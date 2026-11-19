@@ -1,0 +1,696 @@
+{
+  "platform": "SkillEdU Student Success Stories & Testimonials",
+  "total_reviews": 67,
+  "total_videos": 8,
+  "total_items": 75,
+  "overall_rating": "5.0 / 5.0",
+  "video_testimonials": [
+    {
+      "id": "videoCard1",
+      "name": "Devendra Lodhi",
+      "subtitle": "Computer Science • SGSITS",
+      "video_file": "assets/videos/video1_ep02.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_1.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 02",
+      "platform": "LinkedIn Video"
+    },
+    {
+      "id": "videoCard2",
+      "name": "Khushi Mehar",
+      "subtitle": "B.Tech CS • Mahakal Institute of Technology",
+      "video_file": "assets/videos/video2_robot_resume.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_2.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 03",
+      "platform": "LinkedIn Video"
+    },
+    {
+      "id": "videoCard3",
+      "name": "Karan Borana",
+      "subtitle": "B.Tech AI & Data Science • MIT Ujjain",
+      "video_file": "assets/videos/video3_curesync.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_3.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 04",
+      "platform": "LinkedIn Video"
+    },
+    {
+      "id": "videoCard4",
+      "name": "Yuvraj Chouhan",
+      "subtitle": "B.Tech IT • MERN Stack Developer",
+      "video_file": "assets/videos/video4_yuvraj_mern.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_4.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 06",
+      "platform": "LinkedIn Video"
+    },
+    {
+      "id": "videoCard5",
+      "name": "Tanushree Jhala",
+      "subtitle": "Engineering Student • SGSITS",
+      "video_file": "assets/videos/video5_tanushree_women_in_tech.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_5.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 07",
+      "platform": "LinkedIn Video"
+    },
+    {
+      "id": "videoCard6",
+      "name": "Sumit Nandeda",
+      "subtitle": "Computer Science • Sandipani Institute",
+      "video_file": "assets/videos/video6_sumit_ml.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_6.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 01",
+      "platform": "LinkedIn Video"
+    },
+    {
+      "id": "videoCard7",
+      "name": "Mahendra Singh",
+      "subtitle": "Software Developer • Sandipani Institute",
+      "video_file": "assets/videos/video7_mahendra_singh.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_7.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 05",
+      "platform": "LinkedIn Video",
+      "linkedin_url": "https://lnkd.in/p/d38cEFEx"
+    },
+    {
+      "id": "videoCard8",
+      "name": "Muskan Chaurasia",
+      "subtitle": "BCA • Geek Theory Intern",
+      "video_file": "assets/videos/video8_muskan_chaurasia.mp4",
+      "poster_file": "assets/images/banner/linkedin_video_8.jpg",
+      "aspect_ratio": "9:16 portrait",
+      "episode": "Episode 08",
+      "platform": "LinkedIn Video",
+      "linkedin_url": "https://lnkd.in/p/dv8REmEW"
+    }
+  ],
+  "google_reviews": [
+    {
+      "id": 1,
+      "reviewer_name": "Shivansh Makwana",
+      "rating": 5,
+      "date_as_shown": "2 weeks ago New",
+      "review_text": "Recently completed my Frontend Development course at Skilled.U Ujjain 🚀\nLearned HTML, CSS, React JS and worked on real projects with hands-on training. Mentors were very friendly and supportive, and the environment was really positive 😊\n\nOne thing I loved the most was that here they don’t just teach coding… they actually make you feel confident enough to build something on your own 💡✨\n\nThis course helped me improve my confidence, personality development, and coding skills. If you’re looking for a good web development course or coding classes in Ujjain, I’d definitely recommend Skilled.U 💙",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 2,
+      "reviewer_name": "Devkaran Malviya",
+      "rating": 5,
+      "date_as_shown": "2 weeks ago New",
+      "review_text": "Best coaching class in ujjain",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 3,
+      "reviewer_name": "Sandeep Aanjana",
+      "rating": 5,
+      "date_as_shown": "3 weeks ago New",
+      "review_text": "I completed my Machine Learning training from Skilledu.in, and it was a great learning experience. The coaching provides practical and industry-focused training with clear explanations of Machine Learning (with python) concepts. The mentors are supportive and teach with real-world examples and projects, which makes learning easier and more interesting. The offline classes create a good learning environment, and the hands-on practice helped me improve my skills and confidence. I would definitely recommend this institute to anyone who wants to build a strong career in Machine Learning and software development.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 4,
+      "reviewer_name": "Somya Maru",
+      "rating": 5,
+      "date_as_shown": "3 weeks ago New",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 5,
+      "reviewer_name": "tulika patel",
+      "rating": 5,
+      "date_as_shown": "3 weeks ago New",
+      "review_text": "I joined Skilled.U for the MERN stack course as a complete beginner, and it was the best decision. Payal Porwal Mam is great; she explains everything from scratch and is really patient with 1-on-1 doubt solving. The live coding and debugging sessions helped me build a proper full-stack project for my portfolio. I feel way more confident with my coding now, and even my college lab exams have become easy. It's a very supportive place to learn modern AI workflows and industry tools. If you're in Ujjain and want to actually learn how to build software, this is the place.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 6,
+      "reviewer_name": "Akansha Patidar",
+      "rating": 5,
+      "date_as_shown": "3 weeks ago New",
+      "review_text": "Maine Skilled.U se Frontend Development (React) seekha aur mera experience kaafi achha raha. Pehle main complete beginner thi, par ab independent software build kar leti hoon. Bhupendra Sir, Payal Mam, Dheeraj Sir, Ramdayal Sir aur Yogita Mam ne bahut help ki. Sabse best part unka 1-on-1 doubt solving aur live coding guidance tha, jisse complex bugs bhi aasaani se solve ho gaye. Modern UI projects banane se confidence aa gaya aur ab college ke practicals aur exams bhi easy lagte hain. Thank you Skilled.U for improving my coding skills and for all the support! 🫶🏻",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 7,
+      "reviewer_name": "Mohammad muzammil Shaikh",
+      "rating": 5,
+      "date_as_shown": "6 weeks ago",
+      "review_text": "Mene skilledu summar camp se Computer + AI ka course Kiya he ....and really unhone hame jo bhi AI tools sikhaye he aaj hame daily life me bahot kaam aate like collage assignment ho ya freelancing poster design karna ho , ab me vo baot easily realistic way me karta hu...\nThank you so much skilledu , it is very appreciable",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 8,
+      "reviewer_name": "Sunita Chaurasia",
+      "rating": 5,
+      "date_as_shown": "10 weeks ago",
+      "review_text": "I recently completed the Computer + AI Course and Graphic Designing Course from SkillDe.U, and my experience was amazing. The concepts were explained in a very simple and easy-to-understand way. I learned many new and useful things related to Computer, AI, and Graphic Designing.\nThe trainers explained every topic very clearly and patiently, making the learning experience interesting and enjoyable. I really liked the way everything was explained step by step with practical knowledge.\nI am truly thankful to SkillDe.U for providing such a valuable learning experience. I would definitely recommend SkillDe.U to anyone who wants to learn Computer, AI, and Graphic Designing in an easy and effective way. ❤️✨\nThank you, SkillDe.U, for teaching and guiding me so well! 🙏💫",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 9,
+      "reviewer_name": "Hemraj Singh",
+      "rating": 5,
+      "date_as_shown": "10 weeks ago",
+      "review_text": "completed the Computer + AI course here and had a great experience. The teachers explain everything very clearly, and I learned a lot about modern AI tools. It is an excellent place to learn computer skills and AI @skilled.u",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 10,
+      "reviewer_name": "Anushka parmar",
+      "rating": 5,
+      "date_as_shown": "18 weeks ago",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 11,
+      "reviewer_name": "rimjhim tripathi",
+      "rating": 5,
+      "date_as_shown": "18 weeks ago",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 12,
+      "reviewer_name": "Vivek Kumavat",
+      "rating": 5,
+      "date_as_shown": "18 weeks ago",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 13,
+      "reviewer_name": "Devendra Yadav",
+      "rating": 5,
+      "date_as_shown": "18 weeks ago",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 14,
+      "reviewer_name": "Shubham Kumawat",
+      "rating": 5,
+      "date_as_shown": "18 weeks ago",
+      "review_text": "Best institute of our ujjain",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 15,
+      "reviewer_name": "Bhagyashree Raghuvanshi",
+      "rating": 5,
+      "date_as_shown": "20 weeks ago",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 16,
+      "reviewer_name": "Himanshi Chouhan",
+      "rating": 5,
+      "date_as_shown": "22 weeks ago",
+      "review_text": "Skilledu is a good place to learn web development. I completed the MERN Stack course and gained knowledge of frontend and backend technologies. Payal Mam and Bhupendra Sir were very helpful and always cleared our doubts. I recommend this course to students who want to start their development journey.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 17,
+      "reviewer_name": "Sanjay Chauhan",
+      "rating": 5,
+      "date_as_shown": "22 weeks ago",
+      "review_text": "My daughter recently completed the MERN Stack course at Skilledu. We have seen a great improvement in her technical skills and confidence. The teaching methods of Payal Mam and Bhupendra Sir were easy to understand and very practical. I appreciate the efforts of the entire Skilledu team.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 18,
+      "reviewer_name": "Payal Porwal",
+      "rating": 5,
+      "date_as_shown": "22 weeks ago",
+      "review_text": "⭐⭐⭐⭐⭐\n\nBeing a part of Skilled.U has been a wonderful experience. As a trainer, I enjoy teaching in an environment where learning is given more importance than simply finishing the syllabus.\n\nWe focus on practical learning, real-world projects, and helping students understand concepts clearly. It is always satisfying to see students who start as beginners gradually become confident in coding, problem-solving, and modern technologies.\n\nThe positive learning culture and student-focused approach make Skilled.U a great place for anyone looking to build a strong foundation in technology and programming.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 19,
+      "reviewer_name": "Payal Porwal",
+      "rating": 5,
+      "date_as_shown": "22 weeks ago",
+      "review_text": "⭐⭐⭐⭐⭐\n\nIn my experience, Skilled.U is one of the best AI and Coding institutes in Ujjain. Before joining, I visited two other institutes and attended their demo classes, but I wasn't fully satisfied with the teaching approach there.\n\nLater, I visited Skilled.U and attended a demo class. I really liked the way the concepts were explained, so I decided to enroll. I completed both the Python and MERN Stack courses from Skilled.U.\n\nThe training was practical, project-based, and focused on real-world skills. The guidance and support I received helped me build confidence in programming and web development.\n\nToday, I am working in a well-reputed company, and I truly believe that the knowledge and skills I gained at Skilled.U played an important role in my career journey. I would highly recommend this institute to anyone looking to learn Python, MERN Stack, AI, or coding from scratch.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 20,
+      "reviewer_name": "Nitin Mali",
+      "rating": 5,
+      "date_as_shown": "23 weeks ago",
+      "review_text": "Meri daughter ne Computer + AI course join Kiya tha. Uske computer skills aur confidence dono improve huve he . Muskan ma'am students ko bahut. Support karti he aur practical learning pr focus karti he",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 21,
+      "reviewer_name": "Shourya Chourasiya",
+      "rating": 5,
+      "date_as_shown": "23 weeks ago",
+      "review_text": "I attended the summer camp organised by skilled.u institute, and it was an amazing experience. Muskan ma'am bahot achhe se chijo ko pdhate he explain karte he and then practical bhi karvate he.\nThe activities, computer training sessions, coding exercises and AI workshops kept me engaged throughout the program.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 22,
+      "reviewer_name": "Khushi Tak",
+      "rating": 5,
+      "date_as_shown": "23 weeks ago",
+      "review_text": "A great platform for learning Web Development from scratch. The course is practical, industry-focused, and easy to follow. Payal Ma'am's teaching style is exceptional—she makes complex concepts simple and keeps the learning journey engaging. Highly recommended for anyone looking to build strong Frontend Development skills.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 23,
+      "reviewer_name": "Rohit Sharma",
+      "rating": 5,
+      "date_as_shown": "23 weeks ago",
+      "review_text": "Skilledu is one of the best places to learn programming. I enrolled in the MERN Stack course and gained hands-on experience in full-stack web development. The faculty is supportive, especially Payal Ma'am, who is always ready to help and clear doubts. She also takes regular mock interviews, which helped me improve my interview skills and gain confidence for job placements. The project-based learning approach helped me strengthen my coding skills and understanding of web development. I would highly recommend Skilledu to anyone looking to learn coding, programming, or MERN Stack development.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 24,
+      "reviewer_name": "Jaysingh Songara",
+      "rating": 5,
+      "date_as_shown": "23 weeks ago",
+      "review_text": "Skilled u is one of the best Ai and coding institute in ujjain , literally I did computer + AI course from skilledu and I genuinely feel confident now for my AI using skills , skilledu is not only provided many courses like MERN , python etc they provided practical knowledge for everything...they provide structure coruse path and practical experience by made projects ....I designed many posters and posts when I am learning graphic designning here...thankyou skilledu",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 25,
+      "reviewer_name": "Mahima Dhakad",
+      "rating": 5,
+      "date_as_shown": "25 weeks ago",
+      "review_text": "My experience with Skilled.U was really great and helped me grow a lot as a MERN Stack developer. I joined with basic coding knowledge, and through their practical learning approach, projects, and mentorship, I gained a strong understanding of MongoDB, Express.js, React.js, and Node.js.\nThe teachers and team members were very supportive throughout my journey. They always guided and motivated me whenever I faced difficulties, which helped me improve my confidence and skills. The hands-on project experience and real-world learning made the course even more valuable.\nBecause of the skills and support I received at Skilled.U, I was able to successfully complete my internship at Geek Theory and work on real development tasks with confidence.\nOverall, Skilled.U gave me a strong foundation in full-stack development and played an important role in my growth as a developer. 🚀",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 26,
+      "reviewer_name": "Ramdayal nagar",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "As a Manager at Skilled.U Training Institution, I’ve had the opportunity to closely observe how students grow through practical learning and industry-focused training. The institute has created a positive environment for students interested in Web Development, Python, AI, and other modern technologies.\nOne thing that stands out is the focus on hands-on learning, real projects, and practical training instead of only theoretical knowledge. Students receive proper guidance, internship support, and career mentorship that help them become industry-ready.\nThe trainers are supportive and friendly, and the programming classes are designed for both beginners and advanced learners. Along with coding skills, students also improve their digital skills and confidence through project-based learning.\nFor students searching for the Best coding institute in Ujjain or a reliable IT training institute with Web Development, Python, and AI training, Skilled.U provides a strong learning platform with a practical approach and career-focused guidance.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 27,
+      "reviewer_name": "Keshav Tak",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "I completed Frontend Development (HTML, CSS, JS, React) from Skilled.U Ujjain. I joined for job preparation and learned everything with practical training and real projects. Mentors were very friendly and supportive, and their teaching style was easy to understand. It really improved my confidence in coding. I would definitely recommend it as a best IT institute in Ujjain for web development and programming classes.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 28,
+      "reviewer_name": "Rahul Nandeda",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "I joined the Frontend Developer course at Skilled.U Ujjain for a career switch, and it was a really good experience. I learned web development with practical training and real projects, which improved my confidence in coding a lot. The mentors are very friendly and always supportive. I also got internship/job support and proper career guidance. If anyone is looking for a good coding institute in Ujjain, I definitely recommend Skilled.U.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 29,
+      "reviewer_name": "Shivani Panchal",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "“I am Shivani Panchal. Best coding institute in Ujjain. The teachers explain concepts very clearly and provide practical knowledge as well. The environment is friendly, and they offer great support for projects and placements. HTML, CSS, JavaScript, and React were taught very well. They also provided practical projects that helped improve coding confidence. Highly recommended for beginners. The teaching style is excellent, concepts are explained in an easy way, and they also help with interview preparation. One of the best institutes for coding and placements.”",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 30,
+      "reviewer_name": "Ritik Sahu",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "Hey! I'm Ritik a student of front-end development at Skilledu. It is the best institute in Ujjain to learn coding. All the teachers have a fabulous way of teaching. They are hardworking, cooperative, and also motivate and guide students toward their future goals.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 31,
+      "reviewer_name": "Shreya Varvaniya",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "I am learning Web Development at Skilled.U Ujjain and my experience has been very positive. The classes are easy to follow with a strong focus on practical work. The trainers are helpful and guide at every step. It’s a great institute for anyone starting their journey in web development.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 32,
+      "reviewer_name": "Shabbir Dawoodi",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "Currently, I am learning MERN Stack at Skilled.U Institute, and my experience has been very good so far. The classes are practical, easy to understand, and focused on real-world development. Special thanks to Yogita Kashyap Ma’am for her supportive teaching style and clear explanations. She makes complex concepts simple and always encourages students to improve their skills and confidence.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 33,
+      "reviewer_name": "Yuvraj Parmar",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "⭐⭐⭐⭐⭐\n\nHi, mera naam Yuvraj hai aur maine Skilled.U se Web Development course kar raha hu.\n\nMera experience bahut acha raha. Maine yeh course practical skills seekhne ke liye join kiya tha, aur yaha mujhe real learning aur hands-on practice dono mile\n\nAgar aap skills develop karna chahte ho, toh main definitely Skilled.U recommend karunga.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 34,
+      "reviewer_name": "Khushi Mehar",
+      "rating": 5,
+      "date_as_shown": "26 weeks ago",
+      "review_text": "Great place to start your career! Doing my MERN stack internship here at Geek Theory after completing my course. The team is very helpful, and I am getting to learn a lot of practical things every day. Thank you for this opportunity Skilled.U ❤️",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 35,
+      "reviewer_name": "Vishal Chouhan",
+      "rating": 5,
+      "date_as_shown": "32 weeks ago",
+      "review_text": "Gained hands-on technical expertise and industry-ready coding skills through intensive, project-based learning at a premier programming institution.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 36,
+      "reviewer_name": "Javed shaikh",
+      "rating": 5,
+      "date_as_shown": "32 weeks ago",
+      "review_text": "Had a great learning experience at Skilled.U. The hands-on projects and guidance helped me build strong frontend and backend development skills. Highly recommended for anyone looking to grow in tech.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 37,
+      "reviewer_name": "Hansh Singh",
+      "rating": 5,
+      "date_as_shown": "33 weeks ago",
+      "review_text": "Skilledu is a very good coaching class. Here every course from basic to advance level is explained in a very easy way and every student is made to practice with proper assignment so that things are not forgotten and focus remains. Along with this, every Saturday and Sunday a webinar is held on new topics so that the skills of the students can improve. Along with this, some projects are made here for the students so that their level can be known etc.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 38,
+      "reviewer_name": "Manoj Bagwan",
+      "rating": 5,
+      "date_as_shown": "44 weeks ago",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 39,
+      "reviewer_name": "Karan Borana",
+      "rating": 5,
+      "date_as_shown": "44 weeks ago",
+      "review_text": "I am currently doing a Web Development course at this institute. The teaching quality is very good and the concepts are explained clearly. The trainers are supportive and always ready to help. It is a good place for beginners to learn web development.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 40,
+      "reviewer_name": "Yuvraj chouhan Chouhan",
+      "rating": 5,
+      "date_as_shown": "44 weeks ago",
+      "review_text": "I am learning Web Development here and my experience has been really good. The classes are practical and easy to understand. The environment is friendly and helpful. I would recommend this institute to anyone who wants to start a career in web development.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 41,
+      "reviewer_name": "Anoop Pandey",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "I am extremely grateful to be a part of this amazing coding institute(SKILLED.U). The way they teach complex concepts in such a simple and practical manner is truly commendable. All the mentors are highly experienced, supportive, and always ready to clear doubts—chahe kitni baar bhi poochho!\nYahan ka environment learning-friendly hai aur har student par individual attention diya jata hai. Regular assignments, projects,and mock interviews ne meri confidence aur coding skills dono ko hi next level tak le gaye.\nAgar aap genuinely software development, web development, ya programming seekhna chahte hain, toh ye institute ek perfect choice hai.\n\nThank you so much for shaping my career! ~@skilled.u",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 42,
+      "reviewer_name": "Vardan Kumawat",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "Skilledu have best teachers and they are very humble and polite.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 43,
+      "reviewer_name": "Kusum Panchal",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "Skilled.u ne hme bhut kuch sikha diya or lagta hai ki hme computer pura samjha Diya thank you to skilled.u",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 44,
+      "reviewer_name": "Krati Jain",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 45,
+      "reviewer_name": "Nandini Trivedi",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 46,
+      "reviewer_name": "Vaishnavi Rathore",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "The classes were interactive, and we got plenty of hands-on practice with real coding challenges. Regular assignments, quizzes, and coding contests helped us apply what we learned.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 47,
+      "reviewer_name": "Megha Yadav",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 48,
+      "reviewer_name": "Shikha Yadav",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 49,
+      "reviewer_name": "Chandni Dixit",
+      "rating": 5,
+      "date_as_shown": "21 Jun 2025",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 50,
+      "reviewer_name": "Bunti Singh",
+      "rating": 5,
+      "date_as_shown": "29 May 2025",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 51,
+      "reviewer_name": "Radheshayam Lal",
+      "rating": 5,
+      "date_as_shown": "28 Nov 2024",
+      "review_text": "Best institute of technology. I like the way of teaching",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 52,
+      "reviewer_name": "Ajay Raj banna",
+      "rating": 5,
+      "date_as_shown": "27 Nov 2024",
+      "review_text": "Positive atmosphere, staff is polite, Bhupendra sir, Dhiraj sir and Prachi Mam are very polite person , they support everyday for every little help, must join Skilled.u Ujjain (M.P.)",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 53,
+      "reviewer_name": "Bhawna Khatri",
+      "rating": 5,
+      "date_as_shown": "26 Nov 2024",
+      "review_text": "Hey! I'm Bhawna, a student of front-end development at Skilledu. It is the best institute in Ujjain to learn coding. All the teachers have a fabulous way of teaching. They are hardworking, cooperative, and also motivate and guide students toward their future goals.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 54,
+      "reviewer_name": "Sambhav Bhawsar",
+      "rating": 5,
+      "date_as_shown": "26 Nov 2024",
+      "review_text": "I had a wonderful experience at skilledu, it's educational environment is very good and teachers are also excellent",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 55,
+      "reviewer_name": "shivani solanki",
+      "rating": 5,
+      "date_as_shown": "26 Nov 2024",
+      "review_text": "Amazing platform! The instructors are knowledgeable, and the content is top-notch!",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 56,
+      "reviewer_name": "Mohnish Koshti",
+      "rating": 5,
+      "date_as_shown": "26 Nov 2024",
+      "review_text": "SkillEdu coaching is the best place to learn coding, the teachers are very knowledgeable and fabulous place to grow our coding skills.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 57,
+      "reviewer_name": "Er krishna",
+      "rating": 5,
+      "date_as_shown": "26 Nov 2024",
+      "review_text": "Skilled.u ek excellent training institute hai jo practical aur industry-relevant skills sikhata hai. Experienced trainers aur hands-on learning approach isse unique banate hain. Yahaan ka supportive environment aur updated curriculum students ke career growth ke liye perfect hai. Highly recommended!",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 58,
+      "reviewer_name": "Jaya Meda",
+      "rating": 5,
+      "date_as_shown": "26 Nov 2024",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 59,
+      "reviewer_name": "Manisha Meena",
+      "rating": 5,
+      "date_as_shown": "26 Nov 2024",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 60,
+      "reviewer_name": "Muskan Chaurasia",
+      "rating": 5,
+      "date_as_shown": "25 Nov 2024",
+      "review_text": "Loved the course! It was very well-organized, and I learned a lot in a short time. Payal ma'am is very helpful . She makes my course more interesting ☺️.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 61,
+      "reviewer_name": "Aryan Suryavanshi",
+      "rating": 5,
+      "date_as_shown": "24 Nov 2024",
+      "review_text": "This is a very good institute, good and great courses are taught here at very low fees.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 62,
+      "reviewer_name": "Abhishek Porwal",
+      "rating": 5,
+      "date_as_shown": "24 Nov 2024",
+      "review_text": "SkilledU is an excellent institute for learning coding, offering high-quality courses taught by experienced instructors. The curriculum is practical, industry-relevant, and designed to help students build real-world skills. Highly recommended for anyone looking to enhance their coding abilities.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 63,
+      "reviewer_name": "Deepak Panchal",
+      "rating": 5,
+      "date_as_shown": "24 Nov 2024",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    },
+    {
+      "id": 64,
+      "reviewer_name": "Manish bhargav",
+      "rating": 5,
+      "date_as_shown": "22 Nov 2024",
+      "review_text": "Skilledu Coaching has completely transformed my coding skills! The teachers are incredibly knowledgeable and make complex topics easy to understand. The hands-on projects and personalized guidance make it the best place to learn coding in Ujjain.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 65,
+      "reviewer_name": "Devendra Lodhi",
+      "rating": 5,
+      "date_as_shown": "22 Nov 2024",
+      "review_text": "effective, efficient, and secure learning institutions for student👍",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 66,
+      "reviewer_name": "Mahendra singh Gurjar",
+      "rating": 5,
+      "date_as_shown": "22 Nov 2024",
+      "review_text": "Skilledu is the best coaching place to grow yourself in Tech world.",
+      "is_blank": false,
+      "badge": "5.0 Star Experience"
+    },
+    {
+      "id": 67,
+      "reviewer_name": "Rajpal singh Rathore",
+      "rating": 5,
+      "date_as_shown": "22 Nov 2024",
+      "review_text": "",
+      "is_blank": true,
+      "badge": "Rated 5 stars on Google"
+    }
+  ]
+}
