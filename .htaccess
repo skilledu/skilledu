@@ -1,0 +1,10 @@
+# SkillEdU Production Configuration
+ErrorDocument 404 /404.html
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# Force HTTPS (uncomment when SSL is live in production)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>

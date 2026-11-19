@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Disallow internal audit, backend endpoints, and archive files
+Disallow: /search_certificates.php
+Disallow: /assets/backend/
+Disallow: /audit/
+
+Sitemap: https://skilledu.in/sitemap.xml

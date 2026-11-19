@@ -1,0 +1,1131 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SkillEdU Student Management System & Portal | SkillEdU</title>
+  <meta name="description" content="Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.">
+  <link rel="canonical" href="https://skilledu.in/sms.html">
+  
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SkillEdU Academy">
+  <meta property="og:title" content="SkillEdU Student Management System & Portal | SkillEdU">
+  <meta property="og:description" content="Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.">
+  <meta property="og:url" content="https://skilledu.in/sms.html">
+  <meta property="og:image" content="https://skilledu.in/assets/img/logo/skilledU_Logo.png">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SkillEdU Student Management System & Portal | SkillEdU">
+  <meta name="twitter:description" content="Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.">
+  <meta name="twitter:image" content="https://skilledu.in/assets/img/logo/skilledU_Logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- Google Fonts: Inter & Poppins (header/footer ke liye) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon-skillgro.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/default-icons.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/odometer.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/tg-cursor.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- additional css (index wali header/footer styling) -->
+    <link rel="stylesheet" href="assets/css/my_css.css" />
+    <!-- Font Awesome 4.7 (header ke fa fa-phone / fab fa-whatsapp icons ke liye) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <style>
+        /* =========================================================
+           SMS CARDS: simple + clean white cards, Instagram / LinkedIn buttons
+           ========================================================= */
+        .blog-area { background: #f6f8fc; }
+
+        .blog-area .row.gutter-20 {
+            --bs-gutter-x: 16px;
+            row-gap: 16px;
+        }
+
+        .blog-area .row.gutter-20 > [class*="col-"] { display: flex; }
+
+        .blog__post-item {
+            display: flex !important;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            padding: 8px !important;
+            overflow: hidden;
+            border-radius: 14px !important;
+            background: #ffffff !important;
+            border: 1px solid #e6eaf2 !important;
+            box-shadow: 0 2px 10px rgba(22, 20, 57, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog__post-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 28px rgba(22, 20, 57, 0.12);
+        }
+
+        /* poster image: sabka same size */
+        .blog__post-thumb {
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            margin: 0 !important;
+            border-radius: 10px !important;
+        }
+
+        .blog__post-thumb a { display: block; width: 100%; height: 100%; }
+
+        .blog__post-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* buttons wala area */
+        .blog__post-content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            background: transparent !important;
+            margin: 0 !important;
+            padding: 8px 0 0 !important;
+            border-radius: 0 !important;
+        }
+
+        .sms-actions {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 0 !important;
+        }
+
+        /* simple white buttons */
+        .sms-btn {
+            flex: 1;
+            height: 40px;
+            padding: 0 10px;
+            border-radius: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: #ffffff;
+            border: 1px solid #dde2ec;
+            line-height: 1;
+            white-space: nowrap;
+            text-decoration: none !important;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        /* Instagram */
+        .sms-btn.sms-insta i {
+            font-size: 20px;
+            line-height: 1;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .sms-btn .ig-word {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #161439;
+        }
+
+        .sms-btn.sms-insta:hover { background: #fff3f8; border-color: #d6249f; }
+
+        /* LinkedIn: Linked + [in] */
+        .li-logo {
+            font-family: 'Poppins', 'Inter', sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #0a66c2;
+            display: inline-flex;
+            align-items: center;
+            line-height: 1;
+        }
+
+        .li-logo em {
+            font-style: normal;
+            background: #0a66c2;
+            color: #ffffff;
+            border-radius: 4px;
+            padding: 2px 4px 3px;
+            margin-left: 2px;
+            font-size: 15px;
+        }
+
+        .sms-btn.sms-linkedin:hover { background: #eef6fd; border-color: #0a66c2; }
+
+        /* Mobile */
+        @media (max-width: 575.98px) {
+            .blog-area.section-py-120 { padding: 50px 0; }
+            .blog-area .row.gutter-20 { row-gap: 12px; }
+            .blog__post-item:hover { transform: none; }
+            .sms-btn { height: 38px; padding: 0 8px; }
+            .sms-btn .ig-word { font-size: 13px; }
+            .li-logo { font-size: 16px; }
+        }
+
+        /* =========================================================
+           HEADER & FOOTER FONTS (Inter & Poppins) - index se copy
+           ========================================================= */
+        .tg-header__top,
+        .tg-header__top-info,
+        .tg-header__top-info li,
+        .tg-header__top-info li span,
+        .tg-header__top-info li a,
+        .tg-header__phone,
+        .tg-header__phone a,
+        .tg-header__top-social,
+        .tg-header__top-social li {
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 500 !important;
+        }
+
+        .tgmenu__navbar-wrap ul.navigation>li>a,
+        .tgmenu__main-menu ul li a,
+        .mobile-menu .navigation li a {
+            font-family: 'Poppins', sans-serif !important;
+            font-weight: 700 !important;
+        }
+
+        .footer__area,
+        .footer__widget,
+        .footer__content,
+        .footer__content p,
+        .footer__link ul li a,
+        .footer__contact-content,
+        .footer__content .list-wrap li a,
+        .copy-right-text,
+        .copy-right-text p,
+        .copy-right-text a,
+        .footer__bottom-menu ul li a {
+            font-family: 'Inter', sans-serif !important;
+            font-weight: 500 !important;
+        }
+
+        .footer__widget-title {
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        /* =========================================================
+           FOOTER ELEMENT ALIGNMENT & SPACING SETUP - index se copy
+           ========================================================= */
+        .footer__top {
+            padding: 45px 0 15px !important;
+        }
+
+        .footer__top .row [class*=col-]:nth-child(2) .footer__widget,
+        .footer__top .row [class*=col-]:nth-child(3) .footer__widget {
+            margin-left: 0 !important;
+        }
+
+        .footer__widget {
+            margin-bottom: 15px !important;
+        }
+
+        .footer__widget .logo {
+            margin-bottom: 10px !important;
+        }
+
+        .footer__widget-title {
+            font-size: 20px !important;
+            font-weight: 600 !important;
+            margin-bottom: 14px !important;
+            padding-bottom: 10px !important;
+            position: relative;
+        }
+
+        .footer__widget-title::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 32px;
+            height: 3px;
+            border-radius: 2px;
+            background: var(--tg-theme-secondary, #ffc224);
+        }
+
+        .footer__content p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 0;
+        }
+
+        .footer__link .list-wrap li {
+            margin-bottom: 8px !important;
+        }
+
+        .footer__link .list-wrap li a {
+            font-size: 15px;
+            transition: color 0.3s ease;
+        }
+
+        .footer__contact-content .footer__content .list-wrap li {
+            margin-bottom: 8px !important;
+            line-height: 1.5;
+        }
+
+        .footer__content .list-wrap li a.f_contact {
+            color: #ffc224 !important;
+            font-size: 15px;
+            display: inline-block;
+            transition: color 0.3s ease;
+        }
+
+        .footer__content .list-wrap li a.f_contact:hover {
+            color: #ffffff !important;
+        }
+
+        /* Social Icons Alignment */
+        .footer__social {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            margin-top: 20px !important;
+            margin-bottom: 0 !important;
+            padding: 0 !important;
+        }
+
+        .footer__social li {
+            margin: 0 !important;
+            list-style: none !important;
+        }
+
+        .footer__social li a {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 36px !important;
+            height: 36px !important;
+            border-radius: 50% !important;
+            background: rgba(255, 255, 255, 0.08) !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            transition: all 0.3s ease !important;
+            text-decoration: none !important;
+        }
+
+        .footer__social li a:hover {
+            background: #0b66c3 !important;
+            color: #ffffff !important;
+            transform: translateY(-2px);
+        }
+
+        /* Map Alignment */
+        .footer__map-wrapper {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer__map-wrapper iframe {
+            display: block;
+            width: 100%;
+            height: 150px;
+            border: 0;
+        }
+
+        /* Footer Bottom Alignment */
+        .footer__bottom {
+            padding: 14px 0 !important;
+            background: #0c0a2a !important;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .footer__bottom .copy-right-text p {
+            font-size: 14px;
+            margin-bottom: 0;
+            color: #8C9AB4;
+        }
+
+        .footer__bottom .copy-right-text p a {
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .footer__bottom-menu .list-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .footer__bottom-menu .list-wrap li a {
+            font-size: 14px;
+            color: #8C9AB4;
+            transition: color 0.3s ease;
+        }
+
+        .footer__bottom-menu .list-wrap li a:hover {
+            color: #ffc224;
+        }
+
+        @media (max-width: 767.98px) {
+            .footer__bottom .copy-right-text {
+                text-align: center;
+                margin-bottom: 12px;
+            }
+
+            .footer__bottom-menu .list-wrap {
+                justify-content: center !important;
+            }
+        }
+
+        /* Header buttons (Call Us / WhatsApp) - index se copy */
+        .tg-header__area .header-btn .btn,
+        .tgmenu__action .header-btn .btn,
+        .header-btn.login-btn a {
+            background: var(--tg-theme-secondary, #ffc224) !important;
+            color: var(--tg-heading-color, #161439) !important;
+        }
+
+        .tg-header__area .header-btn .btn:hover,
+        .tgmenu__action .header-btn .btn:hover,
+        .header-btn.login-btn a:hover {
+            background: var(--tg-theme-primary, #0b66c3) !important;
+            color: var(--tg-common-color-white, #ffffff) !important;
+        }
+
+        /* =========================================================
+           PAGE SPACING
+           ========================================================= */
+        .blog-area.section-py-120 { padding-top: 50px !important; padding-bottom: 50px !important; }
+
+        @media (max-width: 575.98px) {
+            .blog-area.section-py-120 { padding-top: 30px !important; padding-bottom: 30px !important; }
+            .footer__top { padding: 35px 0 10px !important; }
+        }
+
+        /* =========================================================
+           CARD ke andar neeche ka extra khali space hatao
+           ========================================================= */
+        .blog-area .row.gutter-20 > [class*="col-"] { align-items: flex-start; }
+
+        .blog__post-item {
+            height: auto !important;
+            min-height: 0 !important;
+            padding: 8px !important;
+        }
+
+        .blog__post-item::after { display: none !important; }
+
+        .blog__post-content {
+            flex: 0 0 auto !important;
+            height: auto !important;
+            min-height: 0 !important;
+            padding: 8px 0 0 !important;
+            margin: 0 !important;
+        }
+
+        .sms-actions,
+        .sms-btn {
+            margin-bottom: 0 !important;
+        }
+
+        /* "See post on" line */
+        .sms-note {
+            margin: 0 0 8px !important;
+            padding: 0 2px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.3;
+            color: #5b6477;
+        }
+
+    </style>
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "SkillEdU Student Management System & Portal | SkillEdU",
+  "description": "Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.",
+  "url": "https://skilledu.in/sms.html"
+}
+  </script>
+</head>
+
+<body>
+  <h1 class="visually-hidden">SkillEdU Student Management System & Academic Portal</h1>
+  <!--Preloader-->
+  <div id="preloader">
+    <div id="loader" class="loader">
+      <div class="loader-container">
+        <div class="loader-icon">
+          <img src="assets/img/logo/skilledU_Logo.png" alt="Preloader" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Preloader-end -->
+
+  <!-- Scroll-top -->
+  <button class="scroll__top scroll-to-target" data-target="html" aria-label="Scroll to top of page">
+    <i class="tg-flaticon-arrowhead-up"></i>
+  </button>
+  <!-- Scroll-top-end-->
+
+  <!-- header-area -->
+  <header>
+    <div class="tg-header__top">
+      <div class="container custom-container">
+        <div class="row">
+          <div class="col-lg-6">
+            <ul class="tg-header__top-info list-wrap">
+              <li>
+                <img src="assets/img/icons/map_marker.svg" alt="Icon" />
+                <span><a href="https://maps.app.goo.gl/TMc6gjPbDTMm1KPX7" target="_blank">201 , Navkar Complex ,Teen
+                    Batti Chauraha , Ujjain, MP</a></span>
+              </li>
+              <li>
+                <img src="assets/img/icons/envelope.svg" alt="Icon" />
+                <a href="mailto:info@skilledu.in">info@skilledu.in</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <div class="tg-header__top-right">
+              <div class="tg-header__phone">
+                <img src="assets/img/icons/phone.svg" alt="Icon" />Call us:
+                <a href="tel:+918989099962">+91 89890 99962</a>
+              </div>
+              <ul class="tg-header__top-social list-wrap">
+                <li>Follow Us On :</li>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=61556212776038&sfnsn=wa"><i
+                      class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank"><i
+                      class="fab fa-whatsapp"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/company/skilled-u/" aria-label="SkillEdU on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="header-fixed-height"></div>
+    <div id="sticky-header" class="tg-header__area py-1" style="height: 81px;">
+      <div class="container custom-container">
+        <div class="row">
+          <div class="col-12" style="margin-top: -13px;">
+            <div class="tgmenu__wrap">
+              <nav class="tgmenu__nav">
+                <div class="logo">
+                  <a href="index.html"><img src="assets/img/logo/skilledU_Logo.png" alt="Logo" /></a>
+                </div>
+                <div class="tgmenu__navbar-wrap tgmenu__navbar-wrap-my tgmenu__main-menu d-none d-xl-flex"
+                  style="margin-top: 10px;">
+                  <ul class="navigation">
+                    <li class="menu-item">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item"><a href="all-courses.html">All Courses</a></li>
+                    <li class="menu-item">
+                      <a href="contact.html">Contact US</a>
+                    </li>
+                    <li class="active menu-item">
+                      <a href="sms.html">SMS</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tgmenu__action">
+                  <ul class="list-wrap">
+                    <li class="header-btn login-btn">
+                      <a href="tel:+918989099962" class="btn">
+                        <i class="fa fa-phone px-2"></i>Call Us</a>
+                    </li>
+
+                    <li class="header-btn login-btn">
+                      <a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank" class="btn"><i
+                          class="fab fa-whatsapp px-2"></i>whatsApp Us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="mobile-nav-toggler" role="button" tabindex="0" aria-label="Toggle navigation menu">
+                  <i class="tg-flaticon-menu-1"></i>
+                </div>
+              </nav>
+            </div>
+            <!-- Mobile Menu  -->
+            <div class="tgmobile__menu">
+              <nav class="tgmobile__menu-box">
+                <div class="close-btn" role="button" tabindex="0" aria-label="Close navigation menu">
+                  <i class="tg-flaticon-close-1"></i>
+                </div>
+                <div class="nav-logo"><a href="index.html"><img src="assets/img/logo/skilledU_Logo.png" alt="Logo" /></a>
+                </div>
+                <!--<div class="tgmobile__search">-->
+                <!--    <form action=" #">-->
+                <!--        <input type="text" placeholder="Search here...">-->
+                <!--        <button><i class="fas fa-search"></i></button>-->
+                <!--    </form>-->
+                <!--</div>-->
+                <div class="tgmobile__menu-outer">
+                  <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                </div>
+                <div class="social-links">
+                  <ul class="list-wrap">
+                    <li><a href="https://www.facebook.com/profile.php?id=61556212776038&sfnsn=wa"><i
+                          class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank"><i
+                          class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer"><i
+                          class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/skilled-u/" aria-label="SkillEdU on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <!--<li><a href="#"><i class="fab fa-youtube"></i></a></li>-->
+                  </ul>
+                </div>
+              </nav>
+            </div>
+            <div class="tgmobile__menu-backdrop"></div>
+            <!-- End Mobile Menu -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header-area-end -->
+
+  <!-- main-area -->
+  <main class="main-area fix">
+
+    <!-- blog-area -->
+    <section class="blog-area section-py-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row gutter-20">
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/23.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DeZQ47kgGFr/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dnzznHhx" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/20.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DeHPWnYAIsd/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/d2EWAP8n" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/24.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/Dc_GhZDgH6w/?utm_source=ig_web_copy_link&mdxt=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dAJ8ZnKr" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/22.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DcI8_l4gH09/?utm_source=ig_web_copy_link&psln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dPU_ZxZW" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/19.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/Dbk-yb0AEOW/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/d7GdA-ia" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/3.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DYw66bKk0Ug/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/d7ec7ae3/" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/4.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DZmrROTAGqX/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dijcSt3t" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/13.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DbBGVWMDMtZ/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dYvzsWS7" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/11.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DWy0JaoDEeT/?utm_source=ig_web_copy_link&dlrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dEwKavWd" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/9.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DX9inOLk6_D/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dKZsqags" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/15.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DYNDE93E_JR/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dB3KQVHa" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/21.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/Dd1Nw2qgG0R/?utm_source=ig_web_copy_link&vrfl=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dfX65C6F" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/10.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/djUjhRXA" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/5.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DadATtCgMKV/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/djPwxqGW" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/6.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DaK0tzagCqi/?utm_source=ig_web_copy_link&cplk=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/drG43EhG" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/18.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DXEwhmUk4G8/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/diBpaSyj" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/14.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DXWveXyky8P/?utm_source=ig_web_copy_link&xtok=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dCrjc2qT" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/2.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DZ4-jYmjGc3/?utm_source=ig_web_copy_link&exln=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dYARvyk9" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/17.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DWgxqYakwd4/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/ddAXH4b6" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/12.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dcrJSEmY" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/8.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/p/DYe2ZXRjBz3/?utm_source=ig_web_copy_link&srtk=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dtUbj-dj" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                            <div class="blog__post-item shine__animate-item">
+                                <div class="blog__post-thumb">
+                                    <img src="assets/img/SMS/16.png" alt="img">
+                                </div>
+                                <div class="blog__post-content">
+                                    <p class="sms-note">See post on</p>
+                                    <div class="sms-actions">
+                                        <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer" class="sms-btn sms-insta" aria-label="Instagram"><i class="fab fa-instagram"></i><span class="ig-word">Instagram</span></a>
+                                        <a href="https://lnkd.in/p/dbwkT6Zm" target="_blank" rel="noopener noreferrer" class="sms-btn sms-linkedin" aria-label="LinkedIn"><span class="li-logo">Linked<em>in</em></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog-area-end -->
+
+    </main>
+
+    <!-- footer-area -->
+  <footer class="footer__area">
+    <div class="footer__top">
+      <div class="container">
+        <div class="row">
+          <!-- Col 1: About Skilled.u -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="footer__widget">
+              <div class="logo logo_footer">
+                <a href="index.html"><img src="assets/img/logo/Skilledu_Logo_White2.png" alt="Skilled.u Logo"
+                    style="height: 120px;" /></a>
+              </div>
+              <div class="footer__content">
+                <p>
+                  Skilled.u aims to empower learners nationwide in frontend,
+                  backend development, machine learning, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="footer__widget">
+              <h4 class="footer__widget-title">Quick Links</h4>
+              <div class="footer__link">
+                <ul class="list-wrap">
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="index.html#about">About Us</a></li>
+                  <li><a href="index.html#testimonial">Testimonials</a></li>
+                  <li><a href="index.html#faq">FAQ</a></li>
+                  <li><a href="https://sss.skilledu.in">SSS</a></li>
+                                  <li><a href="certificate-detail.php">Verify Certificate</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 3: Get In Touch -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+            <div class="footer__widget">
+              <h4 class="footer__widget-title">Get In Touch</h4>
+              <div class="footer__contact-content">
+                <div class="footer__content">
+                  <ul class="list-wrap">
+                    <li>
+                      <a class="f_contact" href="https://maps.app.goo.gl/TMc6gjPbDTMm1KPX7" target="_blank">201, Navkar
+                        Complex, Teen Batti Chauraha, Ujjain MP 456010</a>
+                    </li>
+                    <li>
+                      <a class="f_contact" href="tel:+918989099962">+91 89890 99962</a>
+                    </li>
+                    <li>
+                      <a class="f_contact" href="mailto:info@skilledu.in">info@skilledu.in</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <ul class="list-wrap footer__social">
+                  <li>
+                    <a href="https://www.linkedin.com/company/skilled-u/" target="_blank" aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="https://www.facebook.com/profile.php?id=61556212776038&sfnsn=wa" target="_blank"
+                      aria-label="Facebook">
+                      <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M5 5.65773V3.60037C5 3.03254 5.448 2.5717 6 2.5717H7V0H5C3.343 0 2 1.38152 2 3.08603V5.65773H0V8.22943H2V16.4589H5V8.22943H7L8 5.65773H5Z"
+                          fill="currentColor" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank"
+                      aria-label="WhatsApp">
+                      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M7.50187 0H7.49813C3.36281 0 0 3.36375 0 7.5C0 9.14062 0.52875 10.6613 1.42781 11.8959L0.493125 14.6822L3.37594 13.7606C4.56187 14.5463 5.97656 15 7.50187 15C11.6372 15 15 11.6353 15 7.5C15 3.36469 11.6372 0 7.50187 0ZM11.8659 10.5909C11.685 11.1019 10.9669 11.5256 10.3941 11.6494C10.0022 11.7328 9.49031 11.7994 7.76719 11.085C5.56312 10.1719 4.14375 7.93219 4.03312 7.78687C3.92719 7.64156 3.1425 6.60094 3.1425 5.52469C3.1425 4.44844 3.68906 3.92438 3.90938 3.69938C4.09031 3.51469 4.38937 3.43031 4.67625 3.43031C4.76906 3.43031 4.8525 3.435 4.9275 3.43875C5.14781 3.44812 5.25844 3.46125 5.40375 3.80906C5.58469 4.245 6.02531 5.32125 6.07781 5.43188C6.13125 5.5425 6.18469 5.6925 6.10969 5.83781C6.03938 5.98781 5.9775 6.05437 5.86687 6.18187C5.75625 6.30937 5.65125 6.40688 5.54062 6.54375C5.43937 6.66281 5.325 6.79031 5.4525 7.01063C5.58 7.22625 6.02063 7.94531 6.66937 8.52281C7.50656 9.26812 8.18531 9.50625 8.42812 9.6075C8.60906 9.6825 8.82469 9.66469 8.95687 9.52406C9.12469 9.34313 9.33187 9.04313 9.54281 8.74781C9.69281 8.53594 9.88219 8.50969 10.0809 8.58469C10.2834 8.655 11.355 9.18469 11.5753 9.29437C11.7956 9.405 11.9409 9.4575 11.9944 9.55031C12.0469 9.64313 12.0469 10.0791 11.8659 10.5909Z"
+                          fill="currentColor" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                        class="fab fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Col 4: Our Location & Map -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="footer__widget">
+              <h4 class="footer__widget-title">Our Location</h4>
+              <div class="footer__map-wrapper">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.8126686437645!2d75.78882589999999!3d23.177036299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xde22d6ed4c1dceb%3A0x386b788349ba3f7b!2sSkilled.u!5e0!3m2!1sen!2sin!4v1733901595669!5m2!1sen!2sin"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-7 col-12 text-center text-md-start mb-2 mb-md-0">
+            <div class="copy-right-text">
+              <p>
+                © 2026 <a href="index.html">Skilled.u</a> All rights reserved.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5 col-12 text-center text-md-end">
+            <div class="footer__bottom-menu">
+              <ul class="list-wrap">
+                <li><a href="Term-of-Use.html">Term of Use</a></li>
+                <li><a href="Privacy-Policy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer-area-end -->
+
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.odometer.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/tween-max.min.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.marquee.min.js"></script>
+    <script src="assets/js/tg-cursor.min.js"></script>
+    <script src="assets/js/vivus.min.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/svg-inject.min.js"></script>
+    <script src="assets/js/jquery.circleType.js"></script>
+    <script src="assets/js/jquery.lettering.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        SVGInject(document.querySelectorAll("img.injectable"));
+    </script>
+</body>
+
+</html>
