@@ -1,0 +1,9 @@
+id,name,subtitle,video_file,poster_file,aspect_ratio,episode,linkedin_url
+videoCard1,Devendra Lodhi,Computer Science • SGSITS,assets/videos/video1_ep02.mp4,assets/images/banner/linkedin_video_1.jpg,9:16 portrait,Episode 02,
+videoCard2,Khushi Mehar,B.Tech CS • Mahakal Institute of Technology,assets/videos/video2_robot_resume.mp4,assets/images/banner/linkedin_video_2.jpg,9:16 portrait,Episode 03,
+videoCard3,Karan Borana,B.Tech AI & Data Science • MIT Ujjain,assets/videos/video3_curesync.mp4,assets/images/banner/linkedin_video_3.jpg,9:16 portrait,Episode 04,
+videoCard4,Yuvraj Chouhan,B.Tech IT • MERN Stack Developer,assets/videos/video4_yuvraj_mern.mp4,assets/images/banner/linkedin_video_4.jpg,9:16 portrait,Episode 06,
+videoCard5,Tanushree Jhala,Engineering Student • SGSITS,assets/videos/video5_tanushree_women_in_tech.mp4,assets/images/banner/linkedin_video_5.jpg,9:16 portrait,Episode 07,
+videoCard6,Sumit Nandeda,Computer Science • Sandipani Institute,assets/videos/video6_sumit_ml.mp4,assets/images/banner/linkedin_video_6.jpg,9:16 portrait,Episode 01,
+videoCard7,Mahendra Singh,Software Developer • Sandipani Institute,assets/videos/video7_mahendra_singh.mp4,assets/images/banner/linkedin_video_7.jpg,9:16 portrait,Episode 05,https://lnkd.in/p/d38cEFEx
+videoCard8,Muskan Chaurasia,BCA • Geek Theory Intern,assets/videos/video8_muskan_chaurasia.mp4,assets/images/banner/linkedin_video_8.jpg,9:16 portrait,Episode 08,https://lnkd.in/p/dv8REmEW
