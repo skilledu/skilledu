@@ -1,0 +1,185 @@
+#myTab.nav-tabs .nav-link {
+  background: #e6e9ef !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  font-family: var(--tg-heading-font-family) !important;
+  border: none !important;
+  color: var(--tg-body-color) !important;
+  border-radius: 30px !important;
+  padding: 14px 30px !important;
+  line-height: 1 !important;
+  transition: all 0.3s ease-out 0s !important;
+}
+
+#myTab.nav-tabs .nav-link:hover,
+#myTab.nav-tabs .nav-link.active {
+  color: var(--tg-common-color-white) !important;
+  background: var(--tg-theme-primary) !important;
+  box-shadow: 4px 6px 0 0 #050071 !important;
+}
+
+#myTab.nav-tabs .nav-link::before,
+#myTab.nav-tabs .nav-link::after {
+  background: none !important;
+}
+
+#overview-tab-pane .about__info-list-item i {
+  color: var(--tg-heading-color) !important;
+}
+
+#curriculum-tab-pane .accordion {
+  display: block !important;
+  margin-top: 20px !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-item {
+  background-color: #ffffff !important;
+  border: 1px solid #eadfbf !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+  margin: 0 0 14px !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-header {
+  margin: 0 !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 0 !important;
+  width: 100% !important;
+  padding: 16px 20px !important;
+  font-family: inherit !important;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+  text-align: left !important;
+  color: #292929 !important;
+  background-color: #fff8e6 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent;
+  transition: background-color 0.25s ease, color 0.25s ease !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button::after {
+  content: "" !important;
+  position: static !important;
+  flex-shrink: 0 !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin-left: 16px !important;
+  margin-top: -5px !important;
+  background-image: none !important;
+  border: 0 !important;
+  border-right: 2px solid currentColor !important;
+  border-bottom: 2px solid currentColor !important;
+  transform: rotate(45deg) !important;
+  transition: transform 0.25s ease, margin 0.25s ease !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button:hover {
+  color: #222222 !important;
+  background-color: #e6a200 !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button:not(.collapsed) {
+  color: #222222 !important;
+  background-color: #e6a200 !important;
+  box-shadow: none !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button:not(.collapsed)::after {
+  margin-top: 5px !important;
+  transform: rotate(-135deg) !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button:not(.collapsed):hover {
+  color: #222222 !important;
+  background-color: #d99700 !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button:focus,
+#curriculum-tab-pane .accordion .accordion-button:active {
+  color: #222222 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  outline: 0 !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-button:focus-visible {
+  box-shadow: inset 0 0 0 3px #7a5600 !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-body {
+  padding: 18px 20px !important;
+  background-color: #ffffff !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-body ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 2rem !important;
+  list-style: disc !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-body li {
+  display: list-item !important;
+  list-style: disc !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-body li::before,
+#curriculum-tab-pane .accordion .accordion-body .item-name::before {
+  content: none !important;
+  display: none !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-body .course-item-link {
+  display: inline !important;
+  color: inherit !important;
+  background: transparent !important;
+  text-decoration: none !important;
+}
+
+#curriculum-tab-pane .accordion .accordion-body .item-name {
+  display: inline !important;
+  margin: 0 !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+}
+
+@media (max-width: 575px) {
+  #curriculum-tab-pane .accordion .accordion-button {
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+  }
+
+  #curriculum-tab-pane .accordion .accordion-body {
+    padding: 14px 16px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #curriculum-tab-pane .accordion .accordion-button,
+  #curriculum-tab-pane .accordion .accordion-button::after {
+    transition: none !important;
+  }
+}
