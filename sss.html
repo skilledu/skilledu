@@ -4,23 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Student Support & Learning Services | SkillEdU Academy</title>
-  <meta name="description" content="Get dedicated academic guidance, internship placement assistance, and technical troubleshooting support from the experienced SkillEdU mentor community.">
-  <link rel="canonical" href="https://skilledu.in/sss.html">
-  
-  <!-- Open Graph / Social Media Meta -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SkillEdU Academy">
-  <meta property="og:title" content="Student Support & Learning Services | SkillEdU Academy">
-  <meta property="og:description" content="Get dedicated academic guidance, internship placement assistance, and technical troubleshooting support from the experienced SkillEdU mentor community.">
-  <meta property="og:url" content="https://skilledu.in/sss.html">
-  <meta property="og:image" content="https://skilledu.in/assets/img/logo/skilledU_Logo.png">
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Student Support & Learning Services | SkillEdU Academy">
-  <meta name="twitter:description" content="Get dedicated academic guidance, internship placement assistance, and technical troubleshooting support from the experienced SkillEdU mentor community.">
-  <meta name="twitter:image" content="https://skilledu.in/assets/img/logo/skilledU_Logo.png">
+  <title>Skilled.u - Empowering Future Developers</title>
   <meta name="google-site-verification" content="V1QhMYODpNggfU8e_ZiJVVY1IyOEJpGwgWAK_-kIzCM" />
   <meta name="keywords"
     content="future skills, programming, coding, skill development, HTML, CSS, ReactJS, in Ujjain, website development course, mobile app development, frontend courses, backend courses, full stack courses">
@@ -34,9 +18,14 @@
     gtag('config', 'G-0NW60P2SQ3');
   </script>
 
+  <meta name="description" content="Skilled.u - Empowering Future Developers " />
+  <meta name="description" content=" Skilled.u opens doors to endless tech opportunities with
+                  diverse courses empowering your success in the industry." />
+
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
   <!-- Google Fonts: Inter & Poppins -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -57,11 +46,12 @@
     const redirectKeywords = ['cer', 'certi', 'cat', 'ate', 'tifi'];
     for (let keyword of redirectKeywords) {
       if (path.includes(keyword) && path !== '/certificate.html') {
-        window.location.href = "certificate-detail.php";
+        window.location.href = "/certificate.html";
         break;
       }
     }
   </script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="assets/css/animate.min.css" />
@@ -865,32 +855,16 @@
       pointer-events: none;
     }
 
-    .webinar-bg-motion,
-    .webinar__marquee-copy .webinar-bg-motion {
-      position: absolute !important;
-      inset: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      background-image: url("assets/img/banner/skilleduteam.jpeg") !important;
-      background-position: center 35% !important;
-      background-size: cover !important;
-      background-repeat: no-repeat !important;
-      mix-blend-mode: luminosity !important;
-      opacity: 0.35 !important;
-      z-index: 0 !important;
-      pointer-events: none !important;
+    .webinar-bg-motion {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("assets/img/banner/parallex.png") center / cover no-repeat;
     }
 
-    .webinar-bg-motion::before,
-    .webinar__marquee-copy .webinar-bg-motion::before {
-      content: "" !important;
-      position: absolute !important;
-      inset: 0 !important;
-      width: 100% !important;
-      height: 100% !important;
-      background: #072656 !important;
-      opacity: 0.55 !important;
-      z-index: 1 !important;
+    .webinar__marquee-copy .webinar-bg-motion {
+      background-attachment: fixed;
     }
 
     .webinar__marquee::after {
@@ -1215,6 +1189,239 @@
             .li-logo { font-size: 16px; }
         }
 
+            #sss-video-modal[hidden] { display: none !important; }
+            #sss-video-modal {
+                position: fixed;
+                inset: 0;
+                z-index: 9999;
+                display: grid;
+                place-items: center;
+                padding: 20px;
+                background: rgba(8, 10, 20, .86);
+            }
+            #sss-video-modal .sss-video-dialog {
+                width: min(100%, 960px);
+                overflow: hidden;
+                border-radius: 12px;
+                background: #101010;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, .45);
+            }
+            #sss-video-modal .sss-video-toolbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 16px;
+                padding: 12px 16px;
+                color: #fff;
+            }
+            #sss-video-modal .sss-video-title {
+                margin: 0;
+                color: inherit;
+                font-size: 16px;
+            }
+            #sss-video-modal .sss-video-close {
+                display: grid;
+                width: 40px;
+                height: 40px;
+                flex: 0 0 40px;
+                place-items: center;
+                border: 0;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, .12);
+                color: #fff;
+                font-size: 26px;
+                line-height: 1;
+                cursor: pointer;
+            }
+            #sss-video-modal .sss-video-player {
+                display: block;
+                width: 100%;
+                max-height: calc(100vh - 110px);
+                aspect-ratio: 16 / 9;
+                background: #000;
+                border: 0;
+                object-fit: contain;
+            }
+            #sss-video-modal .sss-video-status {
+                margin: 0;
+                padding: 12px 16px;
+                color: #fff;
+                font-size: 14px;
+            }
+            @media (max-width: 575.98px) {
+                #sss-video-modal { padding: 12px; }
+                #sss-video-modal .sss-video-dialog { border-radius: 8px; }
+                #sss-video-modal .sss-video-player { max-height: calc(100vh - 90px); }
+            }
+        /* SMS Section Heading */
+.sms-section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 15px;
+}
+
+.sms-section-heading .sms-subtitle {
+    display: inline-block;
+    line-height: 1.62;
+    background: #d6ecfa;
+    border-radius: 30px;
+    padding: 3px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #0b66c3;
+    margin: 0 0 14px;
+}
+
+.sms-section-heading h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 36px;
+    font-weight: 700 !important;
+    letter-spacing: -0.75px;
+    line-height: 1.33;
+    text-transform: capitalize;
+    color: #161439;
+    margin-bottom: 12px;
+}
+
+.sms-section-heading h2 span {
+    color: #0b66c3;
+}
+
+.sms-section-heading p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #626b7d;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* Tablet View */
+@media (max-width: 991px) {
+    .sms-section-heading {
+        margin-bottom: 28px;
+    }
+
+}
+
+/* Mobile View */
+@media (max-width: 575px) {
+    .sms-section-heading {
+        margin-bottom: 22px;
+    }
+
+    .sms-section-heading .sms-subtitle {
+        font-size: 16px;
+    }
+
+    .sms-section-heading h2 {
+        font-size: 29px;
+    }
+
+    .sms-section-heading p {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sms-section-heading h2 {
+        font-size: 36px;
+    }
+}
+
+    main .find-courses .find-courses-wrapper > a.find-courses-cta {
+      border: 1px solid #f7b32b;
+      border-radius: 30px;
+      background: #f7b32b;
+      color: #16113f;
+      box-shadow: 0 8px 18px rgba(247, 179, 43, 0.28);
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease !important;
+    }
+
+    main .find-courses .find-courses-wrapper > a.find-courses-cta:hover,
+    main .find-courses .find-courses-wrapper > a.find-courses-cta:focus-visible {
+      border-color: #f7b32b !important;
+      background: #e8a11e !important;
+      color: #16113f !important;
+      box-shadow: 0 12px 24px rgba(247, 179, 43, 0.34) !important;
+      transform: translateY(-3px) !important;
+    }
+
+    main .find-courses .find-courses-wrapper > a.find-courses-cta:focus-visible {
+      outline: 3px solid #f7b32b;
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      main .find-courses .find-courses-wrapper > a.find-courses-cta {
+        transition: none !important;
+      }
+
+      main .find-courses .find-courses-wrapper > a.find-courses-cta:hover,
+      main .find-courses .find-courses-wrapper > a.find-courses-cta:focus-visible {
+        transform: none !important;
+      }
+    }
+
+/* All Courses section title styling */
+.sms-section-heading.section__title {
+    margin-bottom: 40px;
+}
+
+.sms-section-heading.section__title .title {
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 36px !important;
+    font-weight: 600 !important;
+    line-height: 1.33 !important;
+    margin: 0 !important;
+    letter-spacing: -0.75px !important;
+    text-transform: uppercase !important;
+    color: #161439 !important;
+    text-align: center !important;
+}
+
+.sms-section-heading.section__title p {
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sms-section-heading.section__title .title span {
+    color: #161439;
+}
+
+@media (max-width: 767.98px) {
+    .sms-section-heading.section__title .title {
+        font-size: 29px !important;
+    }
+}
+  /* Reduce Top Spacing of SSS Section */
+.blog-area.section-py-120 {
+    padding-top: 45px !important;
+    padding-bottom: 80px !important;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+    .blog-area.section-py-120 {
+        padding-top: 35px !important;
+        padding-bottom: 60px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+    .blog-area.section-py-120 {
+        padding-top: 25px !important;
+        padding-bottom: 50px !important;
+    }
+}
+
     /* .btn-00{
   background-color:#0b66c3; 
   border-radius:18px; 
@@ -1230,20 +1437,9 @@
 } */
 
   </style>
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Student Support & Learning Services | SkillEdU Academy",
-  "description": "Get dedicated academic guidance, internship placement assistance, and technical troubleshooting support from the experienced SkillEdU mentor community.",
-  "url": "https://skilledu.in/sss.html"
-}
-  </script>
 </head>
 
 <body>
-  <h1 class="visually-hidden">Student Success, Academic Support & Career Guidance Services</h1>
   <!--Preloader-->
   <div id="preloader">
     <div id="loader" class="loader">
@@ -1257,7 +1453,7 @@
   <!--Preloader-end -->
 
   <!-- Scroll-top -->
-  <button class="scroll__top scroll-to-target" data-target="html" aria-label="Scroll to top of page">
+  <button class="scroll__top scroll-to-target" data-target="html">
     <i class="tg-flaticon-arrowhead-up"></i>
   </button>
   <!-- Scroll-top-end-->
@@ -1297,10 +1493,10 @@
                       class="fab fa-whatsapp"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/skilled-u/" aria-label="SkillEdU on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://www.linkedin.com/company/skilled-u/"><i class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/skilled.u_"><i class="fab fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
@@ -1321,14 +1517,16 @@
                 <div class="tgmenu__navbar-wrap tgmenu__navbar-wrap-my tgmenu__main-menu d-none d-xl-flex"
                   style="margin-top: 10px;">
                   <ul class="navigation">
-                    <li class="menu-item">
+                    <li class="active menu-item" style="color: #000;">
                       <a href="index.html">Home</a>
+
                     </li>
-                    <li class="menu-item"><a href="all-courses.html">All Courses</a></li>
+                    <li><a href="all-courses.html">All Courses</a></li>
                     <li class="menu-item">
                       <a href="contact.html">Contact US</a>
+
                     </li>
-                    <li class="active menu-item">
+                    <li class="menu-item">
                       <a href="sms.html">SMS</a>
                     </li>
                   </ul>
@@ -1344,11 +1542,11 @@
 
                     <li class="header-btn login-btn">
                       <a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank" class="btn"><i
-                          class="fab fa-whatsapp px-2"></i>whatsApp Us</a>
+                          class="fa fa-whatsapp px-2"></i>whatsApp Us</a>
                     </li>
                   </ul>
                 </div>
-                <div class="mobile-nav-toggler" role="button" tabindex="0" aria-label="Toggle navigation menu">
+                <div class="mobile-nav-toggler">
                   <i class="tg-flaticon-menu-1"></i>
                 </div>
               </nav>
@@ -1356,10 +1554,11 @@
             <!-- Mobile Menu  -->
             <div class="tgmobile__menu">
               <nav class="tgmobile__menu-box">
-                <div class="close-btn" role="button" tabindex="0" aria-label="Close navigation menu">
+                <div class="close-btn">
                   <i class="tg-flaticon-close-1"></i>
                 </div>
-                <div class="nav-logo"><a href="index.html"><img src="assets/img/logo/skilledU_Logo.png" alt="Logo" /></a>
+                <div class="nav-logo">
+                  <a href="#"><img src="assets/img/logo/skilledU_Logo.png" alt="Logo" /></a>
                 </div>
                 <!--<div class="tgmobile__search">-->
                 <!--    <form action=" #">-->
@@ -1376,9 +1575,9 @@
                           class="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank"><i
                           class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer"><i
+                    <li><a href="https://www.instagram.com/SkilledU24?igsh=M2Y4djB6dXVzb2xx"><i
                           class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/skilled-u/" aria-label="SkillEdU on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <li><a href="https://www.linkedin.com/company/skilled-u/"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                     <!--<li><a href="#"><i class="fab fa-youtube"></i></a></li>-->
                   </ul>
@@ -1394,6 +1593,34 @@
   </header>
   <!-- header-area-end -->
 
+<!-- breadcrumb-area -->
+<section class="breadcrumb__area breadcrumb__bg bread_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb__content">
+                    <h3 class="title">Skilldu Sunday Special (SSS)</h3>
+                    <nav class="breadcrumb">
+                        <span property="itemListElement" typeof="ListItem">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
+                        <span property="itemListElement" typeof="ListItem">Skilldu Sunday Special (SSS)</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb__shape-wrap">
+        <img src="assets/img/others/breadcrumb_shape01.svg" alt="img" class="alltuchtopdown">
+        <img src="assets/img/others/breadcrumb_shape02.svg" alt="img" data-aos="fade-right" data-aos-delay="300">
+        <img src="assets/img/others/breadcrumb_shape03.svg" alt="img" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/img/others/breadcrumb_shape04.svg" alt="img" data-aos="fade-down-left" data-aos-delay="400">
+        <img src="assets/img/others/breadcrumb_shape05.svg" alt="img" data-aos="fade-left" data-aos-delay="400">
+    </div>
+</section>
+<!-- breadcrumb-area-end -->
+
   
     <main class="main-area fix">
 
@@ -1402,6 +1629,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                  <!-- SMS Section Heading -->
+<div class="sms-section-heading section__title text-center mb-40">
+    <span class="sms-subtitle">BUILD YOUR SKILLS</span>
+    <h2 class="title">OUR SUNDAY WEBINAR</h2>
+    <p class="desc">
+        Explore practical skills, hands-on activities and exciting learning experiences to grow your knowledge every Sunday.   </p>
+</div>
                     <div class="row gutter-20">
 
                         <!-- 1 -->
@@ -1409,7 +1643,7 @@
                             <div class="blog__post-item shine__animate-item">
                                 <div class="blog__post-thumb"><img src="assets/img/banner/online-scam.png" alt="img"></div>
                                 <div class="blog__post-content"><div class="sms-actions">
-                                    <a href="https://drive.google.com/drive/folders/1pg3zrSKpzTm0ewhSGzBZ55JEUlD8ASbF?usp=drive_link" target="_blank" rel="noopener noreferrer" class="sms-btn sms-video"><i class="fas fa-play-circle"></i><span class="ig-word">Watch Video</span></a>
+                                    <a href="https://drive.google.com/drive/folders/1pg3zrSKpzTm0ewhSGzBZ55JEUlD8ASbF?usp=drive_link" class="sms-btn sms-video"><i class="fas fa-play-circle"></i><span class="ig-word">Watch Video</span></a>
                                 </div></div>
                             </div>
                         </div>
@@ -1651,6 +1885,43 @@
     </section>
     <!-- blog-area-end -->
 
+    <div id="sss-video-modal" hidden role="dialog" aria-modal="true" aria-labelledby="sss-video-title">
+        <div class="sss-video-dialog">
+            <div class="sss-video-toolbar">
+                <h2 class="sss-video-title" id="sss-video-title">Video Player</h2>
+                <button class="sss-video-close" type="button" aria-label="Close video">&times;</button>
+            </div>
+            <p class="sss-video-status" role="status" aria-live="polite" hidden></p>
+            <video class="sss-video-player" title="Video player" controls playsinline preload="none"></video>
+        </div>
+    </div>
+
+    <section class="find-courses">
+      <div class="find-courses-wrapper">
+        <div class="find-left">
+          <img src="https://skillgro.websolutionus.com/frontend/img/others/h7_cta_shape.svg" alt="shape" class="shape">
+          <img src="assets/evant/AI-study.png" alt="Students">
+        </div>
+        <div class="find-right">
+          <div class="col-lg-8">
+            <div class="newsletter__content section__title">
+              <h2 class="title"><span class="position-relative"> <svg x="0px" y="0px" preserveAspectRatio="none"
+                    viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565"
+                      fill="currentcolor" />
+                  </svg>
+                  skilled.U AI </span>
+              </h2>
+            </div>
+          </div>
+          <h1 style="color: #fff;">Learn Beyond Sunday</h1>
+          <p>Webinar mein jo seekha usse aur aage badhaiye – yeh portal aapke liye wahi content laata hai jo aapke skills aur career ke sabse zyada useful hai!</p>
+        </div>
+        <a href="https://sai.skilledu.in" target="_blank" class="btn btn-two arrow-btn find-courses-cta">Get Started →</a>
+      </div>
+    </section>
+
     </main>
 
     <!-- footer-area -->
@@ -1684,8 +1955,8 @@
                                     <li><a href="index.html#about">About Us</a></li>
                                     <li><a href="index.html#testimonial">Testimonials</a></li>
                                     <li><a href="index.html#faq">FAQ</a></li>
-                                                  <li><a href="certificate-detail.php">Verify Certificate</a></li>
-                </ul>
+                                    <li><a href="certificate-detail.php">Verify Certificate</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -1736,7 +2007,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                                        <a href="https://www.instagram.com/skilled.u_/" target="_blank" aria-label="Instagram"><i
                                                 class="fab fa-instagram"></i></a>
                                     </li>
                                 </ul>
@@ -1778,10 +2049,377 @@
   <script src="assets/js/svg-inject.min.js"></script>
   <script src="assets/js/jquery.circleType.js"></script>
   <script src="assets/js/jquery.lettering.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/aos.js"></script>
   <script src="assets/js/main.js"></script>
+          <script>
+    (function () {
+      function initCardLazyLoad() {
+        const cardGrid = document.querySelector('.blog-area .row.gutter-20');
+        if (!cardGrid) return;
+
+        const cards = Array.from(cardGrid.children).filter(function (card) {
+          return card.classList.contains('col-xl-3') || card.matches('[class*="col-"]');
+        });
+        if (!cards.length) return;
+
+        function getCardsPerRow() {
+          if (window.matchMedia('(min-width: 1200px)').matches) return 4;
+          if (window.matchMedia('(min-width: 992px)').matches) return 3;
+          if (window.matchMedia('(min-width: 768px)').matches) return 2;
+          return 1;
+        }
+
+        let visibleCount = getCardsPerRow();
+        let observer = null;
+        let currentTrigger = null;
+        let hasUserScrolled = window.scrollY > 0;
+
+        function showCard(card) {
+          card.hidden = false;
+          card.style.display = '';
+          const img = card.querySelector('.blog__post-thumb img');
+          if (img) img.loading = 'eager';
+        }
+
+        function hideCard(card) {
+          card.hidden = true;
+          card.style.display = 'none';
+          const img = card.querySelector('.blog__post-thumb img');
+          if (img) img.loading = 'lazy';
+        }
+
+        // Initially display only the first row of cards
+        cards.forEach(function (card, index) {
+          if (index < visibleCount) {
+            showCard(card);
+          } else {
+            hideCard(card);
+          }
+        });
+
+        function loadNextRow() {
+          if (visibleCount >= cards.length) return;
+          const perRow = getCardsPerRow();
+          const nextTarget = Math.min(cards.length, visibleCount + perRow);
+          for (let i = visibleCount; i < nextTarget; i++) {
+            showCard(cards[i]);
+          }
+          visibleCount = nextTarget;
+
+          if (window.AOS && typeof window.AOS.refresh === 'function') {
+            window.AOS.refresh();
+          }
+
+          updateTrigger();
+        }
+
+        function updateTrigger() {
+          if (currentTrigger && observer) {
+            observer.unobserve(currentTrigger);
+            currentTrigger = null;
+          }
+          if (visibleCount >= cards.length) {
+            if (observer) {
+              observer.disconnect();
+              observer = null;
+            }
+            window.removeEventListener('scroll', onScroll);
+            return;
+          }
+          currentTrigger = cards[visibleCount - 1];
+          if (currentTrigger && observer) {
+            observer.observe(currentTrigger);
+          }
+        }
+
+        function checkAndLoad() {
+          if (!hasUserScrolled || visibleCount >= cards.length) return;
+          const vh = window.innerHeight || document.documentElement.clientHeight;
+          while (visibleCount < cards.length) {
+            const lastVisible = cards[visibleCount - 1];
+            if (!lastVisible) break;
+            const rect = lastVisible.getBoundingClientRect();
+            if (rect.top <= vh + 150) {
+              loadNextRow();
+            } else {
+              break;
+            }
+          }
+        }
+
+        if ('IntersectionObserver' in window) {
+          observer = new IntersectionObserver(function (entries) {
+            for (let i = 0; i < entries.length; i++) {
+              if (entries[i].isIntersecting) {
+                checkAndLoad();
+                break;
+              }
+            }
+          }, {
+            rootMargin: '0px 0px 150px 0px',
+            threshold: 0
+          });
+
+          updateTrigger();
+        }
+
+        function onScroll() {
+          hasUserScrolled = true;
+          checkAndLoad();
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        let resizeTimer;
+        window.addEventListener('resize', function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            const perRow = getCardsPerRow();
+            const target = Math.min(cards.length, Math.ceil(visibleCount / perRow) * perRow);
+            if (target > visibleCount) {
+              for (let i = visibleCount; i < target; i++) {
+                showCard(cards[i]);
+              }
+              visibleCount = target;
+              updateTrigger();
+            }
+            if (hasUserScrolled) {
+              checkAndLoad();
+            }
+          }, 150);
+        });
+
+        // If the page was reloaded when already scrolled down
+        if (window.scrollY > 0) {
+          hasUserScrolled = true;
+          checkAndLoad();
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCardLazyLoad);
+      } else {
+        initCardLazyLoad();
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      const videoLinks = document.querySelectorAll('.sms-btn.sms-video');
+      const modal = document.getElementById('sss-video-modal');
+      const player = modal.querySelector('.sss-video-player');
+      const closeButton = modal.querySelector('.sss-video-close');
+      const status = modal.querySelector('.sss-video-status');
+      const title = modal.querySelector('.sss-video-title');
+      const localHosts = ['localhost', '127.0.0.1'];
+      const isHttpPage = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+      const apiBase = window.SSS_VIDEO_API_BASE ||
+        (localHosts.includes(window.location.hostname) ? 'http://localhost:5000' : window.location.origin);
+      let previousFocus = null;
+      let previousBodyOverflow = '';
+      let syncPromise;
+      let playbackRequest = 0;
+
+      function closeModal() {
+        if (modal.hidden) return;
+        playbackRequest += 1;
+        player.pause();
+        player.removeAttribute('src');
+        player.load();
+        modal.hidden = true;
+        document.body.style.overflow = previousBodyOverflow;
+        status.hidden = true;
+        status.textContent = '';
+        if (previousFocus) previousFocus.focus();
+      }
+
+      function getDriveId(url) {
+        const match = url.match(/\/(?:folders|file\/d|d)\/([A-Za-z0-9_-]+)/);
+        return match ? match[1] : null;
+      }
+
+      function syncVideoLinks() {
+        if (!isHttpPage) {
+          return Promise.reject(new Error('Open the SSS page through an HTTP server, not a file:// URL.'));
+        }
+
+        return fetch(apiBase + '/api/sss/videos', { cache: 'no-store' }).then(function (response) {
+          return response.json().then(function (data) {
+            if (!response.ok) {
+              throw new Error(data.error || 'Video synchronization failed (' + response.status + ').');
+            }
+            return data;
+          }, function () {
+            throw new Error('Video synchronization failed (' + response.status + ').');
+          });
+        }).then(function (data) {
+          if (!data.success || !Array.isArray(data.sessions)) {
+            throw new Error('The video synchronization response was invalid.');
+          }
+
+          const byFolderId = new Map();
+          const byName = new Map();
+          data.sessions.forEach(function (session) {
+            if (session.folderId) byFolderId.set(session.folderId, session);
+            byName.set(session.name.trim().toLowerCase(), session);
+          });
+
+          videoLinks.forEach(function (videoLink) {
+            const linkedId = getDriveId(videoLink.href);
+            const session = (linkedId && byFolderId.get(linkedId)) ||
+              (videoLink.dataset.sssName && byName.get(videoLink.dataset.sssName));
+            if (!session) return;
+
+            videoLink.dataset.sssName = session.name.trim().toLowerCase();
+            const video = session.videos[0];
+            if (video) {
+              videoLink.dataset.videoSrc = apiBase + '/api/sss/videos/' +
+                encodeURIComponent(video.id) + '/stream';
+              videoLink.dataset.videoTitle = session.name;
+            } else {
+              delete videoLink.dataset.videoSrc;
+              videoLink.dataset.videoTitle = session.name;
+            }
+          });
+        });
+      }
+
+      function openModal(videoLink) {
+        const requestId = ++playbackRequest;
+        previousFocus = videoLink;
+        previousBodyOverflow = document.body.style.overflow;
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        title.textContent = videoLink.dataset.videoTitle || 'Video Player';
+        player.pause();
+        player.removeAttribute('src');
+        player.load();
+        status.textContent = 'Checking for the latest video...';
+        status.hidden = false;
+        closeButton.focus();
+
+        syncPromise.then(function () {
+          if (modal.hidden || requestId !== playbackRequest) return;
+          const source = videoLink.dataset.videoSrc;
+          if (!source) {
+            status.textContent = 'No playable video is linked to this card in the SSS sheet.';
+            return;
+          }
+
+          title.textContent = videoLink.dataset.videoTitle || 'Video Player';
+          status.textContent = 'Loading video...';
+          player.src = source;
+          player.load();
+          const playback = player.play();
+          if (playback && typeof playback.catch === 'function') {
+            playback.catch(function () {
+              if (!modal.hidden && requestId === playbackRequest) {
+                status.textContent = 'Playback did not start. Use the player controls to try again.';
+                status.hidden = false;
+              }
+            });
+          }
+        }).catch(function (error) {
+          console.error(error);
+          if (!modal.hidden && requestId === playbackRequest) {
+            status.textContent = !isHttpPage
+              ? 'Open the SSS page through an HTTP server, not a file:// URL.'
+              : error.message.indexOf('Missing Google OAuth configuration:') === 0
+                ? error.message
+                : 'Videos could not be synchronized. Please try again later.';
+            status.hidden = false;
+          }
+        });
+      }
+
+      videoLinks.forEach(function (videoLink) {
+        videoLink.removeAttribute('target');
+        videoLink.addEventListener('click', function (event) {
+          event.preventDefault();
+          openModal(videoLink);
+        });
+      });
+
+      function refreshVideos() {
+        syncPromise = syncVideoLinks();
+        syncPromise.catch(function (error) {
+          console.error(error);
+        });
+      }
+
+      refreshVideos();
+      window.setInterval(refreshVideos, 5 * 60 * 1000);
+
+      player.addEventListener('loadeddata', function () {
+        status.hidden = true;
+      });
+      player.addEventListener('error', function () {
+        status.textContent = 'The video could not be loaded. Please try again later.';
+        status.hidden = false;
+      });
+
+      closeButton.addEventListener('click', closeModal);
+      modal.addEventListener('click', function (event) {
+        if (event.target === modal) closeModal();
+      });
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape' && !modal.hidden) closeModal();
+      });
+    })();
+  </script>
   <!-- <script>
     SVGInject(document.querySelectorAll("img.injectable"));
   </script> -->
+    <script>
+    /* Scroll reveal: card jitni baar screen mein aayega, utni baar animate hoga */
+    (function () {
+      var grid = document.querySelector('.blog-area .row.gutter-20');
+      if (!grid || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
+
+      var cards = Array.prototype.slice.call(grid.children).filter(function (c) {
+        return c.matches('[class*="col-"]');
+      });
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+
+      /* Enter: card screen mein aaya -> animate */
+      var enterIO = new IntersectionObserver(function (entries) {
+        var n = 0;
+        entries.forEach(function (e) {
+          var c = e.target;
+          if (!e.isIntersecting || c._shown) return;
+          c._shown = true;
+          c.animate(
+            [
+              { opacity: 0, transform: 'translateY(40px)' },
+              { opacity: 1, transform: 'none' }
+            ],
+            { duration: 700, delay: n * 150, easing: 'ease', fill: 'backwards' }
+          );
+          c.style.opacity = '';
+          n++;
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.05 });
+
+      /* Leave: card poora screen se bahar gaya -> reset, taaki agli baar phir animate ho */
+      var leaveIO = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var c = e.target;
+          if (e.isIntersecting || !c._shown) return;
+          c._shown = false;
+          c.style.opacity = '0';
+        });
+      }, { threshold: 0 });
+
+      cards.forEach(function (c) {
+        var inView = c.offsetParent !== null && c.getBoundingClientRect().top < vh;
+        c._shown = inView;
+        if (!inView) c.style.opacity = '0';
+        enterIO.observe(c);
+        leaveIO.observe(c);
+      });
+    })();
+    </script>
 </body>
 
 </html>

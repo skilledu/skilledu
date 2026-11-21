@@ -2,25 +2,10 @@
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>SkillEdU Student Management System & Portal | SkillEdU</title>
-  <meta name="description" content="Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.">
-  <link rel="canonical" href="https://skilledu.in/sms.html">
-  
-  <!-- Open Graph / Social Media Meta -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SkillEdU Academy">
-  <meta property="og:title" content="SkillEdU Student Management System & Portal | SkillEdU">
-  <meta property="og:description" content="Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.">
-  <meta property="og:url" content="https://skilledu.in/sms.html">
-  <meta property="og:image" content="https://skilledu.in/assets/img/logo/skilledU_Logo.png">
-
-  <!-- Twitter Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="SkillEdU Student Management System & Portal | SkillEdU">
-  <meta name="twitter:description" content="Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.">
-  <meta name="twitter:image" content="https://skilledu.in/assets/img/logo/skilledU_Logo.png">
+    <title>Skilldu SMS</title>
+    <meta name="description" content="SkillGro - Online Courses & Education Template">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -28,6 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -40,12 +27,14 @@
     <link rel="stylesheet" href="assets/css/select2.min.css">
     <link rel="stylesheet" href="assets/css/odometer.css">
     <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/plyr.css">
     <link rel="stylesheet" href="assets/css/spacing.css">
     <link rel="stylesheet" href="assets/css/tg-cursor.css">
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/sai.css">
     <!-- additional css (index wali header/footer styling) -->
     <link rel="stylesheet" href="assets/css/my_css.css" />
-    <!-- Font Awesome 4.7 (header ke fa fa-phone / fab fa-whatsapp icons ke liye) -->
+    <!-- Font Awesome 4.7 (header ke fa fa-phone / fa fa-whatsapp icons ke liye) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
     <style>
@@ -459,22 +448,126 @@
             line-height: 1.3;
             color: #5b6477;
         }
+        /* SMS Section Heading */
+.sms-section-heading.section__title {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 15px;
+}
+
+.sms-section-heading .sms-subtitle {
+    display: inline-block;
+    line-height: 1.62;
+    background: #d6ecfa;
+    border-radius: 30px;
+    padding: 3px 16px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #0b66c3;
+    margin: 0 0 14px;
+}
+
+.sms-section-heading.section__title .title {
+    font-size: 36px;
+    line-height: 1.33;
+    margin: 0;
+    letter-spacing: -0.75px;
+    text-transform: capitalize;
+}
+
+.sms-section-heading.section__title p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #626b7d;
+    max-width: 650px;
+    margin: 15px auto 0;
+}
+
+/* Tablet View */
+@media (max-width: 991px) {
+    .sms-section-heading.section__title {
+        margin-bottom: 28px;
+    }
+
+}
+
+/* Mobile View */
+@media (max-width: 575px) {
+    .sms-section-heading.section__title {
+        margin-bottom: 22px;
+    }
+
+    .sms-section-heading .sms-subtitle {
+        font-size: 16px;
+    }
+
+    .sms-section-heading.section__title .title {
+        font-size: 29px;
+    }
+
+    .sms-section-heading p {
+        font-size: 13px;
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .sms-section-heading.section__title .title {
+        font-size: 36px;
+    }
+}
+    main .find-courses .find-courses-wrapper > a.find-courses-cta {
+      border: 1px solid #f7b32b;
+      border-radius: 30px;
+      background: #f7b32b;
+      color: #16113f;
+      box-shadow: 0 8px 18px rgba(247, 179, 43, 0.28);
+      transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease !important;
+    }
+
+    main .find-courses .find-courses-wrapper > a.find-courses-cta:hover,
+    main .find-courses .find-courses-wrapper > a.find-courses-cta:focus-visible {
+      border-color: #f7b32b !important;
+      background: #e8a11e !important;
+      color: #16113f !important;
+      box-shadow: 0 12px 24px rgba(247, 179, 43, 0.34) !important;
+      transform: translateY(-3px) !important;
+    }
+
+    main .find-courses .find-courses-wrapper > a.find-courses-cta:focus-visible {
+      outline: 3px solid #f7b32b;
+      outline-offset: 4px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      main .find-courses .find-courses-wrapper > a.find-courses-cta {
+        transition: none !important;
+      }
+
+      main .find-courses .find-courses-wrapper > a.find-courses-cta:hover,
+      main .find-courses .find-courses-wrapper > a.find-courses-cta:focus-visible {
+        transform: none !important;
+      }
+    }
 
     </style>
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "SkillEdU Student Management System & Portal | SkillEdU",
-  "description": "Access course schedules, attendance records, study materials, and direct mentor support through the official SkillEdU Student Management System portal.",
-  "url": "https://skilledu.in/sms.html"
+<style>
+/* CTA heading: desktop par hamesha ek line mein, taaki card se bahar na nikle */
+@media (min-width: 992px) {
+  main .find-courses .find-right h1 {
+    white-space: nowrap;
+    font-size: clamp(28px, 2.6vw, 44px);
+    font-weight: 600;
+    line-height: 1.25;
+  }
 }
-  </script>
+</style>
 </head>
 
 <body>
-  <h1 class="visually-hidden">SkillEdU Student Management System & Academic Portal</h1>
   <!--Preloader-->
   <div id="preloader">
     <div id="loader" class="loader">
@@ -488,7 +581,7 @@
   <!--Preloader-end -->
 
   <!-- Scroll-top -->
-  <button class="scroll__top scroll-to-target" data-target="html" aria-label="Scroll to top of page">
+  <button class="scroll__top scroll-to-target" data-target="html">
     <i class="tg-flaticon-arrowhead-up"></i>
   </button>
   <!-- Scroll-top-end-->
@@ -528,10 +621,10 @@
                       class="fab fa-whatsapp"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/company/skilled-u/" aria-label="SkillEdU on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://www.linkedin.com/company/skilled-u/"><i class="fab fa-linkedin-in"></i></a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/skilled.u_"><i class="fab fa-instagram"></i></a>
                 </li>
               </ul>
             </div>
@@ -552,14 +645,16 @@
                 <div class="tgmenu__navbar-wrap tgmenu__navbar-wrap-my tgmenu__main-menu d-none d-xl-flex"
                   style="margin-top: 10px;">
                   <ul class="navigation">
-                    <li class="menu-item">
+                    <li class="active menu-item" style="color: #000;">
                       <a href="index.html">Home</a>
+
                     </li>
-                    <li class="menu-item"><a href="all-courses.html">All Courses</a></li>
+                    <li><a href="all-courses.html">All Courses</a></li>
                     <li class="menu-item">
                       <a href="contact.html">Contact US</a>
+
                     </li>
-                    <li class="active menu-item">
+                    <li class="menu-item">
                       <a href="sms.html">SMS</a>
                     </li>
                   </ul>
@@ -574,11 +669,11 @@
 
                     <li class="header-btn login-btn">
                       <a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank" class="btn"><i
-                          class="fab fa-whatsapp px-2"></i>whatsApp Us</a>
+                          class="fa fa-whatsapp px-2"></i>whatsApp Us</a>
                     </li>
                   </ul>
                 </div>
-                <div class="mobile-nav-toggler" role="button" tabindex="0" aria-label="Toggle navigation menu">
+                <div class="mobile-nav-toggler">
                   <i class="tg-flaticon-menu-1"></i>
                 </div>
               </nav>
@@ -586,10 +681,11 @@
             <!-- Mobile Menu  -->
             <div class="tgmobile__menu">
               <nav class="tgmobile__menu-box">
-                <div class="close-btn" role="button" tabindex="0" aria-label="Close navigation menu">
+                <div class="close-btn">
                   <i class="tg-flaticon-close-1"></i>
                 </div>
-                <div class="nav-logo"><a href="index.html"><img src="assets/img/logo/skilledU_Logo.png" alt="Logo" /></a>
+                <div class="nav-logo">
+                  <a href="#"><img src="assets/img/logo/skilledU_Logo.png" alt="Logo" /></a>
                 </div>
                 <!--<div class="tgmobile__search">-->
                 <!--    <form action=" #">-->
@@ -606,9 +702,9 @@
                           class="fab fa-facebook-f"></i></a></li>
                     <li><a href="https://wa.me/+918989099962?text=I%20want%20to%20code" target="_blank"><i
                           class="fab fa-whatsapp"></i></a></li>
-                    <li><a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer"><i
+                    <li><a href="https://www.instagram.com/SkilledU24?igsh=M2Y4djB6dXVzb2xx"><i
                           class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/skilled-u/" aria-label="SkillEdU on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <li><a href="https://www.linkedin.com/company/skilled-u/"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                     <!--<li><a href="#"><i class="fab fa-youtube"></i></a></li>-->
                   </ul>
@@ -624,14 +720,55 @@
   </header>
   <!-- header-area-end -->
 
+<!-- breadcrumb-area -->
+<section class="breadcrumb__area breadcrumb__bg bread_bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="breadcrumb__content">
+                    <h3 class="title">Skilldu Monday Stories (SMS)</h3>
+                    <nav class="breadcrumb">
+                        <span property="itemListElement" typeof="ListItem">
+                            <a href="index.html">Home</a>
+                        </span>
+                        <span class="breadcrumb-separator"><i class="fas fa-angle-right"></i></span>
+                        <span property="itemListElement" typeof="ListItem"> Skilldu Monday Stories (SMS)</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="breadcrumb__shape-wrap">
+        <img src="assets/img/others/breadcrumb_shape01.svg" alt="img" class="alltuchtopdown">
+        <img src="assets/img/others/breadcrumb_shape02.svg" alt="img" data-aos="fade-right" data-aos-delay="300">
+        <img src="assets/img/others/breadcrumb_shape03.svg" alt="img" data-aos="fade-up" data-aos-delay="400">
+        <img src="assets/img/others/breadcrumb_shape04.svg" alt="img" data-aos="fade-down-left" data-aos-delay="400">
+        <img src="assets/img/others/breadcrumb_shape05.svg" alt="img" data-aos="fade-left" data-aos-delay="400">
+    </div>
+</section>
+<!-- breadcrumb-area-end -->
+
   <!-- main-area -->
   <main class="main-area fix">
+
+    
 
     <!-- blog-area -->
     <section class="blog-area section-py-120">
         <div class="container">
             <div class="row">
                 <div class="col-12">
+                    <!-- SMS Section Heading -->
+<div class="sms-section-heading section__title text-center mb-40">
+    <span class="sms-subtitle">SMS</span>
+    <h2 class="title">OUR SUCCESS STORIES</h2>
+    <p>
+        Inspiring success stories, student achievements and
+        learning journeys shared every Monday.
+    </p>
+</div>
+
+
                     <div class="row gutter-20">
 
                         <div class="col-xl-3 col-lg-4 col-md-6">
@@ -971,6 +1108,32 @@
     </section>
     <!-- blog-area-end -->
 
+    <section class="find-courses">
+      <div class="find-courses-wrapper">
+        <div class="find-left">
+          <img src="https://skillgro.websolutionus.com/frontend/img/others/h7_cta_shape.svg" alt="shape" class="shape">
+          <img src="assets/evant/AI-study.png" alt="Students">
+        </div>
+        <div class="find-right">
+          <div class="col-lg-8">
+            <div class="newsletter__content section__title">
+              <h2 class="title"><span class="position-relative"> <svg x="0px" y="0px" preserveAspectRatio="none"
+                    viewBox="0 0 209 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.74438 7.70565C69.7006 -1.18799 136.097 -2.38304 203.934 4.1205C207.178 4.48495 209.422 7.14626 208.933 10.0534C206.793 23.6481 205.415 36.5704 204.801 48.8204C204.756 51.3291 202.246 53.5582 199.213 53.7955C136.093 59.7623 74.1922 60.5985 13.5091 56.3043C10.5653 56.0924 7.84371 53.7277 7.42158 51.0325C5.20725 38.2627 2.76333 25.6511 0.0898448 13.1978C-0.465589 10.5873 1.61173 8.1379 4.73327 7.70565"
+                      fill="currentcolor" />
+                  </svg>
+                  skilled.U AI </span>
+              </h2>
+            </div>
+          </div>
+          <h1 style="color: #fff;">Write Your Success Story</h1>
+          <p>In success stories se prerna lijiye aur apni journey shuru kijiye – yeh portal aapke liye wahi content laata hai jo aapke career goals ke sabse zyada useful hai!</p>
+        </div>
+        <a href="https://sai.skilledu.in" target="_blank" class="btn btn-two arrow-btn find-courses-cta">Get Started →</a>
+      </div>
+    </section>
+
     </main>
 
     <!-- footer-area -->
@@ -1001,11 +1164,11 @@
               <div class="footer__link">
                 <ul class="list-wrap">
                   <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="index.html#about">About Us</a></li>
-                  <li><a href="index.html#testimonial">Testimonials</a></li>
-                  <li><a href="index.html#faq">FAQ</a></li>
+                  <li><a href="#about">About Us</a></li>
+                  <li><a href="#testimonial">Testimonials</a></li>
+                  <li><a href="#faq">FAQ</a></li>
+                  <li><a href="certificate-detail.php">Verify Certificate</a></li>
                   <li><a href="https://sss.skilledu.in">SSS</a></li>
-                                  <li><a href="certificate-detail.php">Verify Certificate</a></li>
                 </ul>
               </div>
             </div>
@@ -1057,7 +1220,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/skilled.u_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i
+                    <a href="https://www.instagram.com/skilled.u_/" target="_blank" aria-label="Instagram"><i
                         class="fab fa-instagram"></i></a>
                   </li>
                 </ul>
@@ -1122,9 +1285,213 @@
     <script src="assets/js/svg-inject.min.js"></script>
     <script src="assets/js/jquery.circleType.js"></script>
     <script src="assets/js/jquery.lettering.min.js"></script>
+    <script src="assets/js/plyr.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/aos.js"></script>
     <script src="assets/js/main.js"></script>
+            <script>
+    (function () {
+      function initCardLazyLoad() {
+        const cardGrid = document.querySelector('.blog-area .row.gutter-20');
+        if (!cardGrid) return;
+
+        const cards = Array.from(cardGrid.children).filter(function (card) {
+          return card.classList.contains('col-xl-3') || card.matches('[class*="col-"]');
+        });
+        if (!cards.length) return;
+
+        function getCardsPerRow() {
+          if (window.matchMedia('(min-width: 1200px)').matches) return 4;
+          if (window.matchMedia('(min-width: 992px)').matches) return 3;
+          if (window.matchMedia('(min-width: 768px)').matches) return 2;
+          return 1;
+        }
+
+        let visibleCount = getCardsPerRow();
+        let observer = null;
+        let currentTrigger = null;
+        let hasUserScrolled = window.scrollY > 0;
+
+        function showCard(card) {
+          card.hidden = false;
+          card.style.display = '';
+          const img = card.querySelector('.blog__post-thumb img');
+          if (img) img.loading = 'eager';
+        }
+
+        function hideCard(card) {
+          card.hidden = true;
+          card.style.display = 'none';
+          const img = card.querySelector('.blog__post-thumb img');
+          if (img) img.loading = 'lazy';
+        }
+
+        // Initially display only the first row of cards
+        cards.forEach(function (card, index) {
+          if (index < visibleCount) {
+            showCard(card);
+          } else {
+            hideCard(card);
+          }
+        });
+
+        function loadNextRow() {
+          if (visibleCount >= cards.length) return;
+          const perRow = getCardsPerRow();
+          const nextTarget = Math.min(cards.length, visibleCount + perRow);
+          for (let i = visibleCount; i < nextTarget; i++) {
+            showCard(cards[i]);
+          }
+          visibleCount = nextTarget;
+
+          if (window.AOS && typeof window.AOS.refresh === 'function') {
+            window.AOS.refresh();
+          }
+
+          updateTrigger();
+        }
+
+        function updateTrigger() {
+          if (currentTrigger && observer) {
+            observer.unobserve(currentTrigger);
+            currentTrigger = null;
+          }
+          if (visibleCount >= cards.length) {
+            if (observer) {
+              observer.disconnect();
+              observer = null;
+            }
+            window.removeEventListener('scroll', onScroll);
+            return;
+          }
+          currentTrigger = cards[visibleCount - 1];
+          if (currentTrigger && observer) {
+            observer.observe(currentTrigger);
+          }
+        }
+
+        function checkAndLoad() {
+          if (!hasUserScrolled || visibleCount >= cards.length) return;
+          const vh = window.innerHeight || document.documentElement.clientHeight;
+          while (visibleCount < cards.length) {
+            const lastVisible = cards[visibleCount - 1];
+            if (!lastVisible) break;
+            const rect = lastVisible.getBoundingClientRect();
+            if (rect.top <= vh + 150) {
+              loadNextRow();
+            } else {
+              break;
+            }
+          }
+        }
+
+        if ('IntersectionObserver' in window) {
+          observer = new IntersectionObserver(function (entries) {
+            for (let i = 0; i < entries.length; i++) {
+              if (entries[i].isIntersecting) {
+                checkAndLoad();
+                break;
+              }
+            }
+          }, {
+            rootMargin: '0px 0px 150px 0px',
+            threshold: 0
+          });
+
+          updateTrigger();
+        }
+
+        function onScroll() {
+          hasUserScrolled = true;
+          checkAndLoad();
+        }
+
+        window.addEventListener('scroll', onScroll, { passive: true });
+
+        let resizeTimer;
+        window.addEventListener('resize', function () {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(function () {
+            const perRow = getCardsPerRow();
+            const target = Math.min(cards.length, Math.ceil(visibleCount / perRow) * perRow);
+            if (target > visibleCount) {
+              for (let i = visibleCount; i < target; i++) {
+                showCard(cards[i]);
+              }
+              visibleCount = target;
+              updateTrigger();
+            }
+            if (hasUserScrolled) {
+              checkAndLoad();
+            }
+          }, 150);
+        });
+
+        // If the page was reloaded when already scrolled down
+        if (window.scrollY > 0) {
+          hasUserScrolled = true;
+          checkAndLoad();
+        }
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCardLazyLoad);
+      } else {
+        initCardLazyLoad();
+      }
+    })();
+  </script>
     <script>
         SVGInject(document.querySelectorAll("img.injectable"));
+    </script>
+    <script>
+    /* Scroll reveal: card jitni baar screen mein aayega, utni baar animate hoga */
+    (function () {
+      var grid = document.querySelector('.blog-area .row.gutter-20');
+      if (!grid || !('IntersectionObserver' in window) || !Element.prototype.animate) return;
+
+      var cards = Array.prototype.slice.call(grid.children).filter(function (c) {
+        return c.matches('[class*="col-"]');
+      });
+      var vh = window.innerHeight || document.documentElement.clientHeight;
+
+      /* Enter: card screen mein aaya -> animate */
+      var enterIO = new IntersectionObserver(function (entries) {
+        var n = 0;
+        entries.forEach(function (e) {
+          var c = e.target;
+          if (!e.isIntersecting || c._shown) return;
+          c._shown = true;
+          c.animate(
+            [
+              { opacity: 0, transform: 'translateY(40px)' },
+              { opacity: 1, transform: 'none' }
+            ],
+            { duration: 700, delay: n * 150, easing: 'ease', fill: 'backwards' }
+          );
+          c.style.opacity = '';
+          n++;
+        });
+      }, { rootMargin: '0px 0px -60px 0px', threshold: 0.05 });
+
+      /* Leave: card poora screen se bahar gaya -> reset, taaki agli baar phir animate ho */
+      var leaveIO = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var c = e.target;
+          if (e.isIntersecting || !c._shown) return;
+          c._shown = false;
+          c.style.opacity = '0';
+        });
+      }, { threshold: 0 });
+
+      cards.forEach(function (c) {
+        var inView = c.offsetParent !== null && c.getBoundingClientRect().top < vh;
+        c._shown = inView;
+        if (!inView) c.style.opacity = '0';
+        enterIO.observe(c);
+        leaveIO.observe(c);
+      });
+    })();
     </script>
 </body>
 
