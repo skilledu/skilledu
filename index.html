@@ -53,7 +53,6 @@
 
   <!-- fontrawesome icon  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="assets/css/blog.css" />
   <script>
     const path = window.location.pathname.toLowerCase();
 
@@ -68,6 +67,7 @@
   </script>
   <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/blog.css" />
   <link rel="stylesheet" href="assets/css/animate.min.css" />
   <link rel="stylesheet" href="assets/css/magnific-popup.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
@@ -619,21 +619,25 @@
         padding: 0 !important;
       }
 
+      #our_courses #AI-tab-pane.active {
+        display: block !important;
+        width: 100% !important;
+      }
+
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active,
-      #AI-tab-pane .courses__grid-wrap {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         display: grid !important;
         grid-template-columns: repeat(auto-fit, minmax(min(334px, 100%), min(334px, 100%))) !important;
         justify-content: start !important;
         gap: 30px !important;
         margin: 0 !important;
+        width: 100% !important;
       }
 
       #our_courses .courses__grid-wrap>[class*="col-"],
       #our_courses #Full_Stack-tab-pane>[class*="col-"],
-      #our_courses #AI-tab-pane [class*="col-"],
-      #AI-tab-pane .courses__grid-wrap>[class*="col-"] {
+      #our_courses #AI-tab-pane .courses__grid-wrap>[class*="col-"] {
         display: flex !important;
         align-items: stretch !important;
         width: auto !important;
@@ -909,7 +913,8 @@
         }
 
         #our_courses .courses__grid-wrap,
-        #our_courses #Full_Stack-tab-pane.active {
+        #our_courses #Full_Stack-tab-pane.active,
+        #our_courses #AI-tab-pane .courses__grid-wrap {
           position: static;
           left: auto;
           width: 100% !important;
@@ -1507,7 +1512,7 @@
 
     #our_courses .courses__grid-wrap,
     #our_courses #Full_Stack-tab-pane.active,
-    #our_courses #AI-tab-pane.active {
+    #our_courses #AI-tab-pane .courses__grid-wrap {
       display: grid !important;
       grid-template-columns: 1fr !important;
       gap: var(--space-5) !important;
@@ -1524,7 +1529,7 @@
 
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
         gap: var(--space-6) !important;
       }
@@ -1539,7 +1544,7 @@
 
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         grid-template-columns: repeat(2, 1fr) !important;
       }
 
@@ -1581,7 +1586,7 @@
 
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         grid-template-columns: repeat(auto-fit, minmax(min(334px, 100%), min(334px, 100%))) !important;
         justify-content: start !important;
         gap: var(--space-7) !important;
@@ -1672,7 +1677,6 @@
         white-space: nowrap;
       }
     }
-    
   </style>
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
@@ -2429,7 +2433,60 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+
+<div class="swiper-slide">
+  <div class="courses__item shine__animate-item">
+    <!-- Thumbnail Image -->
+    <div class="courses__item-thumb">
+      <a href="React-Native-development.html" class="shine__animate-link">
+        <img src="assets/img/course-details/React-nativeimg.png" alt="React Native" loading="lazy" decoding="async" />
+      </a>
+    </div>
+
+    <!-- Card Content -->
+    <div class="courses__item-content">
+      <!-- Tag & Rating -->
+      <ul class="courses__item-meta list-wrap">
+        <li class="courses__item-tag">
+          <a href="React-Native-development.html">Android</a>
+        </li>
+        <li class="avg-rating">
+          <i class="fas fa-star"></i> (4.7 Reviews)
+        </li>
+      </ul>
+
+      <!-- Title -->
+      <h5 class="title">
+        <a href="React-Native-development.html">React Native</a>
+      </h5>
+
+      <!-- Learning Points -->
+      <ul class="course-learning-points" aria-label="Key learning points">
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>React Native Basics</span></li>
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>Cross-Platform Apps</span></li>
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>API Integration</span></li>
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>Android & iOS App</span></li>
+      </ul>
+
+      <!-- Enroll Button -->
+      <div class="courses__item-bottom">
+        <div class="button">
+          <a href="https://wa.me/918989099962?text=I%20want%20to%20Learn%20React%20Native" target="_blank">
+            <span class="text"> Enroll Now </span>
+            <i class="flaticon-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+                
+      <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
                       <a href="Frontend-Advance.html" class="shine__animate-link">
@@ -2806,7 +2863,7 @@
                 <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
-                      <a href="Next-Gen AI.html" class="shine__animate-link">
+                      <a href="Next-Gen-AI.html" class="shine__animate-link">
                         <img src="assets/img/course-details/ai and next-gen ai.png" alt="img" />
 
                       </a>
@@ -2814,14 +2871,14 @@
                     <div class="courses__item-content">
                       <ul class="courses__item-meta list-wrap">
                         <li class="courses__item-tag">
-                          <a href="Next-Gen AI.html">AI</a>
+                          <a href="Next-Gen-AI.html">AI</a>
                         </li>
                         <li class="avg-rating">
                           <i class="fas fa-star"></i> (4.5 Reviews)
                         </li>
                       </ul>
                       <h5 class="title">
-                        <a href="Next-Gen AI.html">Next-Gen AI</a>
+                        <a href="Next-Gen-AI.html">Next-Gen AI</a>
                       </h5>
                       <ul class="course-learning-points" aria-label="Key learning points">
                         <li><i class="fas fa-check" aria-hidden="true"></i><span>AI Fundamentals & Prompt
@@ -2847,21 +2904,21 @@
                 <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
-                      <a href="Advanced AI Engineering.html" class="shine__animate-link">
+                      <a href="Advanced-AI-Engineering.html" class="shine__animate-link">
                         <img src="assets/img/course-details/ai and advance ai new img.png" alt="img" />
                       </a>
                     </div>
                     <div class="courses__item-content">
                       <ul class="courses__item-meta list-wrap">
                         <li class="courses__item-tag">
-                          <a href="Advanced AI Engineering.html">AI</a>
+                          <a href="Advanced-AI-Engineering.html">AI</a>
                         </li>
                         <li class="avg-rating">
                           <i class="fas fa-star"></i> (4.5 Reviews)
                         </li>
                       </ul>
                       <h5 class="title">
-                        <a href="Advanced AI Engineering.html">Advanced AI Engineering</a>
+                        <a href="Advanced-AI-Engineering.html">Advanced AI Engineering</a>
                       </h5>
                       <ul class="course-learning-points" aria-label="Key learning points">
                         <li><i class="fas fa-check" aria-hidden="true"></i><span>LLMs & Advanced Prompt
@@ -3403,6 +3460,52 @@
                   </div>
                 </div>
               </div>
+
+              <!-- React Native Card (NEW) -->
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="courses__item shine__animate-item">
+                  <div class="courses__item-thumb">
+                    <a href="React-Native-development.html" class="shine__animate-link">
+                      <img src="assets/img/course-details/React-nativeimg.png" alt="React Native" loading="lazy" decoding="async" />
+                    </a>
+                  </div>
+                  <div class="courses__item-content">
+                    <ul class="courses__item-meta list-wrap">
+                      <li class="courses__item-tag">
+                        <a href="React-Native-development.html">Android</a>
+                      </li>
+                      <li class="avg-rating">
+                        <i class="fas fa-star"></i> (4.7 Reviews)
+                      </li>
+                    </ul>
+                    <h5 class="title">
+                      <a href="React-Native-development.html">React Native</a>
+                    </h5>
+                    <ul class="course-learning-points" aria-label="Key learning points">
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>React Native Basics</span></li>
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Cross-Platform Apps</span></li>
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>API Integration</span></li>
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Android & iOS App</span></li>
+                    </ul>
+                    <div class="courses__item-bottom">
+                      <div class="button">
+                        <a href="https://wa.me/918989099962?text=I%20want%20to%20Learn%20React%20Native" target="_blank">
+                          <span class="text">Enroll Now</span>
+                          <i class="flaticon-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              
             </div>
             <!-- <div class="courses__nav">
                             <div class="courses-button-prev"><i class="flaticon-arrow-right"></i></div>
@@ -3447,6 +3550,10 @@
                     </div>
                   </div>
                 </div>
+
+
+
+                
               </div>
             </div>
             <!-- <div class="courses__nav">
@@ -3454,6 +3561,10 @@
                             <div class="courses-button-next"><i class="flaticon-arrow-right"></i></div>
                         </div> -->
           </div>
+
+
+
+          
 
           <div class="tab-pane fade" id="Machine_Learning-tab-pane" role="tabpanel"
             aria-labelledby="Machine_Learning-tab" tabindex="0">
@@ -3506,8 +3617,8 @@
 
           </div>
 
-          <div class="tab-pane fade" id="AI-tab-pane" role="tabpanel" aria-labelledby="AI-tab-pane" tabindex="0">
-            <div class="row courses__grid-wrap">
+          <div class="tab-pane fade" id="AI-tab-pane" role="tabpanel" aria-labelledby="AI-tab" tabindex="0">
+            <div class="row courses__grid-wrap row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
@@ -3550,7 +3661,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
-                    <a href="Next-Gen AI.html" class="shine__animate-link">
+                    <a href="Next-Gen-AI.html" class="shine__animate-link">
                       <img src="assets/img/course-details/ai and next-gen ai.png" alt="img" />
 
 
@@ -3559,14 +3670,14 @@
                   <div class="courses__item-content">
                     <ul class="courses__item-meta list-wrap">
                       <li class="courses__item-tag">
-                        <a href="Next-Gen AI.html">AI</a>
+                        <a href="Next-Gen-AI.html">AI</a>
                       </li>
                       <li class="avg-rating">
                         <i class="fas fa-star"></i> (4.5 Reviews)
                       </li>
                     </ul>
                     <h5 class="title">
-                      <a href="Next-Gen AI.html">Next-Gen AI</a>
+                      <a href="Next-Gen-AI.html">Next-Gen AI</a>
                     </h5>
                     <ul class="course-learning-points" aria-label="Key learning points">
                       <li><i class="fas fa-check" aria-hidden="true"></i><span>AI Fundamentals & Prompt
@@ -3591,21 +3702,21 @@
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
-                    <a href="Advanced AI Engineering.html" class="shine__animate-link">
+                    <a href="Advanced-AI-Engineering.html" class="shine__animate-link">
                       <img src="assets/img/course-details/ai and advance ai new img.png" alt="img" />
                     </a>
                   </div>
                   <div class="courses__item-content">
                     <ul class="courses__item-meta list-wrap">
                       <li class="courses__item-tag">
-                        <a href="Advanced AI Engineering.html">AI</a>
+                        <a href="Advanced-AI-Engineering.html">AI</a>
                       </li>
                       <li class="avg-rating">
                         <i class="fas fa-star"></i> (4.5 Reviews)
                       </li>
                     </ul>
                     <h5 class="title">
-                      <a href="Advanced AI Engineering.html">Advanced AI Engineering</a>
+                      <a href="Advanced-AI-Engineering.html">Advanced AI Engineering</a>
                     </h5>
                     <ul class="course-learning-points" aria-label="Key learning points">
                       <li><i class="fas fa-check" aria-hidden="true"></i><span>LLMs & Advanced Prompt Engineering</span>
@@ -3624,82 +3735,6 @@
                         </a>
                       </div>
                       <!-- <h5 class="price">$19.00</h5> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <div class="courses__item shine__animate-item">
-                  <div class="courses__item-thumb">
-                    <a href="Mern-stack-development.html" class="shine__animate-link">
-                      <img src="assets/img/course-details/Mern stack development img.png"
-                        alt="MERN Stack Full Stack Web Development" />
-                    </a>
-                  </div>
-                  <div class="courses__item-content">
-                    <ul class="courses__item-meta list-wrap">
-                      <li class="courses__item-tag">
-                        <a href="Mern-stack-development.html">Full Stack</a>
-                      </li>
-                      <li class="avg-rating">
-                        <i class="fas fa-star"></i> (4.7 Reviews)
-                      </li>
-                    </ul>
-                    <h5 class="title">
-                      <a href="Mern-stack-development.html">MERN Stack</a>
-                    </h5>
-                    <ul class="course-learning-points" aria-label="Key learning points">
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>HTML, CSS &amp; JavaScript</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>React.js</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Node.js &amp; Express.js</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>MongoDB &amp; REST APIs</span></li>
-                    </ul>
-                    <div class="courses__item-bottom">
-                      <div class="button">
-                        <a href="https://wa.me/+918989099962?text=I%20want%20to%20Learn%20MERN%20Stack" target="_blank">
-                          <span class="text"> Enroll Now </span>
-                          <i class="flaticon-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <div class="courses__item shine__animate-item">
-                  <div class="courses__item-thumb">
-                    <a href="Master-Python-Data-Science-ML.html" class="shine__animate-link">
-                      <img src="assets/img/course-details/python ds img new.png"
-                        alt="Python, Data Science and Machine Learning" />
-                    </a>
-                  </div>
-                  <div class="courses__item-content">
-                    <ul class="courses__item-meta list-wrap">
-                      <li class="courses__item-tag">
-                        <a href="Master-Python-Data-Science-ML.html">Programming</a>
-                      </li>
-                      <li class="avg-rating">
-                        <i class="fas fa-star"></i> (4.8 Reviews)
-                      </li>
-                    </ul>
-                    <h5 class="title">
-                      <a href="Master-Python-Data-Science-ML.html">Python</a>
-                    </h5>
-                    <ul class="course-learning-points" aria-label="Key learning points">
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Python Programming</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>NumPy &amp; Pandas</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Matplotlib &amp; Seaborn</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Scikit-learn &amp; Machine
-                          Learning</span>
-                      </li>
-                    </ul>
-                    <div class="courses__item-bottom">
-                      <div class="button">
-                        <a href="https://wa.me/+918989099962?text=I%20want%20to%20Learn%20Python" target="_blank">
-                          <span class="text"> Enroll Now </span>
-                          <i class="flaticon-arrow-right"></i>
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -5145,7 +5180,7 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
         </div>
       </div>
     </div>
-        <!-- ==================== BLOG SECTION START ==================== -->
+         <!-- ==================== BLOG SECTION START ==================== -->
     <section class="blog__post-area home-blog-area" id="home-blog">
       <div class="container">
         <div class="row justify-content-center">
