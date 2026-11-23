@@ -67,6 +67,7 @@
   </script>
   <!-- CSS here -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/blog.css" />
   <link rel="stylesheet" href="assets/css/animate.min.css" />
   <link rel="stylesheet" href="assets/css/magnific-popup.css" />
   <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
@@ -618,21 +619,25 @@
         padding: 0 !important;
       }
 
+      #our_courses #AI-tab-pane.active {
+        display: block !important;
+        width: 100% !important;
+      }
+
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active,
-      #AI-tab-pane .courses__grid-wrap {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         display: grid !important;
         grid-template-columns: repeat(auto-fit, minmax(min(334px, 100%), min(334px, 100%))) !important;
         justify-content: start !important;
         gap: 30px !important;
         margin: 0 !important;
+        width: 100% !important;
       }
 
       #our_courses .courses__grid-wrap>[class*="col-"],
       #our_courses #Full_Stack-tab-pane>[class*="col-"],
-      #our_courses #AI-tab-pane [class*="col-"],
-      #AI-tab-pane .courses__grid-wrap>[class*="col-"] {
+      #our_courses #AI-tab-pane .courses__grid-wrap>[class*="col-"] {
         display: flex !important;
         align-items: stretch !important;
         width: auto !important;
@@ -908,7 +913,8 @@
         }
 
         #our_courses .courses__grid-wrap,
-        #our_courses #Full_Stack-tab-pane.active {
+        #our_courses #Full_Stack-tab-pane.active,
+        #our_courses #AI-tab-pane .courses__grid-wrap {
           position: static;
           left: auto;
           width: 100% !important;
@@ -1506,7 +1512,7 @@
 
     #our_courses .courses__grid-wrap,
     #our_courses #Full_Stack-tab-pane.active,
-    #our_courses #AI-tab-pane.active {
+    #our_courses #AI-tab-pane .courses__grid-wrap {
       display: grid !important;
       grid-template-columns: 1fr !important;
       gap: var(--space-5) !important;
@@ -1523,7 +1529,7 @@
 
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
         gap: var(--space-6) !important;
       }
@@ -1538,7 +1544,7 @@
 
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         grid-template-columns: repeat(2, 1fr) !important;
       }
 
@@ -1580,7 +1586,7 @@
 
       #our_courses .courses__grid-wrap,
       #our_courses #Full_Stack-tab-pane.active,
-      #our_courses #AI-tab-pane.active {
+      #our_courses #AI-tab-pane .courses__grid-wrap {
         grid-template-columns: repeat(auto-fit, minmax(min(334px, 100%), min(334px, 100%))) !important;
         justify-content: start !important;
         gap: var(--space-7) !important;
@@ -2427,7 +2433,60 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide">
+
+<div class="swiper-slide">
+  <div class="courses__item shine__animate-item">
+    <!-- Thumbnail Image -->
+    <div class="courses__item-thumb">
+      <a href="React-Native-development.html" class="shine__animate-link">
+        <img src="assets/img/course-details/React-nativeimg.png" alt="React Native" loading="lazy" decoding="async" />
+      </a>
+    </div>
+
+    <!-- Card Content -->
+    <div class="courses__item-content">
+      <!-- Tag & Rating -->
+      <ul class="courses__item-meta list-wrap">
+        <li class="courses__item-tag">
+          <a href="React-Native-development.html">Android</a>
+        </li>
+        <li class="avg-rating">
+          <i class="fas fa-star"></i> (4.7 Reviews)
+        </li>
+      </ul>
+
+      <!-- Title -->
+      <h5 class="title">
+        <a href="React-Native-development.html">React Native</a>
+      </h5>
+
+      <!-- Learning Points -->
+      <ul class="course-learning-points" aria-label="Key learning points">
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>React Native Basics</span></li>
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>Cross-Platform Apps</span></li>
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>API Integration</span></li>
+        <li><i class="fas fa-check" aria-hidden="true"></i><span>Android & iOS App</span></li>
+      </ul>
+
+      <!-- Enroll Button -->
+      <div class="courses__item-bottom">
+        <div class="button">
+          <a href="https://wa.me/918989099962?text=I%20want%20to%20Learn%20React%20Native" target="_blank">
+            <span class="text"> Enroll Now </span>
+            <i class="flaticon-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+                
+      <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
                       <a href="Frontend-Advance.html" class="shine__animate-link">
@@ -2804,7 +2863,7 @@
                 <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
-                      <a href="Next-Gen AI.html" class="shine__animate-link">
+                      <a href="Next-Gen-AI.html" class="shine__animate-link">
                         <img src="assets/img/course-details/ai and next-gen ai.png" alt="img" />
 
                       </a>
@@ -2812,14 +2871,14 @@
                     <div class="courses__item-content">
                       <ul class="courses__item-meta list-wrap">
                         <li class="courses__item-tag">
-                          <a href="Next-Gen AI.html">AI</a>
+                          <a href="Next-Gen-AI.html">AI</a>
                         </li>
                         <li class="avg-rating">
                           <i class="fas fa-star"></i> (4.5 Reviews)
                         </li>
                       </ul>
                       <h5 class="title">
-                        <a href="Next-Gen AI.html">Next-Gen AI</a>
+                        <a href="Next-Gen-AI.html">Next-Gen AI</a>
                       </h5>
                       <ul class="course-learning-points" aria-label="Key learning points">
                         <li><i class="fas fa-check" aria-hidden="true"></i><span>AI Fundamentals & Prompt
@@ -2845,21 +2904,21 @@
                 <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
-                      <a href="Advanced AI Engineering.html" class="shine__animate-link">
+                      <a href="Advanced-AI-Engineering.html" class="shine__animate-link">
                         <img src="assets/img/course-details/ai and advance ai new img.png" alt="img" />
                       </a>
                     </div>
                     <div class="courses__item-content">
                       <ul class="courses__item-meta list-wrap">
                         <li class="courses__item-tag">
-                          <a href="Advanced AI Engineering.html">AI</a>
+                          <a href="Advanced-AI-Engineering.html">AI</a>
                         </li>
                         <li class="avg-rating">
                           <i class="fas fa-star"></i> (4.5 Reviews)
                         </li>
                       </ul>
                       <h5 class="title">
-                        <a href="Advanced AI Engineering.html">Advanced AI Engineering</a>
+                        <a href="Advanced-AI-Engineering.html">Advanced AI Engineering</a>
                       </h5>
                       <ul class="course-learning-points" aria-label="Key learning points">
                         <li><i class="fas fa-check" aria-hidden="true"></i><span>LLMs & Advanced Prompt
@@ -3401,6 +3460,52 @@
                   </div>
                 </div>
               </div>
+
+              <!-- React Native Card (NEW) -->
+              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                <div class="courses__item shine__animate-item">
+                  <div class="courses__item-thumb">
+                    <a href="React-Native-development.html" class="shine__animate-link">
+                      <img src="assets/img/course-details/React-nativeimg.png" alt="React Native" loading="lazy" decoding="async" />
+                    </a>
+                  </div>
+                  <div class="courses__item-content">
+                    <ul class="courses__item-meta list-wrap">
+                      <li class="courses__item-tag">
+                        <a href="React-Native-development.html">Android</a>
+                      </li>
+                      <li class="avg-rating">
+                        <i class="fas fa-star"></i> (4.7 Reviews)
+                      </li>
+                    </ul>
+                    <h5 class="title">
+                      <a href="React-Native-development.html">React Native</a>
+                    </h5>
+                    <ul class="course-learning-points" aria-label="Key learning points">
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>React Native Basics</span></li>
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Cross-Platform Apps</span></li>
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>API Integration</span></li>
+                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Android & iOS App</span></li>
+                    </ul>
+                    <div class="courses__item-bottom">
+                      <div class="button">
+                        <a href="https://wa.me/918989099962?text=I%20want%20to%20Learn%20React%20Native" target="_blank">
+                          <span class="text">Enroll Now</span>
+                          <i class="flaticon-arrow-right"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              
             </div>
             <!-- <div class="courses__nav">
                             <div class="courses-button-prev"><i class="flaticon-arrow-right"></i></div>
@@ -3445,6 +3550,10 @@
                     </div>
                   </div>
                 </div>
+
+
+
+                
               </div>
             </div>
             <!-- <div class="courses__nav">
@@ -3452,6 +3561,10 @@
                             <div class="courses-button-next"><i class="flaticon-arrow-right"></i></div>
                         </div> -->
           </div>
+
+
+
+          
 
           <div class="tab-pane fade" id="Machine_Learning-tab-pane" role="tabpanel"
             aria-labelledby="Machine_Learning-tab" tabindex="0">
@@ -3504,8 +3617,8 @@
 
           </div>
 
-          <div class="tab-pane fade" id="AI-tab-pane" role="tabpanel" aria-labelledby="AI-tab-pane" tabindex="0">
-            <div class="row courses__grid-wrap">
+          <div class="tab-pane fade" id="AI-tab-pane" role="tabpanel" aria-labelledby="AI-tab" tabindex="0">
+            <div class="row courses__grid-wrap row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
@@ -3548,7 +3661,7 @@
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
-                    <a href="Next-Gen AI.html" class="shine__animate-link">
+                    <a href="Next-Gen-AI.html" class="shine__animate-link">
                       <img src="assets/img/course-details/ai and next-gen ai.png" alt="img" />
 
 
@@ -3557,14 +3670,14 @@
                   <div class="courses__item-content">
                     <ul class="courses__item-meta list-wrap">
                       <li class="courses__item-tag">
-                        <a href="Next-Gen AI.html">AI</a>
+                        <a href="Next-Gen-AI.html">AI</a>
                       </li>
                       <li class="avg-rating">
                         <i class="fas fa-star"></i> (4.5 Reviews)
                       </li>
                     </ul>
                     <h5 class="title">
-                      <a href="Next-Gen AI.html">Next-Gen AI</a>
+                      <a href="Next-Gen-AI.html">Next-Gen AI</a>
                     </h5>
                     <ul class="course-learning-points" aria-label="Key learning points">
                       <li><i class="fas fa-check" aria-hidden="true"></i><span>AI Fundamentals & Prompt
@@ -3589,21 +3702,21 @@
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
-                    <a href="Advanced AI Engineering.html" class="shine__animate-link">
+                    <a href="Advanced-AI-Engineering.html" class="shine__animate-link">
                       <img src="assets/img/course-details/ai and advance ai new img.png" alt="img" />
                     </a>
                   </div>
                   <div class="courses__item-content">
                     <ul class="courses__item-meta list-wrap">
                       <li class="courses__item-tag">
-                        <a href="Advanced AI Engineering.html">AI</a>
+                        <a href="Advanced-AI-Engineering.html">AI</a>
                       </li>
                       <li class="avg-rating">
                         <i class="fas fa-star"></i> (4.5 Reviews)
                       </li>
                     </ul>
                     <h5 class="title">
-                      <a href="Advanced AI Engineering.html">Advanced AI Engineering</a>
+                      <a href="Advanced-AI-Engineering.html">Advanced AI Engineering</a>
                     </h5>
                     <ul class="course-learning-points" aria-label="Key learning points">
                       <li><i class="fas fa-check" aria-hidden="true"></i><span>LLMs & Advanced Prompt Engineering</span>
@@ -3622,82 +3735,6 @@
                         </a>
                       </div>
                       <!-- <h5 class="price">$19.00</h5> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <div class="courses__item shine__animate-item">
-                  <div class="courses__item-thumb">
-                    <a href="Mern-stack-development.html" class="shine__animate-link">
-                      <img src="assets/img/course-details/Mern stack development img.png"
-                        alt="MERN Stack Full Stack Web Development" />
-                    </a>
-                  </div>
-                  <div class="courses__item-content">
-                    <ul class="courses__item-meta list-wrap">
-                      <li class="courses__item-tag">
-                        <a href="Mern-stack-development.html">Full Stack</a>
-                      </li>
-                      <li class="avg-rating">
-                        <i class="fas fa-star"></i> (4.7 Reviews)
-                      </li>
-                    </ul>
-                    <h5 class="title">
-                      <a href="Mern-stack-development.html">MERN Stack</a>
-                    </h5>
-                    <ul class="course-learning-points" aria-label="Key learning points">
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>HTML, CSS &amp; JavaScript</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>React.js</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Node.js &amp; Express.js</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>MongoDB &amp; REST APIs</span></li>
-                    </ul>
-                    <div class="courses__item-bottom">
-                      <div class="button">
-                        <a href="https://wa.me/+918989099962?text=I%20want%20to%20Learn%20MERN%20Stack" target="_blank">
-                          <span class="text"> Enroll Now </span>
-                          <i class="flaticon-arrow-right"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <div class="courses__item shine__animate-item">
-                  <div class="courses__item-thumb">
-                    <a href="Master-Python-Data-Science-ML.html" class="shine__animate-link">
-                      <img src="assets/img/course-details/python ds img new.png"
-                        alt="Python, Data Science and Machine Learning" />
-                    </a>
-                  </div>
-                  <div class="courses__item-content">
-                    <ul class="courses__item-meta list-wrap">
-                      <li class="courses__item-tag">
-                        <a href="Master-Python-Data-Science-ML.html">Programming</a>
-                      </li>
-                      <li class="avg-rating">
-                        <i class="fas fa-star"></i> (4.8 Reviews)
-                      </li>
-                    </ul>
-                    <h5 class="title">
-                      <a href="Master-Python-Data-Science-ML.html">Python</a>
-                    </h5>
-                    <ul class="course-learning-points" aria-label="Key learning points">
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Python Programming</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>NumPy &amp; Pandas</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Matplotlib &amp; Seaborn</span></li>
-                      <li><i class="fas fa-check" aria-hidden="true"></i><span>Scikit-learn &amp; Machine
-                          Learning</span>
-                      </li>
-                    </ul>
-                    <div class="courses__item-bottom">
-                      <div class="button">
-                        <a href="https://wa.me/+918989099962?text=I%20want%20to%20Learn%20Python" target="_blank">
-                          <span class="text"> Enroll Now </span>
-                          <i class="flaticon-arrow-right"></i>
-                        </a>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -5143,6 +5180,284 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
         </div>
       </div>
     </div>
+         <!-- ==================== BLOG SECTION START ==================== -->
+    <section class="blog__post-area home-blog-area" id="home-blog">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-6 col-lg-8">
+            <div class="section__title text-center mb-40" data-aos="fade-up">
+              <span class="sub-title">Blogs</span>
+              <h2 class="title">Latest Blogs</h2>
+              <p class="desc">Explore the latest insights on technology, programming, AI and software development.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row gutter-20 justify-content-center" id="home-blog-grid">
+          <!-- Blog Card: why-some-applications-use-java-others-cpp -->
+          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="fade-up" data-aos-delay="200">
+            <article class="blog__post-item shine__animate-item" onclick="if(!event.target.closest('a')) window.location.href='/blog/why-some-applications-use-java-others-cpp';">
+              <div class="blog__post-thumb">
+                <a href="/blog/why-some-applications-use-java-others-cpp" class="shine__animate-link">
+                  <img src="assets/img/blog/why-some-applications-use-java-others-cpp.png" alt="Why Do Some Applications Need Java While Others Use C++?" />
+                </a>
+              </div>
+              <div class="blog__post-content">
+                <div class="blog__post-meta">
+                  <ul class="list-wrap">
+                    <li><i class="flaticon-calendar"></i> 16 Nov, 2026</li>
+                    <li><i class="flaticon-user-1"></i> by <a href="/blog/why-some-applications-use-java-others-cpp">Skilled.u</a></li>
+                  </ul>
+                </div>
+                <h3 class="title">
+                  <a href="/blog/why-some-applications-use-java-others-cpp">Why Do Some Applications Need Java While Others Use C++?</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+
+          <!-- Blog Card: frontend-vs-backend-vs-full-stack -->
+          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="fade-up" data-aos-delay="300">
+            <article class="blog__post-item shine__animate-item" onclick="if(!event.target.closest('a')) window.location.href='/blog/frontend-vs-backend-vs-full-stack';">
+              <div class="blog__post-thumb">
+                <a href="/blog/frontend-vs-backend-vs-full-stack" class="shine__animate-link">
+                  <img src="assets/img/blog/frontend-vs-backend-vs-full-stack.png" alt="Frontend vs Backend vs Full Stack: Which Web Development Path Should You Choose?" />
+                </a>
+              </div>
+              <div class="blog__post-content">
+                <div class="blog__post-meta">
+                  <ul class="list-wrap">
+                    <li><i class="flaticon-calendar"></i> 16 Nov, 2026</li>
+                    <li><i class="flaticon-user-1"></i> by <a href="/blog/frontend-vs-backend-vs-full-stack">Skilled.u</a></li>
+                  </ul>
+                </div>
+                <h3 class="title">
+                  <a href="/blog/frontend-vs-backend-vs-full-stack">Frontend vs Backend vs Full Stack: Which Web Development Path Should You Choose?</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+
+          <!-- Blog Card: how-apis-help-applications-communicate -->
+          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="fade-up" data-aos-delay="400">
+            <article class="blog__post-item shine__animate-item" onclick="if(!event.target.closest('a')) window.location.href='/blog/how-apis-help-applications-communicate';">
+              <div class="blog__post-thumb">
+                <a href="/blog/how-apis-help-applications-communicate" class="shine__animate-link">
+                  <img src="assets/img/blog/how-apis-help-applications-communicate.png" alt="How Does an API Help Different Applications Communicate?" />
+                </a>
+              </div>
+              <div class="blog__post-content">
+                <div class="blog__post-meta">
+                  <ul class="list-wrap">
+                    <li><i class="flaticon-calendar"></i> 16 Nov, 2026</li>
+                    <li><i class="flaticon-user-1"></i> by <a href="/blog/how-apis-help-applications-communicate">Skilled.u</a></li>
+                  </ul>
+                </div>
+                <h3 class="title">
+                  <a href="/blog/how-apis-help-applications-communicate">How Does an API Help Different Applications Communicate?</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+
+          <!-- Blog Card: why-javascript-powers-interactive-websites -->
+          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="fade-up" data-aos-delay="500">
+            <article class="blog__post-item shine__animate-item" onclick="if(!event.target.closest('a')) window.location.href='/blog/why-javascript-powers-interactive-websites';">
+              <div class="blog__post-thumb">
+                <a href="/blog/why-javascript-powers-interactive-websites" class="shine__animate-link">
+                  <img src="assets/img/blog/why-javascript-powers-interactive-websites.png" alt="Why Is JavaScript Behind Almost Every Interactive Website?" />
+                </a>
+              </div>
+              <div class="blog__post-content">
+                <div class="blog__post-meta">
+                  <ul class="list-wrap">
+                    <li><i class="flaticon-calendar"></i> 16 Nov, 2026</li>
+                    <li><i class="flaticon-user-1"></i> by <a href="/blog/why-javascript-powers-interactive-websites">Skilled.u</a></li>
+                  </ul>
+                </div>
+                <h3 class="title">
+                  <a href="/blog/why-javascript-powers-interactive-websites">Why Is JavaScript Behind Almost Every Interactive Website?</a>
+                </h3>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-center" ">
+            <div class="blog__post-bottom text-center mt-40 " style="margin-bottom: 60px" >
+              <a href="/blog.html" class="btn btn-two  arrow-btn">
+                View All Blogs <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Centralized Blog Registry for Skilled.u Homepage
+      // When adding new blogs, prepend them to this array (up to 4 will automatically display)
+      (function() {
+        const publishedBlogs = [
+          {
+            title: "Why Do Some Applications Need Java While Others Use C++?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/why-some-applications-use-java-others-cpp",
+            image: "assets/img/blog/why-some-applications-use-java-others-cpp.png",
+            alt: "Why Do Some Applications Need Java While Others Use C++?"
+          },
+          {
+            title: "Frontend vs Backend vs Full Stack: Which Web Development Path Should You Choose?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/frontend-vs-backend-vs-full-stack",
+            image: "assets/img/blog/frontend-vs-backend-vs-full-stack.png",
+            alt: "Frontend vs Backend vs Full Stack: Which Web Development Path Should You Choose?"
+          },
+          {
+            title: "How Does an API Help Different Applications Communicate?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/how-apis-help-applications-communicate",
+            image: "assets/img/blog/how-apis-help-applications-communicate.png",
+            alt: "How Does an API Help Different Applications Communicate?"
+          },
+          {
+            title: "Why Is JavaScript Behind Almost Every Interactive Website?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/why-javascript-powers-interactive-websites",
+            image: "assets/img/blog/why-javascript-powers-interactive-websites.png",
+            alt: "Why Is JavaScript Behind Almost Every Interactive Website?"
+          },
+          {
+            title: "Why Do Some Websites Feel Amazing While Others Feel Frustrating?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/why-some-websites-feel-amazing-others-frustrating",
+            image: "assets/img/blog/why-some-websites-feel-amazing-others-frustrating.png",
+            alt: "Why Do Some Websites Feel Amazing While Others Feel Frustrating?"
+          },
+          {
+            title: "Can Machines Learn from Their Mistakes? Understanding Machine Learning",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/can-machines-learn-from-their-mistakes",
+            image: "assets/img/blog/can-machines-learn-from-their-mistakes.png",
+            alt: "Can Machines Learn from Their Mistakes? Understanding Machine Learning"
+          },
+          {
+            title: "Why Do Developers Use Frameworks Instead of Building Everything Manually?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/why-developers-use-frameworks",
+            image: "assets/img/blog/why-developers-use-frameworks.png",
+            alt: "Why Do Developers Use Frameworks Instead of Building Everything Manually?"
+          },
+          {
+            title: "How GitHub Changed the Way Developers Work Together",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/how-github-changed-developer-collaboration",
+            image: "assets/img/blog/how-github-changed-developer-collaboration.png",
+            alt: "How GitHub Changed the Way Developers Work Together"
+          },
+          {
+            title: "What Makes a Website Fast, Secure and User-Friendly?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/what-makes-a-website-fast-secure-user-friendly",
+            image: "assets/img/blog/what-makes-a-website-fast-secure-user-friendly.png",
+            alt: "What Makes a Website Fast, Secure and User-Friendly?"
+          },
+          {
+            title: "Can AI Think Like a Human? Understanding the Technology Behind AI Agents",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/can-ai-think-like-a-human-ai-agents",
+            image: "assets/img/blog/can-ai-think-like-a-human-ai-agents.png",
+            alt: "Can AI Think Like a Human? Understanding the Technology Behind AI Agents"
+          },
+          {
+            title: "What Does a Full-Stack Developer Actually Do? Skills, Tools, and Daily Responsibilities",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/what-does-a-full-stack-developer-do",
+            image: "assets/img/blog/what-does-a-full-stack-developer-do.png",
+            alt: "What Does a Full-Stack Developer Actually Do? Skills, Tools, and Daily Responsibilities"
+          },
+          {
+            title: "How Does YouTube Know Which Video You Might Watch Next?",
+            date: "16 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/how-youtube-recommends-videos",
+            image: "assets/img/blog/how-youtube-recommends-videos.png",
+            alt: "How Does YouTube Know Which Video You Might Watch Next?"
+          },
+          {
+            title: "How AI Helps Developer, 7 Ways Artificial Intelligence Is Changing Web Development",
+            date: "14 Nov, 2026",
+            author: "Skilled.u",
+            url: "/blog/how-ai-helps-developers",
+            image: "assets/img/blog/how-ai-helps-developers.png",
+            alt: "How AI Helps Developer, 7 Ways Artificial Intelligence Is Changing Web Development"
+          }
+        ];
+
+        const grid = document.getElementById("home-blog-grid");
+        if (!grid) return;
+
+        // Card-level click handler to make anywhere on the card redirect to its page
+        document.addEventListener("click", function(e) {
+          const card = e.target.closest(".home-blog-area .blog__post-item");
+          if (card && !e.target.closest("a")) {
+            const mainLink = card.querySelector(".title a") || card.querySelector("a.shine__animate-link");
+            if (mainLink && mainLink.getAttribute("href")) {
+              window.location.href = mainLink.getAttribute("href");
+            }
+          }
+        });
+
+        // Automatically display up to the latest four published blogs if additional blogs exist
+        if (publishedBlogs.length > 0) {
+          grid.innerHTML = "";
+          const latestBlogs = publishedBlogs.slice(0, 4);
+          latestBlogs.forEach((blog, index) => {
+            const col = document.createElement("div");
+            col.className = latestBlogs.length === 2
+              ? "col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-10"
+              : (latestBlogs.length === 3 
+                ? "col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-10" 
+                : (latestBlogs.length === 1 ? "col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-10" : "col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-10"));
+            col.setAttribute("data-aos", "fade-up");
+            col.setAttribute("data-aos-delay", (200 + index * 100).toString());
+
+            col.innerHTML = `
+              <article class="blog__post-item shine__animate-item" onclick="if(!event.target.closest('a')) window.location.href='${blog.url}';">
+                <div class="blog__post-thumb">
+                  <a href="${blog.url}" class="shine__animate-link">
+                    <img src="${blog.image}" alt="${blog.alt}">
+                  </a>
+                </div>
+                <div class="blog__post-content">
+                  <div class="blog__post-meta">
+                    <ul class="list-wrap">
+                      <li><i class="flaticon-calendar"></i> ${blog.date}</li>
+                      <li><i class="flaticon-user-1"></i> by <a href="${blog.url}">${blog.author}</a></li>
+                    </ul>
+                  </div>
+                  <h3 class="title">
+                    <a href="${blog.url}">${blog.title}</a>
+                  </h3>
+                </div>
+              </article>
+            `;
+            grid.appendChild(col);
+          });
+        }
+      })();
+    </script>
+    <!-- ==================== BLOG SECTION END ==================== -->
     <!-- faq-area -->
     <section class="faq__area" style="padding: 130px 0 120px;">
       <div class="container">
