@@ -113,13 +113,21 @@ img{display:block;max-width:100%}
 .pc-btn:hover{transform:translate(2px,3px);box-shadow:1px 1px 0 #07077a}
 .pc-btn:focus-visible{outline:3px solid #16113f;outline-offset:3px}
 
-.about-event-gallery{margin-top:70px;padding:40px 20px;text-align:center;background:#0f2c46;overflow:hidden}
-.about-event-gallery .section__title{margin:0 auto 30px}
-.about-event-gallery .section__title .title{color:#fff}
-.about-event-gallery .slider{position:relative;width:100%;height:auto;margin:25px 0;overflow:hidden}
-.about-event-gallery .slide-track{display:flex;width:200%;animation:scroll 21s linear infinite}
-.about-event-gallery .slider.is-paused .slide-track{animation-play-state:paused}
-@media(prefers-reduced-motion:reduce){.about-event-gallery .slider{overflow-x:auto}.about-event-gallery .slide-track{width:max-content;animation:none}}
+/* About Page Ceremony Carousel - Scrollbar Removal & Hover Pause */
+.slider {
+  overflow: hidden !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+.slider::-webkit-scrollbar,
+.slide-track::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
 
 @media(max-width:991px){.track{grid-template-columns:1fr 1fr}.mv-grid{grid-template-columns:1fr}.pg-grid{grid-template-columns:repeat(2,1fr)}.split{grid-template-columns:1fr}.g3,.g4{grid-template-columns:1fr 1fr}.t{font-size:26px}.card{flex-basis:100%}.doodle{opacity:.5}}
 @media(max-width:575px){.pg-grid{grid-template-columns:1fr}.mv-card{padding:24px}.pg-head h2{font-size:26px}.g3,.g4{grid-template-columns:1fr}.t{font-size:24px}.web h2,.tm h2{font-size:26px}.track{grid-template-columns:1fr}.hero h1{font-size:30px}}
@@ -1611,10 +1619,6 @@ img, video, iframe {
   padding-bottom: 64px;
 }
 
-.about-event-gallery {
-  margin-top: 0;
-}
-
 .fact__area {
   padding: 40px 0;
 }
@@ -2225,9 +2229,9 @@ img, video, iframe {
         <!-- blog-area-end -->
 
     <!-- Event -->
-    <section class="section pt-90 pb-90 about-event-gallery" id="about-event-gallery" aria-label="Skilled.U certificate ceremony">
+    <div class="section pt-90 pb-90" style="padding-bottom: 70px;">
 
-      <div class="section__title pb-30">
+      <div class="section__title pb-30" style="    margin-top: -60px;">
         <span class="sub-title">Glimpse Of</span>
         <h2 class="title">
           <span class="position-relative">
@@ -2244,41 +2248,41 @@ img, video, iframe {
       </div>
 
       <!-- Row 1 -->
-      <div class="slider" aria-label="First row of ceremony photos">
+      <div class="slider">
         <div class="slide-track">
-          <div class="slide small"><img src="assets/evant/Photo14.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide medium"><img src="assets/evant/Photo2.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo7.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide medium"><img src="assets/evant/Photo4.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo16.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo6.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo14.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo22.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo20.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo21.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo14.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
+          <div class="slide small"><img src="assets/evant/Photo14.JPG"></div>
+          <div class="slide medium"><img src="assets/evant/Photo2.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo7.JPG"></div>
+          <div class="slide medium"><img src="assets/evant/Photo4.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo16.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo6.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo14.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo22.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo20.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo21.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo14.JPG"></div>
         </div>
       </div>
 
       <!-- Row 2 -->
-      <div class="slider" aria-label="Second row of ceremony photos">
-        <div class="slide-track">
-          <div class="slide small"><img src="assets/evant/Photo8.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide medium"><img src="assets/evant/Photo1.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo12.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide medium"><img src="assets/evant/Photo5.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo9.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo13.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo15.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo11.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo23.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo19.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo17.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide large"><img src="assets/evant/Photo24.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
-          <div class="slide small"><img src="assets/evant/Photo10.JPG" alt="Skilled.U certificate ceremony" loading="lazy"></div>
+      <div class="slider">
+        <div class="slide-track" style="padding-bottom: 100px;">
+          <div class="slide small"><img src="assets/evant/Photo8.JPG"></div>
+          <div class="slide medium"><img src="assets/evant/Photo1.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo12.JPG"></div>
+          <div class="slide medium"><img src="assets/evant/Photo5.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo9.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo13.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo15.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo11.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo23.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo19.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo17.JPG"></div>
+          <div class="slide large"><img src="assets/evant/Photo24.JPG"></div>
+          <div class="slide small"><img src="assets/evant/Photo10.JPG"></div>
         </div>
       </div>
-    </section>
+    </div>
 
 
 
@@ -2607,20 +2611,6 @@ img, video, iframe {
 <script src="assets/js/aos.js"></script>
 <script src="assets/js/main.js"></script>
 
-<script>
-(function () {
-  var gallery = document.getElementById('about-event-gallery');
-  if (!gallery) return;
-  gallery.querySelectorAll('.slider').forEach(function (slider) {
-    slider.addEventListener('mouseenter', function () {
-      slider.classList.add('is-paused');
-    });
-    slider.addEventListener('mouseleave', function () {
-      slider.classList.remove('is-paused');
-    });
-  });
-}());
-</script>
 <script>
 function sl(b,d){var c=b.parentNode.querySelector('.cards');c.scrollBy({left:d*(c.clientWidth/2+19)})}</script>
 <script>
