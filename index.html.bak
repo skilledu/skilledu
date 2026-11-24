@@ -3457,7 +3457,7 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
                 <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
-                      <a href="Next-Gen AI.html" class="shine__animate-link">
+                      <a href="Next-Gen-AI.html" class="shine__animate-link">
                         <img src="assets/img/course-details/ai and next-gen ai.png" alt="img" />
 
                       </a>
@@ -3465,14 +3465,14 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
                     <div class="courses__item-content">
                       <ul class="courses__item-meta list-wrap">
                         <li class="courses__item-tag">
-                          <a href="Next-Gen AI.html">AI</a>
+                          <a href="Next-Gen-AI.html">AI</a>
                         </li>
                         <li class="avg-rating">
                           <i class="fas fa-star"></i> (4.5 Reviews)
                         </li>
                       </ul>
                       <h5 class="title">
-                        <a href="Next-Gen AI.html">Next-Gen AI</a>
+                        <a href="Next-Gen-AI.html">Next-Gen AI</a>
                       </h5>
                       <ul class="course-learning-points" aria-label="Key learning points">
                         <li><i class="fas fa-check" aria-hidden="true"></i><span>AI Fundamentals & Prompt
@@ -3498,21 +3498,21 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
                 <div class="swiper-slide">
                   <div class="courses__item shine__animate-item">
                     <div class="courses__item-thumb">
-                      <a href="Advanced AI Engineering.html" class="shine__animate-link">
+                      <a href="Advanced-AI-Engineering.html" class="shine__animate-link">
                         <img src="assets/img/course-details/ai and advance ai new img.png" alt="img" />
                       </a>
                     </div>
                     <div class="courses__item-content">
                       <ul class="courses__item-meta list-wrap">
                         <li class="courses__item-tag">
-                          <a href="Advanced AI Engineering.html">AI</a>
+                          <a href="Advanced-AI-Engineering.html">AI</a>
                         </li>
                         <li class="avg-rating">
                           <i class="fas fa-star"></i> (4.5 Reviews)
                         </li>
                       </ul>
                       <h5 class="title">
-                        <a href="Advanced AI Engineering.html">Advanced AI Engineering</a>
+                        <a href="Advanced-AI-Engineering.html">Advanced AI Engineering</a>
                       </h5>
                       <ul class="course-learning-points" aria-label="Key learning points">
                         <li><i class="fas fa-check" aria-hidden="true"></i><span>LLMs & Advanced Prompt
@@ -4201,7 +4201,7 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
-                    <a href="Next-Gen AI.html" class="shine__animate-link">
+                    <a href="Next-Gen-AI.html" class="shine__animate-link">
                       <img src="assets/img/course-details/ai and next-gen ai.png" alt="img" />
 
 
@@ -4210,14 +4210,14 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
                   <div class="courses__item-content">
                     <ul class="courses__item-meta list-wrap">
                       <li class="courses__item-tag">
-                        <a href="Next-Gen AI.html">AI</a>
+                        <a href="Next-Gen-AI.html">AI</a>
                       </li>
                       <li class="avg-rating">
                         <i class="fas fa-star"></i> (4.5 Reviews)
                       </li>
                     </ul>
                     <h5 class="title">
-                      <a href="Next-Gen AI.html">Next-Gen AI</a>
+                      <a href="Next-Gen-AI.html">Next-Gen AI</a>
                     </h5>
                     <ul class="course-learning-points" aria-label="Key learning points">
                       <li><i class="fas fa-check" aria-hidden="true"></i><span>AI Fundamentals & Prompt
@@ -4242,21 +4242,21 @@ app.<span class="c-fn">get</span>(<span class="c-str">'/'</span>, (req, res) <sp
               <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
                 <div class="courses__item shine__animate-item">
                   <div class="courses__item-thumb">
-                    <a href="Advanced AI Engineering.html" class="shine__animate-link">
+                    <a href="Advanced-AI-Engineering.html" class="shine__animate-link">
                       <img src="assets/img/course-details/ai and advance ai new img.png" alt="img" />
                     </a>
                   </div>
                   <div class="courses__item-content">
                     <ul class="courses__item-meta list-wrap">
                       <li class="courses__item-tag">
-                        <a href="Advanced AI Engineering.html">AI</a>
+                        <a href="Advanced-AI-Engineering.html">AI</a>
                       </li>
                       <li class="avg-rating">
                         <i class="fas fa-star"></i> (4.5 Reviews)
                       </li>
                     </ul>
                     <h5 class="title">
-                      <a href="Advanced AI Engineering.html">Advanced AI Engineering</a>
+                      <a href="Advanced-AI-Engineering.html">Advanced AI Engineering</a>
                     </h5>
                     <ul class="course-learning-points" aria-label="Key learning points">
                       <li><i class="fas fa-check" aria-hidden="true"></i><span>LLMs & Advanced Prompt Engineering</span>
