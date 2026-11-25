@@ -35,6 +35,11 @@
   margin-bottom: 24px;
 }
 
+/* Vertical space between blog cards on all viewports (desktop, tablet, mobile) */
+#blog-grid .blog-card-col {
+  margin-bottom: 30px;
+}
+
 .blog__post-item:hover {
   filter: drop-shadow(10px 10px 0px #CAC9D6) !important;
   transform: none !important;
