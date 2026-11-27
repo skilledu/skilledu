@@ -524,6 +524,108 @@
         fill: currentColor;
     }
 
+    /* =========================================================
+       FULLSCREEN & EXPANDED ZOOM VIEWPORT STYLING
+       ========================================================= */
+    .video-card-stage:fullscreen,
+    .video-card-stage:-webkit-full-screen,
+    .video-card-stage.is-stage-fullscreen {
+        position: fixed !important;
+        inset: 0 !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        max-width: 100vw !important;
+        max-height: 100vh !important;
+        aspect-ratio: auto !important;
+        border-radius: 0 !important;
+        background: #000000 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        overflow: hidden !important;
+        z-index: 999999 !important;
+    }
+
+    .video-card-stage:fullscreen video,
+    .video-card-stage:-webkit-full-screen video,
+    .video-card-stage.is-stage-fullscreen video {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: contain !important;
+        transform: none !important;
+        background: #000000 !important;
+    }
+
+    .video-card-stage:fullscreen .video-stage-vignette,
+    .video-card-stage:-webkit-full-screen .video-stage-vignette,
+    .video-card-stage.is-stage-fullscreen .video-stage-vignette {
+        display: none !important;
+    }
+
+    .video-card-stage:fullscreen .video-controls-bar,
+    .video-card-stage:-webkit-full-screen .video-controls-bar,
+    .video-card-stage.is-stage-fullscreen .video-controls-bar {
+        position: absolute !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        padding: 16px 24px 14px !important;
+        z-index: 10 !important;
+    }
+
+    .v-btn-close-fs {
+        display: none;
+    }
+
+    .video-card-stage:fullscreen .v-btn-close-fs,
+    .video-card-stage:-webkit-full-screen .v-btn-close-fs,
+    .video-card-stage.is-stage-fullscreen .v-btn-close-fs {
+        display: flex !important;
+        position: absolute !important;
+        top: 20px !important;
+        right: 20px !important;
+        width: 44px !important;
+        height: 44px !important;
+        border-radius: 50% !important;
+        background: rgba(15, 23, 42, 0.75) !important;
+        backdrop-filter: blur(8px) !important;
+        -webkit-backdrop-filter: blur(8px) !important;
+        border: 1px solid rgba(255, 255, 255, 0.25) !important;
+        color: #ffffff !important;
+        z-index: 25 !important;
+        cursor: pointer !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: background 0.2s, transform 0.2s, opacity 0.3s ease !important;
+    }
+
+    .video-card-stage:fullscreen .v-btn-close-fs:hover,
+    .video-card-stage:-webkit-full-screen .v-btn-close-fs:hover,
+    .video-card-stage.is-stage-fullscreen .v-btn-close-fs:hover {
+        background: rgba(220, 38, 38, 0.85) !important;
+        transform: scale(1.08) !important;
+    }
+
+    .video-card-stage:fullscreen .v-btn-close-fs svg,
+    .video-card-stage:-webkit-full-screen .v-btn-close-fs svg,
+    .video-card-stage.is-stage-fullscreen .v-btn-close-fs svg {
+        width: 22px !important;
+        height: 22px !important;
+        fill: #ffffff !important;
+    }
+
+    .video-card-stage.controls-hidden .v-btn-close-fs {
+        opacity: 0 !important;
+        pointer-events: none !important;
+    }
+
     /* Student Identity Details Area */
     .video-identity-meta {
         background: #ffffff;
@@ -5313,30 +5415,118 @@
           });
         }
 
-        // Fullscreen
+        // Fullscreen & Big Screen Zoom Logic
+        let closeBtn = stage.querySelector('.v-btn-close-fs');
+        if (!closeBtn) {
+          closeBtn = document.createElement('button');
+          closeBtn.type = 'button';
+          closeBtn.className = 'v-btn v-btn-close-fs';
+          closeBtn.setAttribute('aria-label', 'Close Fullscreen');
+          closeBtn.innerHTML = '<svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>';
+          stage.appendChild(closeBtn);
+        }
+
+        function isStageFullscreen() {
+          return document.fullscreenElement === stage ||
+                 document.webkitFullscreenElement === stage ||
+                 stage.classList.contains('is-stage-fullscreen');
+        }
+
+        function syncFullscreenUI(isFs) {
+          if (iconFsEnter) iconFsEnter.style.display = isFs ? 'none' : 'block';
+          if (iconFsExit) iconFsExit.style.display = isFs ? 'block' : 'none';
+          if (fsBtn) fsBtn.setAttribute('aria-label', isFs ? 'Exit Fullscreen' : 'Fullscreen');
+        }
+
+        function openCssFullscreen() {
+          stage.classList.add('is-stage-fullscreen');
+          document.body.style.overflow = 'hidden';
+          syncFullscreenUI(true);
+        }
+
+        function closeCssFullscreen() {
+          stage.classList.remove('is-stage-fullscreen');
+          document.body.style.overflow = '';
+          syncFullscreenUI(false);
+          if (typeof window.rebalanceMasonry === 'function') {
+            setTimeout(window.rebalanceMasonry, 150);
+          }
+        }
+
+        function enterFullScreen() {
+          if (stage.requestFullscreen) {
+            stage.requestFullscreen().catch(function () {
+              openCssFullscreen();
+            });
+          } else if (stage.webkitRequestFullscreen) {
+            stage.webkitRequestFullscreen();
+          } else if (video.webkitEnterFullscreen) {
+            video.webkitEnterFullscreen();
+          } else {
+            openCssFullscreen();
+          }
+        }
+
+        function exitFullScreen() {
+          if (document.fullscreenElement || document.webkitFullscreenElement) {
+            if (document.exitFullscreen) {
+              document.exitFullscreen().catch(function () {});
+            } else if (document.webkitExitFullscreen) {
+              document.webkitExitFullscreen();
+            }
+          }
+          if (stage.classList.contains('is-stage-fullscreen')) {
+            closeCssFullscreen();
+          }
+        }
+
         if (fsBtn) {
           fsBtn.addEventListener('click', function (e) {
             e.stopPropagation();
-            if (!document.fullscreenElement && !document.webkitFullscreenElement) {
-              if (stage.requestFullscreen) {
-                stage.requestFullscreen();
-              } else if (stage.webkitRequestFullscreen) {
-                stage.webkitRequestFullscreen();
-              }
+            e.preventDefault();
+            if (!isStageFullscreen()) {
+              enterFullScreen();
             } else {
-              if (document.exitFullscreen) {
-                document.exitFullscreen();
-              } else if (document.webkitExitFullscreen) {
-                document.webkitExitFullscreen();
-              }
+              exitFullScreen();
             }
           });
         }
 
-        document.addEventListener('fullscreenchange', function () {
+        closeBtn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          e.preventDefault();
+          exitFullScreen();
+        });
+
+        function onFsChange() {
           const isFs = document.fullscreenElement === stage || document.webkitFullscreenElement === stage;
-          if (iconFsEnter) iconFsEnter.style.display = isFs ? 'none' : 'block';
-          if (iconFsExit) iconFsExit.style.display = isFs ? 'block' : 'none';
+          syncFullscreenUI(isFs);
+          if (!isFs) {
+            stage.classList.remove('is-stage-fullscreen');
+            document.body.style.overflow = '';
+            if (typeof window.rebalanceMasonry === 'function') {
+              setTimeout(window.rebalanceMasonry, 150);
+            }
+          }
+        }
+
+        document.addEventListener('fullscreenchange', onFsChange);
+        document.addEventListener('webkitfullscreenchange', onFsChange);
+
+        video.addEventListener('webkitbeginfullscreen', function () {
+          syncFullscreenUI(true);
+        });
+        video.addEventListener('webkitendfullscreen', function () {
+          syncFullscreenUI(false);
+          if (typeof window.rebalanceMasonry === 'function') {
+            setTimeout(window.rebalanceMasonry, 150);
+          }
+        });
+
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && isStageFullscreen()) {
+            exitFullScreen();
+          }
         });
       });
     });
@@ -5357,6 +5547,11 @@
       function rebalanceMasonry() {
         const grid = document.getElementById('testimonialsWallGrid');
         if (!grid) return;
+
+        // Prevent rebalancing while any video is in fullscreen or expanded zoom mode
+        if (document.fullscreenElement || document.webkitFullscreenElement || document.querySelector('.video-card-stage.is-stage-fullscreen')) {
+          return;
+        }
 
         // Initialize master card elements once
         if (!masterCardElements) {
@@ -5389,7 +5584,9 @@
         // If single column on mobile, append in natural master sequence
         if (numCols === 1) {
           masterCardElements.forEach(function (card) {
-            colDivs[0].appendChild(card);
+            if (card.parentElement !== colDivs[0]) {
+              colDivs[0].appendChild(card);
+            }
           });
           return;
         }
@@ -5430,7 +5627,9 @@
             targetCol = colHeights.indexOf(Math.min(...colHeights));
           }
 
-          colDivs[targetCol].appendChild(card);
+          if (card.parentElement !== colDivs[targetCol]) {
+            colDivs[targetCol].appendChild(card);
+          }
 
           // Measure actual rendered height
           const h = card.offsetHeight || card.getBoundingClientRect().height || 300;
@@ -5443,9 +5642,14 @@
 
       let resizeTimer = null;
       function onWindowResize() {
+        if (document.fullscreenElement || document.webkitFullscreenElement || document.querySelector('.video-card-stage.is-stage-fullscreen')) {
+          return;
+        }
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(rebalanceMasonry, 120);
       }
+
+      window.rebalanceMasonry = rebalanceMasonry;
 
       if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', rebalanceMasonry);
