@@ -9639,6 +9639,7 @@ textarea {
   line-height: 1;
 }
 
+
 .blog__post-meta .list-wrap li i {
   font-size: 20px;
   color: var(--tg-theme-primary);
@@ -9647,7 +9648,7 @@ textarea {
 
 .blog__post-meta .list-wrap li a {
   color: var(--tg-body-color);
-  margin-left: 5px;
+  margin-left:1px;
 }
 
 .blog__post-meta .list-wrap li a:hover {
