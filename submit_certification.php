@@ -30,7 +30,7 @@ if ($conn->connect_error) {
                     showConfirmButton: false,
                     timer: 1500
                 }).then(function() {
-                    window.location.href = "certificate-form.html"; // Redirect to the form page
+                    window.location.href = "certificate-form.php"; // Redirect to the form page
                 });
             }
           </script>';
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Handle file upload
     if (isset($_FILES['certificate']) && $_FILES['certificate']['error'] == 0) {
-        $file_name = $_FILES['certificate']['name   '];
+        $file_name = $_FILES['certificate']['name'];
         $file_tmp = $_FILES['certificate']['tmp_name'];
         $file_size = $_FILES['certificate']['size'];
         $file_error = $_FILES['certificate']['error'];
@@ -72,7 +72,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             showConfirmButton: false,
                             timer: 1500
                         }).then(function() {
-                            window.location.href = "certificate-form.html"; // Redirect to the form page
+                            window.location.href = "certificate-form.php"; // Redirect to the form page
                         });
                     }
                   </script>';
@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 showConfirmButton: false,
                                 timer: 1500
                             }).then(function() {
-                                window.location.href = "certificate-form.html"; // Redirect to another page or the same form page
+                                window.location.href = "certificate-form.php"; // Redirect to another page or the same form page
                             });
                         }
                       </script>';
@@ -116,7 +116,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                                 showConfirmButton: false,
                                 timer: 1500
                             }).then(function() {
-                                window.location.href = "certificate-form.html"; // Redirect to the form page
+                                window.location.href = "certificate-form.php"; // Redirect to the form page
                             });
                         }
                       </script>';
@@ -133,7 +133,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             showConfirmButton: false,
                             timer: 1500
                         }).then(function() {
-                            window.location.href = "certificate-form.html"; // Redirect to the form page
+                            window.location.href = "certificate-form.php"; // Redirect to the form page
                         });
                     }
                   </script>';
@@ -150,7 +150,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         showConfirmButton: false,
                         timer: 1500
                     }).then(function() {
-                        window.location.href = "certificate-form.html"; // Redirect to the form page
+                        window.location.href = "certificate-form.php"; // Redirect to the form page
                     });
                 }
               </script>';

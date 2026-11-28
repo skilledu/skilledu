@@ -6,11 +6,11 @@ ini_set('display_startup_errors', 1);
 
 mysqli_report(MYSQLI_REPORT_OFF);
 
-// Database Credentials
-$host     = 'localhost';                  // Production DB Host
-$username = 'skilledu1_skilledu_main';    // Production DB User
-$password = 'Skilledu1_skilledu_main';    // Production DB Password
-$dbname   = 'skilledu1_skilledu_main';    // Production DB Name
+// Database Credentials (Local Development)
+$host     = 'localhost';                  // Local DB Host
+$username = 'root';                       // Local DB User
+$password = '';                           // Local DB Password (empty)
+$dbname   = 'skilledu_dummy';             // Local DB Name
 
 // Initialize variables
 $certificate_id = '';
