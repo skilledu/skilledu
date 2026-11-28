@@ -80,6 +80,176 @@
   <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" />
 
   <style>
+    /* Course Card & Grid Styling matching all-courses.html */
+    #our_courses .courses__grid-wrap {
+      row-gap: 30px;
+    }
+
+    #our_courses .courses__grid-wrap > [class*="col-"] {
+      display: flex;
+      align-items: stretch;
+      margin-bottom: 0;
+    }
+
+    #our_courses .courses__item {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background: var(--tg-common-color-white);
+      border-radius: 10px;
+      padding: 25px 25px 30px;
+      border: 1px solid #B5B5C3;
+      transition: all 0.2s ease-out;
+      cursor: pointer;
+    }
+
+    #our_courses .courses__item:hover {
+      filter: drop-shadow(10px 10px 0px #CAC9D6);
+    }
+
+    #our_courses .courses__item * {
+      cursor: pointer;
+    }
+
+    #our_courses .courses__item-thumb {
+      aspect-ratio: 1.47;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 18px;
+    }
+
+    #our_courses .courses__item-thumb a,
+    #our_courses .courses__item-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    #our_courses .courses__item-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+
+    #our_courses .courses__item-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: nowrap;
+      gap: 10px;
+      margin: 0 0 12px;
+    }
+
+    #our_courses .courses__item-meta .avg-rating {
+      white-space: nowrap;
+      font-size: 13px;
+      color: #6C6C80;
+    }
+
+    #our_courses .courses__item-meta .avg-rating i {
+      color: #F8BC24 !important;
+      letter-spacing: 0;
+      margin-right: 5px;
+    }
+
+    #our_courses .courses__item-content .title {
+      margin-bottom: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
+    #our_courses .courses__item-content .title a {
+      color: var(--tg-heading-color);
+      transition: all 0.3s ease;
+    }
+
+    #our_courses .courses__item-content .title a:hover {
+      color: var(--tg-theme-primary);
+    }
+
+    #our_courses .course-card-topics {
+      list-style: none;
+      margin: 0 0 14px;
+      padding: 0;
+      color: var(--tg-body-color);
+      font-size: 13px;
+    }
+
+    #our_courses .course-card-topics li {
+      display: flex;
+      align-items: flex-start;
+      gap: 7px;
+      margin: 0 0 5px;
+      line-height: 1.35;
+    }
+
+    #our_courses .course-card-topics li:last-child {
+      margin-bottom: 0;
+    }
+
+    #our_courses .course-card-topics i {
+      flex: 0 0 auto;
+      margin-top: 3px;
+      color: var(--tg-theme-primary);
+      font-size: 10px;
+    }
+
+    #our_courses .course-card-topics li span {
+      min-width: 0;
+      overflow-wrap: anywhere;
+    }
+
+    #our_courses .courses__item-bottom {
+      margin-top: auto;
+      padding-top: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    #our_courses .courses__item-bottom .button a {
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      padding: 10px 19px;
+      align-items: center;
+      gap: 6px;
+      border-radius: 50px;
+      border: 1px solid #000;
+      background: var(--tg-theme-secondary);
+      box-shadow: 4px 4px 0px 0px #3D3D3D;
+      font-family: var(--tg-heading-font-family);
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: var(--tg-fw-semi-bold);
+      color: var(--tg-heading-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    #our_courses .courses__item-bottom .button a:hover {
+      box-shadow: none;
+    }
+
+    @media (max-width: 767.98px) {
+      #our_courses .courses__item {
+        padding: 20px 18px 24px;
+      }
+      #our_courses .courses__item-content .title {
+        font-size: 17px;
+      }
+      #our_courses .courses__item-bottom .button a {
+        padding: 9px 14px;
+        font-size: 13px;
+      }
+    }
+
     .footer__content .list-wrap li a.f_contact {
       color: #ffc224 !important;
     }
@@ -342,103 +512,120 @@
           </div>
         </div>
         <div class="row courses__grid-wrap row-cols-1 row-cols-xl-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-1">
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <div class="courses__item shine__animate-item">
-                  <div class="courses__item-thumb">
-                    <a href="php-with-laravel.html" class="shine__animate-link">
-                      <img src="assets/img/new-course-img/php with laravel.jpg" alt="img">
-                    </a>
-                  </div>
-                  <div class="courses__item-content">
-                    <ul class="courses__item-meta list-wrap">
-                      <li class="courses__item-tag">
-                        <a href="php-with-laravel.html">Backend</a>
-                      </li>
-                      <li class="avg-rating">
-                        <i class="fas fa-star"></i> (4.8 Reviews)
-                      </li>
-                    </ul>
-                    <h5 class="title">
-                      <a href="php-with-laravel.html">PHP With Laravel</a>
-                    </h5>
-                    <p class="author">By <a href="index.html">Skilled.u</a></p>
-                    <div class="courses__item-bottom">
-                      <div class="button">
-                        <a href="https://wa.me/+918989099962?text=I%20Want%20To%20Learn%20PHP%20With%20Laravel" target="_blank">
-                          <span class="text">Enroll Now</span>
-                          <i class="flaticon-arrow-right"></i>
-                        </a>
-                      </div>
-                      <!-- <h5 class="price">$15.00</h5> -->
-                    </div>
-                  </div>
-                </div>
+          <!-- Card 1: PHP With Laravel -->
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="courses__item shine__animate-item">
+              <div class="courses__item-thumb">
+                <a href="php-with-laravel.html" class="shine__animate-link">
+                  <img src="assets/img/course-details/FULL PHP AND LARAVEL.png" alt="PHP With Laravel" loading="lazy" decoding="async" />
+                </a>
               </div>
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <div class="courses__item shine__animate-item">
-                  <div class="courses__item-thumb">
-                    <a href="node-js.html" class="shine__animate-link">
-                      <img src="assets/img/new-course-img/nodejs.jpg" alt="img">
+              <div class="courses__item-content">
+                <ul class="courses__item-meta list-wrap">
+                  <li class="courses__item-tag">
+                    <a href="php-with-laravel.html">Backend</a>
+                  </li>
+                  <li class="avg-rating">
+                    <i class="fas fa-star"></i> (4.8 Reviews)
+                  </li>
+                </ul>
+                <h5 class="title">
+                  <a href="php-with-laravel.html">PHP With Laravel</a>
+                </h5>
+                <ul class="course-card-topics" aria-label="Key learning points">
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>PHP & Laravel</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>MVC architecture</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>MySQL & SQLite</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>JavaScript</span></li>
+                </ul>
+                <div class="courses__item-bottom">
+                  <div class="button">
+                    <a href="https://wa.me/918989099962?text=I%20want%20to%20Learn%20PHP%20With%20Laravel" target="_blank">
+                      <span class="text">Enroll Now</span>
+                      <i class="flaticon-arrow-right"></i>
                     </a>
-                  </div>
-                  <div class="courses__item-content">
-                    <ul class="courses__item-meta list-wrap">
-                      <li class="courses__item-tag">
-                        <a href="node-js.html">Backend</a>
-                      </li>
-                      <li class="avg-rating">
-                        <i class="fas fa-star"></i> (4.5 Reviews)
-                      </li>
-                    </ul>
-                    <h5 class="title">
-                      <a href="node-js.html">Node JS (MERN)</a>
-                    </h5>
-                    <p class="author">By <a href="index.html">Skilled.u</a></p>
-                    <div class="courses__item-bottom">
-                      <div class="button">
-                        <a href="https://wa.me/+918989099962?text=I%20want%20to%20Learn%20MERN" target="_blank">
-                          <span class="text">Enroll Now</span>
-                          <i class="flaticon-arrow-right"></i>
-                        </a>
-                      </div>
-                      <!-- <h5 class="price">$19.00</h5> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
-                <div class="courses__item shine__animate-item">
-                  <div class="courses__item-thumb">
-                    <a href="php-without-framework.html" class="shine__animate-link">
-                      <img src="assets/img/new-course-img/python with django.jpg" alt="img">
-                    </a>
-                  </div>
-                  <div class="courses__item-content">
-                    <ul class="courses__item-meta list-wrap">
-                      <li class="courses__item-tag">
-                        <a href="python-django.html">Python</a>
-                      </li>
-                      <li class="avg-rating">
-                        <i class="fas fa-star"></i> (4.2 Reviews)
-                      </li>
-                    </ul>
-                    <h5 class="title">
-                      <a href="php-without-framework.html">Basic Python With Django</a>
-                    </h5>
-                    <p class="author">By <a href="index.html">Skilled.u</a></p>
-                    <div class="courses__item-bottom">
-                      <div class="button">
-                        <a href="https://wa.me/+918989099962?text=I%20want%20to%20Learn%20Basic%20Python%20with%20Django" target="_blank">
-                          <span class="text">Enroll Now</span>
-                          <i class="flaticon-arrow-right"></i>
-                        </a>
-                      </div>
-                      <!-- <h5 class="price">$19.00</h5> -->
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <!-- Card 2: Node JS (MERN) -->
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="courses__item shine__animate-item">
+              <div class="courses__item-thumb">
+                <a href="node-js.html" class="shine__animate-link">
+                  <img src="assets/img/course-details/node js new img.png" alt="Node JS (MERN)" loading="lazy" decoding="async" />
+                </a>
+              </div>
+              <div class="courses__item-content">
+                <ul class="courses__item-meta list-wrap">
+                  <li class="courses__item-tag">
+                    <a href="node-js.html">Backend</a>
+                  </li>
+                  <li class="avg-rating">
+                    <i class="fas fa-star"></i> (4.5 Reviews)
+                  </li>
+                </ul>
+                <h5 class="title">
+                  <a href="node-js.html">Node JS (MERN)</a>
+                </h5>
+                <ul class="course-card-topics" aria-label="Key learning points">
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>Node.js & Express.js</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>REST APIs & JSON</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>React.js</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>MySQL & MongoDB</span></li>
+                </ul>
+                <div class="courses__item-bottom">
+                  <div class="button">
+                    <a href="https://wa.me/918989099962?text=I%20want%20to%20Learn%20MERN" target="_blank">
+                      <span class="text">Enroll Now</span>
+                      <i class="flaticon-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Basic Python with Django -->
+          <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+            <div class="courses__item shine__animate-item">
+              <div class="courses__item-thumb">
+                <a href="python-django.html" class="shine__animate-link">
+                  <img src="assets/img/course-details/basic python and django.png" alt="Basic Python with Django" loading="lazy" decoding="async" />
+                </a>
+              </div>
+              <div class="courses__item-content">
+                <ul class="courses__item-meta list-wrap">
+                  <li class="courses__item-tag">
+                    <a href="python-django.html">Python</a>
+                  </li>
+                  <li class="avg-rating">
+                    <i class="fas fa-star"></i> (4.5 Reviews)
+                  </li>
+                </ul>
+                <h5 class="title">
+                  <a href="python-django.html">Basic Python with Django</a>
+                </h5>
+                <ul class="course-card-topics" aria-label="Key learning points">
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>Python & Django</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>HTML & CSS</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>JavaScript</span></li>
+                  <li><i class="fas fa-check" aria-hidden="true"></i><span>MySQL/SQLite</span></li>
+                </ul>
+                <div class="courses__item-bottom">
+                  <div class="button">
+                    <a href="https://wa.me/918989099962?text=I%20want%20to%20Learn%20Basic%20Python%20with%20Django" target="_blank">
+                      <span class="text">Enroll Now</span>
+                      <i class="flaticon-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -597,6 +784,7 @@
   <script src="assets/js/jquery.circleType.js"></script>
   <script src="assets/js/jquery.lettering.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/all-courses.js"></script>
   <!-- <script>
     SVGInject(document.querySelectorAll("img.injectable"));
   </script> -->

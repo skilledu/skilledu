@@ -158,6 +158,12 @@
       height: auto;
     }
 
+        main.main-area.ceremony-page {
+            overflow: visible !important;
+            overflow-x: clip !important;
+            overflow-y: visible !important;
+            width: 100%;
+        }
     main.main-area.ceremony-page {
       overflow-x: clip;
       overflow-y: visible;
@@ -770,6 +776,27 @@
       list-style: none;
     }
 
+        .ceremony-nav-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 2px solid #dcebf8;
+            text-decoration: none;
+            color: var(--tg-heading-color);
+            font-family: var(--tg-heading-font-family);
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 1;
+            transition: all 0.25s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(9, 4, 84, 0.05);
+            box-sizing: border-box;
+        }
     .ceremony-nav-btn {
       display: inline-flex;
       align-items: center;
@@ -1402,6 +1429,406 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
        Multi-breakpoint layout adjustments for collage gallery & circular sidebar
        ========================================================================== */
 
+        /* 1. Large Screen / Desktop (min-width: 1200px) */
+        @media (min-width: 1200px) {
+            .ceremony-layout-wrapper {
+                grid-template-columns: 60px minmax(0, 1fr);
+                gap: 32px;
+            }
+
+            .ceremony-gallery-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 20px;
+            }
+        }
+
+        /* 2. Small Laptop / iPad Landscape (992px to 1199.98px) */
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .tg-header__top {
+                height: auto;
+                min-height: 50px;
+            }
+
+            #sticky-header.tg-header__area {
+                height: 80px;
+                min-height: 80px;
+            }
+
+            .site-header__navbar {
+                display: none;
+            }
+
+            .site-header__toggler {
+                display: flex;
+            }
+
+            .site-header__action {
+                display: flex;
+            }
+
+            .site-header__action-list {
+                display: flex;
+                gap: 10px;
+            }
+
+            .site-header__btn {
+                width: auto !important;
+                min-width: 0 !important;
+                height: 44px !important;
+                min-height: 44px !important;
+                padding: 0 18px !important;
+                font-size: 14px !important;
+                box-shadow: 3px 4px 0 var(--sk-navy-deep) !important;
+            }
+
+            .ceremony-layout-wrapper {
+                grid-template-columns: 56px minmax(0, 1fr);
+                gap: 24px;
+            }
+
+            .ceremony-gallery-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 18px;
+            }
+        }
+
+        /* 3. Tablet (768px to 991.98px) */
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .tg-header__top {
+                display: none !important;
+            }
+
+            #sticky-header.tg-header__area {
+                height: 70px;
+                min-height: 70px;
+            }
+
+            .site-header__navbar {
+                display: none;
+            }
+
+            .site-header__action {
+                display: none;
+            }
+
+            .site-header__toggler {
+                display: flex;
+            }
+
+            .ceremony-hero.breadcrumb__bg {
+                padding: 70px 0;
+            }
+
+            .ceremony-showcase-gallery {
+                padding: 30px 0 70px;
+            }
+
+            .ceremony-layout-wrapper {
+                display: grid;
+                grid-template-columns: 56px minmax(0, 1fr);
+                gap: 20px;
+                align-items: start;
+                width: 100%;
+            }
+
+            .ceremony-sidebar-nav {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 86px;
+                z-index: 20;
+                width: 100%;
+            }
+
+            .ceremony-showcase-block {
+                scroll-margin-top: 92px;
+            }
+
+            .ceremony-gallery-grid {
+                grid-template-columns: repeat(4, minmax(0, 1fr));
+                gap: 14px;
+            }
+
+            .ceremony-card {
+                border-radius: 12px;
+            }
+
+            .ceremony-card__inner {
+                border-radius: 12px;
+            }
+
+            .ceremony-card__overlay {
+                padding: 12px;
+            }
+
+            .ceremony-card__tag {
+                font-size: 11px;
+                padding: 3px 8px;
+            }
+
+            .ceremony-card__zoom {
+                width: 28px;
+                height: 28px;
+                font-size: 11px;
+            }
+
+            .footer__top {
+                padding: 60px 0 30px;
+            }
+        }
+
+        /* 4. Medium to Mobile Breakpoint adjustments (max-width: 767.98px) */
+        @media (max-width: 767.98px) {
+            .ceremony-hero.breadcrumb__bg {
+                padding: 60px 0;
+            }
+
+            .ceremony-hero .title {
+                font-size: 26px;
+            }
+
+            .ceremony-showcase-gallery__title {
+                font-size: 24px;
+            }
+
+            .breadcrumb__shape-wrap {
+                display: none;
+            }
+
+            .ceremony-section-header {
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .ceremony-section-header__title {
+                font-size: 18px;
+            }
+
+            .ceremony-section {
+                margin-bottom: 45px;
+            }
+
+            .ceremony-layout-wrapper {
+                display: grid;
+                grid-template-columns: 56px minmax(0, 1fr);
+                gap: 16px;
+                align-items: start;
+                width: 100%;
+            }
+
+            .ceremony-sidebar-nav {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 80px;
+                z-index: 20;
+                width: 100%;
+            }
+
+            .ceremony-showcase-block {
+                scroll-margin-top: 85px;
+                margin-bottom: 40px;
+            }
+
+            /* Mobile view: Main image first (full width), followed by 2-column grid */
+            .ceremony-gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+            }
+
+            .ceremony-gallery-grid>.ceremony-card:first-child {
+                grid-column: span 2;
+                grid-row: auto;
+                height: auto;
+            }
+
+            .ceremony-gallery-grid>.ceremony-card:first-child .ceremony-card__inner {
+                aspect-ratio: 16 / 10;
+                height: auto;
+            }
+        }
+
+        /* 5. Mobile (all phones: max-width: 575.98px) */
+        @media (max-width: 575.98px) {
+            .tg-header__top {
+                display: none !important;
+            }
+
+            #sticky-header.tg-header__area {
+                height: 65px;
+                min-height: 65px;
+            }
+
+            .site-header__navbar {
+                display: none;
+            }
+
+            .site-header__action {
+                display: none;
+            }
+
+            .site-header__toggler {
+                display: flex;
+            }
+
+            .ceremony-hero.breadcrumb__bg {
+                padding: 50px 0;
+            }
+
+            .ceremony-hero .title {
+                font-size: 22px;
+                line-height: 1.25;
+            }
+
+            .ceremony-hero__intro {
+                font-size: 13px;
+            }
+
+            .ceremony-showcase-gallery {
+                padding: 24px 0 50px;
+            }
+
+            .ceremony-showcase-gallery__badge {
+                font-size: 11px;
+                padding: 4px 12px;
+            }
+
+            .ceremony-showcase-gallery__title {
+                font-size: 20px;
+            }
+
+            .ceremony-showcase-gallery__subtitle {
+                font-size: 13px;
+            }
+
+            .ceremony-layout-wrapper {
+                display: grid;
+                grid-template-columns: 56px minmax(0, 1fr);
+                gap: 14px;
+                align-items: start;
+                width: 100%;
+            }
+
+            .ceremony-sidebar-nav {
+                position: -webkit-sticky;
+                position: sticky;
+                top: 76px;
+                z-index: 20;
+                width: 100%;
+            }
+
+            .ceremony-main-heading .title,
+            .section__title.ceremony-main-heading .title {
+                font-size: 21px;
+                line-height: 1.35;
+            }
+
+            .ceremony-main-heading .desc {
+                font-size: 13.5px;
+                line-height: 1.55;
+            }
+
+            .ceremony-showcase-block {
+                scroll-margin-top: 80px;
+                margin-bottom: 36px;
+            }
+
+            .ceremony-section-header {
+                margin-bottom: 16px;
+                padding-bottom: 10px;
+            }
+
+            .ceremony-section-header__icon {
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+
+            .ceremony-section-header__title {
+                font-size: 17px;
+            }
+
+            .ceremony-section-header__count {
+                font-size: 11px;
+                padding: 3px 10px;
+            }
+
+            .ceremony-gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 12px;
+                width: 100%;
+            }
+
+            .ceremony-gallery-grid>.ceremony-card:first-child {
+                grid-column: span 2;
+                grid-row: auto;
+                height: auto;
+            }
+
+            .ceremony-gallery-grid>.ceremony-card:first-child .ceremony-card__inner {
+                aspect-ratio: 16 / 10;
+                height: auto;
+            }
+
+            .ceremony-card {
+                border-radius: 12px;
+                width: 100%;
+            }
+
+            .ceremony-card__inner {
+                border-radius: 12px;
+                width: 100%;
+            }
+
+            .ceremony-card__overlay {
+                padding: 10px;
+            }
+
+            .ceremony-card__tag {
+                font-size: 10px;
+                padding: 2px 7px;
+            }
+
+            .ceremony-card__zoom {
+                width: 26px;
+                height: 26px;
+                font-size: 10px;
+            }
+
+            .footer__top {
+                padding: 50px 0 20px;
+            }
+
+            .footer__bottom {
+                padding: 20px 0;
+            }
+
+            .footer__bottom .row {
+                gap: 12px;
+                text-align: center;
+            }
+
+            .footer__bottom-nav {
+                justify-content: center;
+            }
+        }
+
+        /* 6. Extra Small Mobile (320px to 375.98px) */
+        @media (max-width: 375.98px) {
+
+            .ceremony-main-heading .title,
+            .section__title.ceremony-main-heading .title {
+                font-size: 19px;
+                line-height: 1.35;
+            }
+
+            .ceremony-layout-wrapper {
+                grid-template-columns: 52px minmax(0, 1fr);
+                gap: 10px;
+            }
+
+            .ceremony-sidebar-nav {
+                top: 74px;
+            }
     /* 1. Large Screen / Desktop (min-width: 1200px) */
     @media (min-width: 1200px) {
       .ceremony-layout-wrapper {
@@ -2047,6 +2474,30 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
             <div class="close-btn" role="button" aria-label="Close navigation menu" tabindex="0">
               <i class="tg-flaticon-close-1" aria-hidden="true"></i>
             </div>
+        </div>
+    </header>
+    <!-- header-area-end -->
+
+    <main class="main-area ceremony-page">
+        <section class="breadcrumb__area breadcrumb__bg bread_bg ceremony-hero" aria-labelledby="ceremony-page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumb__content">
+                            <h1 class="title" id="ceremony-page-title">Skilled.U Achievers & Certificate Celebration
+                            </h1>
+                            <nav class="breadcrumb" aria-label="Breadcrumb">
+                                <span><a href="index.html">Home</a></span>
+                                <span class="breadcrumb-separator"><i class="fas fa-angle-right"
+                                        aria-hidden="true"></i></span>
+                                <span aria-current="page">Certificate Ceremony</span>
+                            </nav>
+                            <p class="ceremony-hero__intro">Celebrating student achievement, academic excellence, and
+                                proud
+                                certificate distribution moments at Skilled.U.</p>
+                        </div>
+                    </div>
+                </div>
             <div class="nav-logo">
               <a href="index.html">
                 <img src="assets/img/logo/skilledU_Logo.png" alt="Skilled.U Logo" width="150" height="49" loading="lazy"

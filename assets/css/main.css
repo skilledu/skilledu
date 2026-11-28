@@ -4356,8 +4356,8 @@ textarea {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -4407,12 +4407,8 @@ textarea {
 @media (max-width: 767.98px) {
   .courses__nav .courses-button-prev {
     position: relative;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    left: 0;
+    transform: none;
+    left: auto;
   }
 }
 
@@ -4474,12 +4470,8 @@ textarea {
 @media (max-width: 767.98px) {
   .courses__nav .courses-button-next {
     position: relative;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0);
-    right: 0;
+    transform: none;
+    right: auto;
   }
 }
 
