@@ -159,8 +159,9 @@
         }
 
         main.main-area.ceremony-page {
-            overflow-x: clip;
-            overflow-y: visible;
+            overflow: visible !important;
+            overflow-x: clip !important;
+            overflow-y: visible !important;
             width: 100%;
         }
 
@@ -776,6 +777,7 @@
             justify-content: center;
             width: 48px;
             height: 48px;
+            flex-shrink: 0;
             border-radius: 50%;
             background: #ffffff;
             border: 2px solid #dcebf8;
@@ -1459,20 +1461,6 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
                 gap: 24px;
             }
 
-            .ceremony-sidebar-nav {
-                top: 96px;
-            }
-
-            .ceremony-nav-list {
-                gap: 14px;
-            }
-
-            .ceremony-nav-btn {
-                width: 44px;
-                height: 44px;
-                font-size: 15px;
-            }
-
             .ceremony-gallery-grid {
                 grid-template-columns: repeat(4, minmax(0, 1fr));
                 gap: 18px;
@@ -1512,7 +1500,7 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
 
             .ceremony-layout-wrapper {
                 display: grid;
-                grid-template-columns: 50px minmax(0, 1fr);
+                grid-template-columns: 56px minmax(0, 1fr);
                 gap: 20px;
                 align-items: start;
                 width: 100%;
@@ -1524,32 +1512,6 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
                 top: 86px;
                 z-index: 20;
                 width: 100%;
-                background: transparent;
-                border: none;
-                box-shadow: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .ceremony-nav-list {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 14px;
-                width: 100%;
-                background: transparent;
-                border: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .ceremony-nav-btn {
-                width: 44px;
-                height: 44px;
-                font-size: 15px;
             }
 
             .ceremony-showcase-block {
@@ -1623,7 +1585,7 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
 
             .ceremony-layout-wrapper {
                 display: grid;
-                grid-template-columns: 44px minmax(0, 1fr);
+                grid-template-columns: 56px minmax(0, 1fr);
                 gap: 16px;
                 align-items: start;
                 width: 100%;
@@ -1632,35 +1594,9 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
             .ceremony-sidebar-nav {
                 position: -webkit-sticky;
                 position: sticky;
-                top: 78px;
+                top: 80px;
                 z-index: 20;
                 width: 100%;
-                background: transparent;
-                border: none;
-                box-shadow: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .ceremony-nav-list {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 12px;
-                width: 100%;
-                background: transparent;
-                border: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .ceremony-nav-btn {
-                width: 40px;
-                height: 40px;
-                font-size: 14px;
             }
 
             .ceremony-showcase-block {
@@ -1741,8 +1677,8 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
 
             .ceremony-layout-wrapper {
                 display: grid;
-                grid-template-columns: 40px minmax(0, 1fr);
-                gap: 12px;
+                grid-template-columns: 56px minmax(0, 1fr);
+                gap: 14px;
                 align-items: start;
                 width: 100%;
             }
@@ -1753,14 +1689,6 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
                 top: 76px;
                 z-index: 20;
                 width: 100%;
-                background: transparent;
-                border: none;
-                box-shadow: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
             }
 
             .ceremony-main-heading .title,
@@ -1772,24 +1700,6 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
             .ceremony-main-heading .desc {
                 font-size: 13.5px;
                 line-height: 1.55;
-            }
-
-            .ceremony-nav-list {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-                width: 100%;
-                background: transparent;
-                border: none;
-                padding: 0;
-                margin: 0;
-            }
-
-            .ceremony-nav-btn {
-                width: 38px;
-                height: 38px;
-                font-size: 13.5px;
             }
 
             .ceremony-showcase-block {
@@ -1887,22 +1797,12 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
             }
 
             .ceremony-layout-wrapper {
-                grid-template-columns: 34px minmax(0, 1fr);
-                gap: 8px;
+                grid-template-columns: 52px minmax(0, 1fr);
+                gap: 10px;
             }
 
             .ceremony-sidebar-nav {
-                top: 72px;
-            }
-
-            .ceremony-nav-list {
-                gap: 8px;
-            }
-
-            .ceremony-nav-btn {
-                width: 32px;
-                height: 32px;
-                font-size: 12px;
+                top: 74px;
             }
 
             .ceremony-showcase-block {
@@ -2080,7 +1980,7 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
     </header>
     <!-- header-area-end -->
 
-    <main class="main-area fix ceremony-page">
+    <main class="main-area ceremony-page">
         <section class="breadcrumb__area breadcrumb__bg bread_bg ceremony-hero" aria-labelledby="ceremony-page-title">
             <div class="container">
                 <div class="row">

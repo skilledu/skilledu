@@ -40544,7 +40544,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
 
     .courses__item-thumb {
-      height: 170px !important;
+      height: auto !important;
       margin-bottom: 12px !important;
     }
 
@@ -42330,6 +42330,47 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
     }
   }
 
+  @media (max-width: 768px) {
+    #our_courses .sk-course-main .courses__item-thumb {
+      width: 100% !important;
+      height: auto !important;
+      aspect-ratio: 16 / 9 !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      background: #f8fafc !important;
+      border: 1px solid rgba(0, 0, 0, 0.05) !important;
+      border-radius: 8px !important;
+      overflow: hidden !important;
+      margin: 0 0 16px 0 !important;
+      position: relative !important;
+    }
+
+    #our_courses .sk-course-main .courses__item-thumb a.shine__animate-link {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      width: 100% !important;
+      height: 100% !important;
+      overflow: hidden !important;
+      position: relative !important;
+      border-radius: 8px !important;
+      background: transparent !important;
+    }
+
+    #our_courses .sk-course-main .courses__item-thumb img {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center !important;
+      border-radius: 6px !important;
+      display: block !important;
+      aspect-ratio: auto !important;
+    }
+  }
+
   @media (max-width: 575.98px) {
 
     #our_courses .sk-course-main .courses__grid-wrap,
@@ -42342,7 +42383,21 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
       padding: 18px;
     }
 
+    #our_courses .sk-course-main .courses__item-thumb {
+      height: auto !important;
+      aspect-ratio: 16 / 9 !important;
+      margin-bottom: 14px !important;
+    }
+
     #our_courses .sk-course-main .courses__item-thumb img {
-      aspect-ratio: 16 / 9;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center !important;
+      border-radius: 6px !important;
+      display: block !important;
+      aspect-ratio: auto !important;
     }
   }

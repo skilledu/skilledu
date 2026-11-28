@@ -16,6 +16,86 @@
   <!-- CSS here (All CSS Inlined Internally) -->
   <link rel="stylesheet" href="assets/css/all-courses.css">
 
+  <style>
+    /* Match image dimensions, aspect ratio, and fitting of Python and MERN Stack cards to existing cards */
+    #our_courses .sk-course-main .courses__item-thumb img[src*="python ds img new.png"],
+    #our_courses .sk-course-main .courses__item-thumb img[src*="Mern stack development img.png"],
+    #all-tab-pane .courses__item-thumb img[src*="python ds img new.png"],
+    #all-tab-pane .courses__item-thumb img[src*="Mern stack development img.png"],
+    #Programming-tab-pane .courses__item-thumb img[src*="python ds img new.png"],
+    #Full_Stack-tab-pane .courses__item-thumb img[src*="Mern stack development img.png"] {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1.46 / 1;
+      border-radius: 6px;
+      object-fit: cover;
+      object-position: 5% center;
+    }
+
+    /* Responsive Course Card Image Fix for Mobile Views */
+    @media (max-width: 768px) {
+      #our_courses .sk-course-main .courses__item-thumb {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        background: #f8fafc !important;
+        border: 1px solid rgba(0, 0, 0, 0.05) !important;
+        border-radius: 8px !important;
+        overflow: hidden !important;
+        margin: 0 0 16px 0 !important;
+        position: relative !important;
+      }
+
+      #our_courses .sk-course-main .courses__item-thumb a.shine__animate-link {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: 100% !important;
+        overflow: hidden !important;
+        position: relative !important;
+        border-radius: 8px !important;
+        background: transparent !important;
+      }
+
+      #our_courses .sk-course-main .courses__item-thumb img {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        border-radius: 6px !important;
+        display: block !important;
+        aspect-ratio: auto !important;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      #our_courses .sk-course-main .courses__item-thumb {
+        height: auto !important;
+        aspect-ratio: 16 / 9 !important;
+        margin-bottom: 14px !important;
+      }
+
+      #our_courses .sk-course-main .courses__item-thumb img {
+        width: 100% !important;
+        height: 100% !important;
+        max-width: 100% !important;
+        max-height: 100% !important;
+        object-fit: contain !important;
+        object-position: center !important;
+        border-radius: 6px !important;
+        display: block !important;
+        aspect-ratio: auto !important;
+      }
+    }
+  </style>
+
 
 
 </head>
@@ -367,8 +447,8 @@
                       <div class="courses__item shine__animate-item">
                         <div class="courses__item-thumb">
                           <a href="React-Native-development.html" class="shine__animate-link">
-                            <img src="assets/img/course-details/React-nativeimg.png" alt="React Native"
-                              loading="lazy" decoding="async" />
+                            <img src="assets/img/course-details/React-nativeimg.png" alt="React Native" loading="lazy"
+                              decoding="async" />
                           </a>
                         </div>
                         <div class="courses__item-content">
@@ -632,7 +712,7 @@
                       <div class="courses__item shine__animate-item">
                         <div class="courses__item-thumb">
                           <a href="python-ml.html" class="shine__animate-link">
-                            <img src=" assets/img/course-details/python ds img new.png" alt="img" loading="lazy"
+                            <img src="assets/img/new-course-img/updated-python with ml.jpg" alt="img" loading="lazy"
                               decoding="async" />
                           </a>
                         </div>
@@ -1003,7 +1083,7 @@
                     <div class="courses__item shine__animate-item">
                       <div class="courses__item-thumb">
                         <a href="Master-Python-Data-Science-ML.html" class="shine__animate-link">
-                          <img src="assets/img/course-details/python ds img new.png "
+                          <img src="assets/img/course-details/python ds img new.png"
                             alt="Python, Data Science and Machine Learning" loading="lazy" decoding="async" />
                         </a>
                       </div>
@@ -1013,8 +1093,8 @@
                             <a href="Master-Python-Data-Science-ML.html">Programming</a>
                           </li>
                           <li class="avg-rating">
-                              <i class="fas fa-star"></i> (4.5 Reviews)
-                            </li>
+                            <i class="fas fa-star"></i> (4.5 Reviews)
+                          </li>
                         </ul>
                         <h5 class="title">
                           <a href="Master-Python-Data-Science-ML.html">Python</a>
@@ -1262,8 +1342,8 @@
                             <a href="Mern-stack-development.html">Full Stack</a>
                           </li>
                           <li class="avg-rating">
-                              <i class="fas fa-star"></i> (4.5 Reviews)
-                            </li>
+                            <i class="fas fa-star"></i> (4.5 Reviews)
+                          </li>
 
                         </ul>
                         <h5 class="title">
@@ -1499,7 +1579,7 @@
                     <div class="courses__item shine__animate-item">
                       <div class="courses__item-thumb">
                         <a href="python-ml.html" class="shine__animate-link">
-                          <img src="assets/img/course-details/python ds img new.png" alt="img" loading="lazy"
+                          <img src="assets/img/new-course-img/updated-python with ml.jpg" alt="img" loading="lazy"
                             decoding="async" />
                         </a>
                       </div>
