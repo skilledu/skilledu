@@ -35,6 +35,11 @@
   margin-bottom: 24px;
 }
 
+/* Vertical space between blog cards on all viewports (desktop, tablet, mobile) */
+#blog-grid .blog-card-col {
+  margin-bottom: 30px;
+}
+
 .blog__post-item:hover {
   filter: drop-shadow(10px 10px 0px #CAC9D6) !important;
   transform: none !important;
@@ -785,7 +790,7 @@
 ==================================================================*/
 .home-blog-area {
   margin-top: 0 !important;
-  padding: 100px 0 90px !important;
+  padding: 100px 0 130px !important;
   background-color: var(--tg-common-color-gray, #F7F7F9);
   position: relative;
   z-index: 1;
@@ -793,7 +798,7 @@
 
 @media (max-width: 767.98px) {
   .home-blog-area {
-    padding: 70px 0 60px !important;
+    padding: 70px 0 90px !important;
   }
 }
 
@@ -804,6 +809,13 @@
 
 .home-blog-area .blog__post-item {
   margin-bottom: 24px;
+}
+
+/* Extra space between stacked blog cards on mobile & tablet */
+@media (max-width: 991.98px) {
+  .home-blog-area #home-blog-grid > div {
+    margin-bottom: 40px !important;
+  }
 }
 
 .home-blog-area .blog__post-content .title {
@@ -837,6 +849,40 @@
 
 .home-blog-area .blog__post-bottom {
   margin-top: 30px;
+}
+
+/* Keep the "View All Blogs" button visible on mobile & tablet */
+@media (max-width: 991.98px) {
+  .home-blog-area {
+    padding-bottom: 90px !important;
+  }
+  .home-blog-area .blog__post-bottom {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  .home-blog-area .blog__post-bottom .btn.btn-two.arrow-btn {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    height: auto !important;
+  }
+}
+
+/* View All Blogs button - swap normal/hover backgrounds, remove black border */
+.home-blog-area .blog__post-bottom .btn.btn-two.arrow-btn {
+  background: var(--tg-theme-primary) !important;
+  border: none !important;
+  color: var(--tg-common-color-white) !important;
+}
+
+.home-blog-area .blog__post-bottom .btn.btn-two.arrow-btn:hover,
+.home-blog-area .blog__post-bottom .btn.btn-two.arrow-btn:focus-visible {
+  background: var(--tg-theme-secondary) !important;
+  border: none !important;
+  color: #000000 !important;
+  border-color: transparent !important;
 }
 
 @media (prefers-reduced-motion: reduce) {

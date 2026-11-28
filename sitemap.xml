@@ -152,7 +152,13 @@
   </url>
   <url>
     <loc>https://skilledu.in/Term-of-Use.html</loc>
-    <lastmod>2026-11-06</lastmod>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://skilledu.in/Refund-Policy.html</loc>
+    <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
