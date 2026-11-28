@@ -2739,17 +2739,7 @@ section.fact__area {
     }
 }
 
-@media (min-width: 768px) and (max-width: 1399.98px) {
-    .mern-hero-section .mern-main-photo {
-        height: auto;
-        object-fit: contain;
-        object-position: center;
-    }
 
-    .mern-hero-section .mern-float-code {
-        display: none;
-    }
-}
 
 
 /* =========================================

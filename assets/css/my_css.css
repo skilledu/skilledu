@@ -59,6 +59,9 @@
 
 .brand-area.brand-area-two .marquee_mode.lang_stripe .brand__item a img.lang_st {
   height: 40px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 .courses__curriculum-wrap .course-item .item-name.item-name1::before {
@@ -934,15 +937,18 @@ p.achievw-card {
   }
 
   .hero-sparkle.top-sparkle {
-    position: absolute;
-    top: -36px;
-    left: 0;
+    position: absolute !important;
+    top: -22px !important;
+    left: 15px !important;
     align-self: auto;
     width: 34px;
     height: 34px;
     flex: 0 0 34px;
+    display: block !important;
+    visibility: visible !important;
+    z-index: 5 !important;
     margin: 0 !important;
-    animation: none !important;
+    animation: sparklePulse 3s ease-in-out infinite alternate !important;
   }
 
   .hero-sparkle.top-sparkle svg {
@@ -951,7 +957,6 @@ p.achievw-card {
     height: 34px;
     margin: 0 !important;
     transform-origin: center;
-    animation: none !important;
   }
 
   .hero-card {
@@ -1069,7 +1074,8 @@ p.achievw-card {
 
 @media (max-width: 575.98px) {
   .hero-sparkle.top-sparkle {
-    left: 36px;
+    top: -20px !important;
+    left: 10px !important;
   }
 }
 
@@ -1527,15 +1533,35 @@ p.achievw-card {
   }
 }
 
-/* 8. SSS Section */
+/* 8. SSS & SMS Sections */
 @media (max-width: 991.98px) {
-  #sms .tg-button-wrap {
-    display: flex !important;
-    justify-content: center !important;
+  #sms .work__content,
+  #sss .work__content {
+    overflow: visible !important;
   }
 
+  #sms .tg-button-wrap,
   #sss .tg-button-wrap {
+    display: flex !important;
     justify-content: center !important;
+    width: 100%;
+    padding: 0 8px 12px !important;
+    margin-bottom: 16px !important;
+    overflow: visible !important;
+    box-sizing: border-box;
+  }
+
+  #sms .tg-button-wrap .btn.arrow-btn,
+  #sss .tg-button-wrap .btn.arrow-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.3;
   }
 
   .choose__content-four > .btn-four {
@@ -1552,6 +1578,21 @@ p.achievw-card {
   div[style*="margin-left: -50px"] {
     margin-left: 0 !important;
     margin-top: 30px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #sms .tg-button-wrap,
+  #sss .tg-button-wrap {
+    padding: 0 8px 12px !important;
+    margin-bottom: 16px !important;
+  }
+
+  #sms .tg-button-wrap .btn.arrow-btn,
+  #sss .tg-button-wrap .btn.arrow-btn {
+    padding: 13px 22px !important;
+    font-size: 14px !important;
+    max-width: calc(100% - 8px);
   }
 }
 
@@ -1711,6 +1752,13 @@ p.achievw-card {
     padding-right: 15px !important;
     text-align: center !important;
     margin-bottom: 15px !important;
+  }
+
+  .cta__area .feedback-points {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .cta__area .section__title {
