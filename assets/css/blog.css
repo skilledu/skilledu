@@ -245,10 +245,63 @@
   margin-left: 10px;
 }
 
+/* Desktop (≥992px): Sticky sidebar with both widgets */
+@media (min-width: 992px) {
+  .blog-area .container {
+    overflow: visible;
+  }
+
+  .blog-area .row {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow: visible;
+  }
+
+  .blog-area .col-xl-3.col-lg-4 {
+    align-self: stretch;
+  }
+
+  .blog-sidebar {
+    position: sticky;
+    top: 100px; /* Stick below the navbar/header */
+    align-self: flex-start;
+    overflow: visible;
+  }
+}
+
+/* Mobile (≤991px): No sticky, hide sidebar search (shown separately after breadcrumb), keep popular posts */
 @media (max-width: 991.98px) {
   .blog-sidebar {
+    position: static !important;
+    top: auto;
     margin-left: 0;
     margin-top: 50px;
+  }
+
+  /* Hide the search widget inside sidebar on mobile — it appears after breadcrumb instead */
+  .blog-sidebar .blog-widget.widget_search {
+    display: none;
+  }
+
+  /* Popular posts remain visible in sidebar location on mobile */
+  .blog-sidebar .blog-widget:not(.widget_search) {
+    display: block;
+  }
+}
+
+/* Mobile-only search bar shown after breadcrumb */
+.mobile-blog-search {
+  display: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (max-width: 991.98px) {
+  .mobile-blog-search {
+    display: block;
   }
 }
 
