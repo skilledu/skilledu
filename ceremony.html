@@ -158,9 +158,11 @@
       height: auto;
     }
 
+    main.main-area.fix.ceremony-page,
     main.main-area.ceremony-page {
-      overflow-x: clip;
-      overflow-y: visible;
+      overflow-x: clip !important;
+      overflow-y: visible !important;
+      overflow: clip visible !important;
       width: 100%;
     }
 
@@ -1523,11 +1525,12 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
       }
 
       .ceremony-sidebar-nav {
-        position: fixed;
+        grid-column: 1;
+        position: -webkit-sticky;
+        position: sticky;
         top: 86px;
-        left: max(16px, calc((100% - 720px) / 2 + 15px));
         width: 50px;
-        z-index: 95;
+        z-index: 20;
         background: transparent;
         border: none;
         box-shadow: none;
@@ -1638,11 +1641,13 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
       }
 
       .ceremony-sidebar-nav {
-        position: fixed;
+        grid-column: 1;
+        position: -webkit-sticky;
+        position: sticky;
         top: 78px;
-        left: 15px;
+        left: auto;
         width: 44px;
-        z-index: 95;
+        z-index: 20;
         background: transparent;
         border: none;
         box-shadow: none;
@@ -1760,11 +1765,13 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
       }
 
       .ceremony-sidebar-nav {
-        position: fixed;
+        grid-column: 1;
+        position: -webkit-sticky;
+        position: sticky;
         top: 76px;
-        left: 15px;
+        left: auto;
         width: 40px;
-        z-index: 95;
+        z-index: 20;
         background: transparent;
         border: none;
         box-shadow: none;
@@ -1908,11 +1915,13 @@ Skilled.U footer layout, widgets, social icons and smooth back-to-top
       }
 
       .ceremony-sidebar-nav {
-        position: fixed;
+        grid-column: 1;
+        position: -webkit-sticky;
+        position: sticky;
         top: 72px;
-        left: 12px;
+        left: auto;
         width: 34px;
-        z-index: 95;
+        z-index: 20;
       }
 
       .ceremony-nav-list {
