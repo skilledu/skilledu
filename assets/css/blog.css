@@ -32,7 +32,7 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  margin-bottom: 24px;
+  margin-bottom: 15px;
 }
 
 /* Vertical space between blog cards on all viewports (desktop, tablet, mobile) */
@@ -157,7 +157,7 @@
   color: var(--tg-body-color, #6D6C80);
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 2px;
 }
 
 .blog__post-meta .list-wrap li i {
@@ -167,6 +167,7 @@
 
 .blog__post-meta .list-wrap li a {
   color: var(--tg-body-color, #6D6C80);
+  margin-left: 1px;
 }
 
 .blog__post-meta .list-wrap li a:hover {
@@ -182,6 +183,7 @@
   margin-bottom: 4px;
   flex-grow: 1;
 }
+
 
 .blog__post-content .title a {
   display: inline;
@@ -808,13 +810,22 @@
 }
 
 .home-blog-area .blog__post-item {
-  margin-bottom: 24px;
+  height: 100% !important;
+  margin-bottom: 0 !important;
+  padding: 20px 20px 20px !important;
 }
 
 /* Extra space between stacked blog cards on mobile & tablet */
 @media (max-width: 991.98px) {
   .home-blog-area #home-blog-grid > div {
     margin-bottom: 40px !important;
+  }
+}
+
+/* Spacing when last card drops down to next row on ~1125px viewport */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home-blog-area #home-blog-grid > div {
+    margin-bottom: 30px !important;
   }
 }
 
@@ -825,6 +836,7 @@
   line-height: 1.45;
   color: var(--tg-heading-color, #161439);
   margin-bottom: 0;
+  flex-grow: 0 !important;
 }
 
 .home-blog-area .blog__post-content .title a {
@@ -2439,6 +2451,17 @@
   }
   .find-courses .find-right p.cta-desc {
     font-size: 14.5px !important;
+  }
+}
+
+@media (max-width: 459px) {
+  .find-courses .find-courses-wrapper .btn {
+    font-size: 13px !important;
+    padding: 12px 18px !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+    text-align: center !important;
+    line-height: 1.3 !important;
   }
 }
 
